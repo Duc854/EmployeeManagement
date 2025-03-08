@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\SharedInterfaces\SharedInterfaces.csproj" />
+		<ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+	</ItemGroup>
+
 </Project>
