@@ -50,14 +50,15 @@ namespace Presentation;
 
             if (user != null)
             {
-                MessageBox.Show($"Đăng nhập thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 if (user.Role == "Admin")
                 {
+                    MessageBox.Show($"Đăng nhập (Admin) thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                     new AdminHomePage().Show();
                 }
                 else
                 {
+                    MessageBox.Show($"Đăng nhập thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                     new EmployeeHomePage().Show();
                 }
 
@@ -65,7 +66,7 @@ namespace Presentation;
             }
             else
             {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }
