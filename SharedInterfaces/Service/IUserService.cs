@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Models;
+using Models.Models;
 
 namespace SharedInterfaces.Service
 {
     public interface IUserService
     {
+        public User Authenticate(string username, string password);
     }
 }

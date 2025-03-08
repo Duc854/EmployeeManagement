@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedInterfaces", "SharedInterfaces\SharedInterfaces.csproj", "{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

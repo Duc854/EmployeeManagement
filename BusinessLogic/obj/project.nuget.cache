@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "G0Xkys7WRS4=",
-  "success": false,
+  "dgSpecHash": "cqdfqB8PQPw=",
+  "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
@@ -80,15 +80,5 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  BusinessLogic -> DataAccess -> BusinessLogic.",
-      "libraryId": "BusinessLogic",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

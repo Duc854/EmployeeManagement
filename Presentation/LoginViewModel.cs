@@ -7,65 +7,71 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
 using BusinessLogic.Service;
+using Models.Models;
+using System.Windows.Controls;
 
-namespace Presentation
-{
+namespace Presentation;
     public class LoginViewModel : INotifyPropertyChanged
+{
+    private string _username;
+    public string Username
     {
-        private string _username;
-        public string Username
+        get { return _username; }
+        set
         {
-            get { return _username; }
-            set
+            _username = value;
+            OnPropertyChanged(nameof(Username));
+        }
+    }
+
+    public ICommand LoginCommand { get; }
+
+    private readonly UserService _userService;
+
+    public LoginViewModel()
+    {
+        _userService = new UserService();
+        LoginCommand = new RelayCommand(ExecuteLogin);
+    }
+
+    private void ExecuteLogin(object parameter)
+    {
+        if (parameter is PasswordBox passwordBox)
+        {
+            string password = passwordBox.Password;
+
+            if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(password))
             {
-                _username = value;
-                OnPropertyChanged(nameof(Username));
+                MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
             }
-        }
 
-        public ICommand LoginCommand { get; }
+            var user = _userService.Authenticate(Username, password);
 
-        private readonly UserService _userService;
-
-        public LoginViewModel()
-        {
-            _userService = new UserService();
-            LoginCommand = new RelayCommand(ExecuteLogin, CanExecuteLogin);
-        }
-
-        private bool CanExecuteLogin(object parameter) => !string.IsNullOrWhiteSpace(Username);
-
-        private void ExecuteLogin(object parameter)
-        {
-            if (parameter is System.Windows.Controls.PasswordBox passwordBox)
+            if (user != null)
             {
-                string password = passwordBox.Password;
-                var user = _userService.Authenticate(Username, password);
+                MessageBox.Show($"Đăng nhập thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                if (user != null)
+                if (user.Role == "Admin")
                 {
-                    SessionManager.CurrentUser = user;
-
-                    if (user.Role == "Admin")
-                    {
-                        new Views.AdminView().Show();
-                    }
-                    else
-                    {
-                        new Views.EmployeeView().Show();
-                    }
-
-                    Application.Current.MainWindow.Close();
+                    new AdminHomePage().Show();
                 }
                 else
                 {
-                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    new EmployeeHomePage().Show();
                 }
+
+                Application.Current.MainWindow.Close();
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
+
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected void OnPropertyChanged(string propertyName) =>
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }

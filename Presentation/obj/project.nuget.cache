@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "ob0bnl8gMZc=",
-  "success": false,
+  "dgSpecHash": "i25OIDFVJQI=",
+  "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
@@ -80,15 +80,5 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  Presentation -> DataAccess -> SharedInterfaces -> DataAccess.",
-      "libraryId": "DataAccess",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
