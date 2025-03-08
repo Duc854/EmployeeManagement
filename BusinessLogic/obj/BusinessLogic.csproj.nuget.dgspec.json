@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

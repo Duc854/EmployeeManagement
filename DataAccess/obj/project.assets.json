@@ -4023,11 +4023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\EmployeeManagement\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
