@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\admin\\desktop\\hoctap\\prn212\\employeemanagement\\employeemanagement\\presentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\admin\\desktop\\hoctap\\prn212\\employeemanagement\\employeemanagement\\presentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\Presentation\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\Presentation\\MainWindow.xaml",
+              "RelativeToolTip": "Presentation\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-08T16:54:25.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\Presentation\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\EmployeeManagement\\EmployeeManagement\\Presentation\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T16:54:25.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
