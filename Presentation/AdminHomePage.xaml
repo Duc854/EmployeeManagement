@@ -7,6 +7,97 @@
         mc:Ignorable="d"
         Title="AdminHomePage" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lstActions" Grid.Column="0" Background="LightGray" SelectionChanged="ActionList_SelectionChanged">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="MinWidth" Value="150"/>
+                    <Setter Property="MinHeight" Value="50"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <Border BorderBrush="Black" BorderThickness="1" Padding="10" Background="Transparent" Width="145" Height="50">
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="DodgerBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
+
+            <ListBoxItem Content="Quản lý người dùng" Width="120"/>
+            <ListBoxItem Content="Quản lý phòng" Width="98"/>
+            <ListBoxItem Content="Quản lý đặt phòng" Width="98"/>
+        </ListBox>
+        <Grid Grid.Column="1" Margin="10">
+            <StackPanel>
+                <!-- Phần Số liệu thống kê -->
+                <TextBlock Text="Số liệu thống kê" FontSize="20" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+                    <!-- Số lượng nhân viên -->
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Số lượng nhân viên" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding EmployeeCount}" FontSize="16"/>
+                    </StackPanel>
+                    <!-- Số phòng ban -->
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Số phòng ban" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding DepartmentCount}" FontSize="16"/>
+                    </StackPanel>
+                    <!-- Số ca chấm công trễ -->
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Ca chấm công trễ" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding LateAttendanceCount}" FontSize="16"/>
+                    </StackPanel>
+                    <!-- Số đơn nghỉ phép chờ duyệt -->
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Đơn nghỉ phép chờ duyệt" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding PendingLeaveRequests}" FontSize="16"/>
+                    </StackPanel>
+                    <!-- Các chỉ số khác -->
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Chỉ số khác" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding OtherMetrics}" FontSize="16"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Phần Báo cáo chấm công -->
+                <TextBlock Text="Danh sách chấm công hôm nay" FontSize="20" FontWeight="Bold"/>
+                <DataGrid x:Name="dgAttendanceToday" AutoGenerateColumns="False" Margin="10" Width="500">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã nhân viên" Binding="{Binding EmployeeId}" Width="Auto"/>
+                        <DataGridTextColumn Header="Tên nhân viên" Binding="{Binding Employee.FullName}" Width="*"/>
+                        <DataGridTextColumn Header="Giờ chấm công" Binding="{Binding CheckInTime}" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

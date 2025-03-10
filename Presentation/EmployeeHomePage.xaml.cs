@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +24,34 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        private void ActionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lstActions.SelectedItem is ListBoxItem selectedItem)
+            {
+                //string action = selectedItem.Content.ToString();
+                //if (action == "Quản lý người dùng")
+                //{
+                //    CustomerManagement customerManagement = new CustomerManagement();
+                //    customerManagement.Show();
+                //}
+                //if (action == "Quản lý phòng")
+                //{
+                //    RoomManagementView roomManagementView = new RoomManagementView();
+                //    roomManagementView.Show();
+                //}
+                //if (action == "Quản lý đặt phòng")
+                //{
+                //    BookingManagementView bookingManagementView = new BookingManagementView();
+                //    bookingManagementView.Show();
+                //}
+            }
+        }
+
+        private void FilterReports_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

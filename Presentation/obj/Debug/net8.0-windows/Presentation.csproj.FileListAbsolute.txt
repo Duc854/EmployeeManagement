@@ -387,3 +387,9 @@ C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Pres
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\Presentation.pdb
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\ref\Presentation.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
