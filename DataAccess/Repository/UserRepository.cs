@@ -23,7 +23,7 @@ namespace DataAccess.Repository
         {
             try
             {
-                return _context.Users.AsNoTracking().FirstOrDefault(u => u.Username.Equals(username));
+                return _context.Users.Include(u => u.Employee).Include(u => u.Employee.Department).AsNoTracking().FirstOrDefault(u => u.Username.Equals(username));
             }
             catch (Exception ex)
             {

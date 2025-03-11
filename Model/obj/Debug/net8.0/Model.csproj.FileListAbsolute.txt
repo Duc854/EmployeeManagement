@@ -13,3 +13,4 @@ C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Mode
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Model\obj\Debug\net8.0\Model.pdb
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Model\obj\Debug\net8.0\Model.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Model\obj\Debug\net8.0\ref\Model.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Model\bin\Debug\net8.0\appsettings.json

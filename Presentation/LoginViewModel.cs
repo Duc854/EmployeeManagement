@@ -59,6 +59,7 @@ namespace Presentation;
                 else
                 {
                     MessageBox.Show($"Đăng nhập thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Application.Current.Properties["user"] = user;
                     new EmployeeHomePage().Show();
                 }
 

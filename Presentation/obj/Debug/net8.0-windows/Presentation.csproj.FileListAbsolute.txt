@@ -393,3 +393,4 @@ C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Pres
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\appsettings.json

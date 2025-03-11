@@ -5,64 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="Trang chủ" Height="450" Width="800">
+        Title="Trang chủ" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="80"/>
         </Grid.ColumnDefinitions>
-        <ListBox Name="lstActions" Grid.Column="0" Background="LightGray" SelectionChanged="ActionList_SelectionChanged">
-            <ListBox.ItemContainerStyle>
-                <Style TargetType="ListBoxItem">
-                    <Setter Property="Padding" Value="0"/>
-                    <Setter Property="FontSize" Value="14"/>
-                    <Setter Property="Foreground" Value="Black"/>
-                    <Setter Property="Background" Value="Transparent"/>
-                    <Setter Property="Cursor" Value="Hand"/>
-                    <Setter Property="MinWidth" Value="150"/>
-                    <Setter Property="MinHeight" Value="50"/>
-                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
-                    <Setter Property="VerticalContentAlignment" Value="Center"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="ListBoxItem">
-                                <Border BorderBrush="Black" BorderThickness="1" Padding="10" Background="Transparent" Width="145" Height="50">
-                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
 
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="LightBlue"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                        </Trigger>
-                        <Trigger Property="IsSelected" Value="True">
-                            <Setter Property="Background" Value="DodgerBlue"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ListBox.ItemContainerStyle>
+        <StackPanel Grid.Column="0" Background="LightGray" VerticalAlignment="Stretch">
 
-            <ListBoxItem Content="Quản lý người dùng" Width="120"/>
-            <ListBoxItem Content="Quản lý phòng" Width="98"/>
-            <ListBoxItem Content="Quản lý đặt phòng" Width="98"/>
-        </ListBox>
-        <Grid Grid.Column="1" Margin="10">
-            <StackPanel>
-                <TextBlock Text="Báo cáo thống kê" FontSize="20" FontWeight="Bold"/>
-                <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                    <TextBlock Text="Từ ngày: " VerticalAlignment="Center"/>
-                    <DatePicker Name="dpStartDate" Width="120" Margin="5 0"/>
-                    <TextBlock Text="Đến ngày: " VerticalAlignment="Center"/>
-                    <DatePicker Name="dpEndDate" Width="120" Margin="5 0"/>
-                    <Button Content="Lọc" Click="FilterReports_Click" Background="LightBlue"/>
+            <!-- Ảnh đại diện -->
+            <Border Height="100" Width="100" CornerRadius="50" Margin="10" HorizontalAlignment="Center">
+                <Image Name = "Avatar" Source="{Binding Avatar}" Stretch="UniformToFill"/>
+            </Border>
+
+            <!-- Thông tin cá nhân -->
+            <TextBlock Name = "txtFullName" Text="{Binding FullName}" FontSize="16" FontWeight="Bold" Foreground="Black" TextAlignment="Center"/>
+            <TextBlock Name = "txtPosition" Text="{Binding Position}" FontSize="14" Foreground="DarkSlateGray" TextAlignment="Center"/>
+            <TextBlock Name = "txtDepartment" Text="{Binding Department, StringFormat='Phòng ban: {0}'}" FontSize="14" Foreground="DarkSlateGray" TextAlignment="Center" Margin="0,5,0,10"/>
+
+            <!-- Danh sách chức năng -->
+            <ListBox Name="lstActions" Background="LightGray" SelectionChanged="ActionList_SelectionChanged">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="MinWidth" Value="180"/>
+                        <Setter Property="MinHeight" Value="50"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Border BorderBrush="Black" BorderThickness="1" Padding="10" Background="Transparent" Width="180" Height="50">
+                                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightBlue"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="DodgerBlue"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBoxItem Content="Thông tin cá nhân"/>
+                <ListBoxItem Content="Thông báo nội bộ"/>
+                <ListBoxItem Content="Số ngày phép còn lại"/>
+            </ListBox>
+            <Button Content="Đăng xuất" Click="DailyAttendance" Background="LightSkyBlue"  Height="30" Width="100" Grid.Column="2" Margin=" 0 30 0 0"/>
+        </StackPanel>
+        
+        <Grid Grid.Column="1" Margin="10" PreviewMouseDown="Grid_MouseDown">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition MaxHeight="100"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row ="0">
+                    <TextBlock Text="Thông báo" FontSize="20" FontWeight="Bold"/>
                 </StackPanel>
-                <DataGrid x:Name="dgReports" AutoGenerateColumns="True" Margin="10"/>
-            </StackPanel>
+                <ListBox Name="NotificationList" SelectionChanged="NotificationList_SelectionChanged"
+                 Margin="10" Grid.Row="1">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Title}" Foreground="Blue"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Border Name="DetailPanel" Grid.Row="2" Visibility="Collapsed"
+                Background="LightGray" Padding="10">
+                    <StackPanel>
+                        <TextBlock Name="DetailTitle" FontWeight="Bold" FontSize="14"/>
+                        <TextBlock Name="DetailContent" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
         </Grid>
+        <Button Content="Chấm công" Click="DailyAttendance" Background="#D3D3D3"  Height="30" Grid.Column="2" Margin=" 0 350 10 0"/>
     </Grid>
 </Window>
