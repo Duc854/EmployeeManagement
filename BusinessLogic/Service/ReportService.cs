@@ -35,10 +35,18 @@ namespace BusinessLogic.Service
         {
             return _reportRepository.GetEmployeeStatisticsByGender();
         }
+        public DataTable GetEmployeeStatisticsByPosition()
+        {
+            return _reportRepository.GetEmployeeStatisticsByPosition();
+        }
 
         public DataTable GetSalaryStatisticsByMonth()
         {
             return _reportRepository.GetSalaryStatisticsByMonth();
+        }
+        public DataTable GetSalaryStatisticsByQuarter()
+        {
+            return _reportRepository.GetSalaryStatisticsByQuarter();
         }
     }
 }

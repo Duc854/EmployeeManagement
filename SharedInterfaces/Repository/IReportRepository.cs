@@ -13,6 +13,8 @@ namespace SharedInterfaces.Repository
         DataTable GetEmployeesFiltered(string departmentName, string gender, decimal? minSalary, decimal? maxSalary, DateTime? startDate);
         DataTable GetEmployeeStatisticsByDepartment();
         DataTable GetEmployeeStatisticsByGender();
+        DataTable GetEmployeeStatisticsByPosition();
         DataTable GetSalaryStatisticsByMonth();
+        DataTable GetSalaryStatisticsByQuarter();
     }
 }
