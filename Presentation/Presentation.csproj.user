@@ -10,6 +10,9 @@
     <Compile Update="AdminHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DepartmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EmployeeHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
