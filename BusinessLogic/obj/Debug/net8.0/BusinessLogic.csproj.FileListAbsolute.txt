@@ -50,3 +50,25 @@ C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\Busi
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\HocTap\PRN212\Employee Management\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\BusinessLogic.runtimeconfig.json
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\DataAccess.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\Model.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\SharedInterfaces.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\SharedInterfaces.pdb
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\bin\Debug\net8.0\Model.pdb
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.sourcelink.json
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\Business.CF5D6E35.Up2Date
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\BusinessLogic.genruntimeconfig.cache
+G:\KY_5\PRN212\EmployeeManagement\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
