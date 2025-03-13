@@ -108,6 +108,10 @@ namespace DataAccess.Repository
                 if (employee != null)
                 {
                     employee.Avatar = avatarData;
+                    if(employee.Avatar.Length > 5 * 1024 * 1024)
+                    {
+                        employee.Avatar = null;
+                    }
                     _context.SaveChanges();
                 }
             }

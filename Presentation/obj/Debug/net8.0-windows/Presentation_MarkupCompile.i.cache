@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 G:\KY_5\PRN212\EmployeeManagement\Presentation\App.xaml
-52001553032
+91701924394
 
-12-1514115054
-2361066719144
-AdminHomePage.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;Login.xaml;MainWindow.xaml;
+1645658248
+243-834206147
+AdminHomePage.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;Login.xaml;MainWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;
 
 False
 

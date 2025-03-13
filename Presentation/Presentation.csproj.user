@@ -16,6 +16,9 @@
     <Compile Update="EmployeeHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EmployeeManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
