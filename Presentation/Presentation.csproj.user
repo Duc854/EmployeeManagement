@@ -16,6 +16,15 @@
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ReportEmployeeNumberWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportSalaryEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminHomePage.xaml">
@@ -28,6 +37,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportEmployeeNumberWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportSalaryEmployeeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

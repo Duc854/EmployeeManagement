@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
+              "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj"
+              },
+              "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+                "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
               }
             }
           }
@@ -48,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -99,24 +102,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\Model.csproj": {
+    "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\obj\\",
+        "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,7 +128,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -143,7 +145,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -194,24 +197,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+    "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "projectUniqueName": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
         "projectName": "SharedInterfaces",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\SharedInterfaces\\obj\\",
+        "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -220,15 +223,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Desktop\\HocTap\\PRN212\\Employee Management\\EmployeeManagement\\Model\\Model.csproj"
+              "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Model.csproj"
               }
             }
           }
@@ -242,7 +244,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -293,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

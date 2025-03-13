@@ -42,10 +42,21 @@
         </StackPanel>
 
         <!-- Bảng kết quả -->
-        <DataGrid x:Name="dgResult" Grid.Row="1" AutoGenerateColumns="True"
-                  IsReadOnly="True" Margin="0"
-                  HeadersVisibility="Column"
-                  AlternatingRowBackground="LightGray"
-                  CanUserAddRows="False"/>
+        <DataGrid x:Name="dgResult"
+          Grid.Row="1"
+          IsReadOnly="True"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          HeadersVisibility="Column"
+          AlternatingRowBackground="LightGray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="EmployeeID" Binding="{Binding EmployeeId}" Width="*"/>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" Width="*"/>
+                <DataGridTextColumn Header="Salary" Binding="{Binding Salary}" Width="*"/>
+                <DataGridTextColumn Header="StartDate" Binding="{Binding StartDate}" Width="*"/>
+                <DataGridTextColumn Header="Department" Binding="{Binding Department.DepartmentName}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>

@@ -39,20 +39,25 @@ namespace Presentation
         private void LoadSalaryStatisticsByMonth()
         {
             var result = _reportService.GetSalaryStatisticsByMonth();
-            dgSalaryStatistics.ItemsSource = result.DefaultView;
+            dgSalaryStatistics.ItemsSource = result;
         }
 
 
         private void btnSalaryByMonth_Click(object sender, RoutedEventArgs e)
         {
             var result = _reportService.GetSalaryStatisticsByMonth();
-            dgSalaryStatistics.ItemsSource = result.DefaultView;
+            dgSalaryStatistics.ItemsSource = result;
+
+            dgSalaryStatistics.Columns[1].Header = "Tháng";
         }
 
         private void btnSalaryByQuarter_Click(object sender, RoutedEventArgs e)
         {
             var result = _reportService.GetSalaryStatisticsByQuarter();
-            dgSalaryStatistics.ItemsSource = result.DefaultView;
+            dgSalaryStatistics.ItemsSource = result;
+
+            dgSalaryStatistics.Columns[1].Header = "Quý";
+
         }
         private void btnExportToExcel_Click(object sender, RoutedEventArgs e)
         {
