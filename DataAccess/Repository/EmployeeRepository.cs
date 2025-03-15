@@ -67,11 +67,11 @@ namespace DataAccess.Repository
                 var existingEmployee = _context.Employees.Find(employee.EmployeeId);
                 if (existingEmployee != null)
                 {
-                    int originalUserId = existingEmployee.UserId; 
+                    int originalUserId = existingEmployee.UserId;
 
                     _context.Entry(existingEmployee).CurrentValues.SetValues(employee);
 
-                    existingEmployee.UserId = originalUserId;
+                    existingEmployee.UserId = originalUserId; 
 
                     if (employee.Avatar == null)
                     {
@@ -87,6 +87,7 @@ namespace DataAccess.Repository
                 throw;
             }
         }
+
 
         public void DeleteEmployee(int employeeId)
         {

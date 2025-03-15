@@ -26,7 +26,7 @@ namespace BusinessLogic.Service
         {
             return _employeeRepository.GetEmployeeById(employeeId);
         }
-        public void AddEmployee(Employee employee, string username, string password)
+        public void AddEmployee(Employee employee, string? username, string? password)
         {
             try
             {
@@ -59,11 +59,50 @@ namespace BusinessLogic.Service
                 throw;
             }
         }
-        
-        public void UpdateEmployee(Employee employee)
+
+        public void UpdateEmployee(Employee employee, string? newUsername, string? newPassword)
         {
-            _employeeRepository.UpdateEmployee(employee);
+            try
+            {
+                var existingEmployee = _employeeRepository.GetEmployeeById(employee.EmployeeId);
+                if (existingEmployee == null)
+                {
+                    throw new Exception("Nhân viên không tồn tại.");
+                }
+
+                var existingUser = _userRepository.GetUserById(existingEmployee.UserId);
+                if (existingUser == null)
+                {
+                    throw new Exception("Tài khoản người dùng không tồn tại.");
+                }
+
+                if (!string.IsNullOrEmpty(newUsername) && existingUser.Username != newUsername)
+                {
+                    var usernameExists = _userRepository.GetUserByUsername(newUsername);
+                    if (usernameExists != null)
+                    {
+                        throw new Exception("Username đã tồn tại. Vui lòng chọn username khác.");
+                    }
+                    existingUser.Username = newUsername;
+                }
+
+                if (!string.IsNullOrEmpty(newPassword))
+                {
+                    existingUser.PasswordHash = newPassword;
+                }
+
+                _userRepository.UpdateUser(existingUser);
+                _employeeRepository.UpdateEmployee(employee);
+
+                Console.WriteLine("Cập nhật thông tin nhân viên thành công!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi: {ex.Message}");
+                throw;
+            }
         }
+
         public void DeleteEmployee(int employeeId)
         {
             _employeeRepository.DeleteEmployee(employeeId);

@@ -1,15 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|g:\\ky_5\\prn212\\employeemanagement\\presentation\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|g:\\ky_5\\prn212\\employeemanagement\\presentation\\createemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\createemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|g:\\ky_5\\prn212\\employeemanagement\\presentation\\updateemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\updateemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|g:\\ky_5\\prn212\\employeemanagement\\presentation\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|g:\\ky_5\\prn212\\employeemanagement\\presentation\\updateemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\updateemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A156055-FF88-437A-BAEC-52109F05CC15}|BusinessLogic\\BusinessLogic.csproj|g:\\ky_5\\prn212\\employeemanagement\\businesslogic\\service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A156055-FF88-437A-BAEC-52109F05CC15}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1644,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +43,82 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateEmployee.xaml.cs",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\CreateEmployee.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\CreateEmployee.xaml.cs",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\CreateEmployee.xaml.cs",
+              "RelativeToolTip": "Presentation\\CreateEmployee.xaml.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwF4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T14:34:42.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateEmployee.xaml.cs",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\UpdateEmployee.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\UpdateEmployee.xaml.cs",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\UpdateEmployee.xaml.cs",
+              "RelativeToolTip": "Presentation\\UpdateEmployee.xaml.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAUwIoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T14:20:23.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateEmployee.xaml",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\UpdateEmployee.xaml",
+              "RelativeDocumentMoniker": "Presentation\\UpdateEmployee.xaml",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\UpdateEmployee.xaml",
+              "RelativeToolTip": "Presentation\\UpdateEmployee.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-15T13:54:18.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\BusinessLogic\\Service\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Service\\EmployeeService.cs",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\BusinessLogic\\Service\\EmployeeService.cs",
+              "RelativeToolTip": "BusinessLogic\\Service\\EmployeeService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAhwGYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:46:15.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeManagementWindow.xaml.cs",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\EmployeeManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\EmployeeManagementWindow.xaml.cs",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\EmployeeManagementWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\EmployeeManagementWindow.xaml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAnwEAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:14:05.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeManagementWindow.xaml",
+              "DocumentMoniker": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\EmployeeManagementWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\EmployeeManagementWindow.xaml",
+              "ToolTip": "G:\\KY_5\\PRN212\\EmployeeManagement\\Presentation\\EmployeeManagementWindow.xaml",
+              "RelativeToolTip": "Presentation\\EmployeeManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-15T08:49:46.508Z",
+              "EditorCaption": ""
             }
           ]
         }
