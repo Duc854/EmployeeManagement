@@ -12,9 +12,11 @@ namespace BusinessLogic.Service
     public class EmployeeService : IEmployeeService
     {
         private readonly EmployeeRepository _employeeRepository;
+        private readonly UserRepository _userRepository;
         public EmployeeService()
         {
             _employeeRepository = new EmployeeRepository();
+            _userRepository = new UserRepository();
         }
         public List<Employee> GetAllEmployees() 
         {
@@ -24,10 +26,40 @@ namespace BusinessLogic.Service
         {
             return _employeeRepository.GetEmployeeById(employeeId);
         }
-        public void AddEmployee(Employee employee)
+        public void AddEmployee(Employee employee, string username, string password)
         {
-            _employeeRepository.AddEmployee(employee);
+            try
+            {
+                var existingUser = _userRepository.GetUserByUsername(username);
+                if (existingUser != null)
+                {
+                    throw new Exception("Username đã tồn tại. Vui lòng chọn username khác.");
+                }
+                var newUser = new User
+                {
+                    Username = username,
+                    PasswordHash = password, 
+                    Role = "Employee"
+                };
+
+                _userRepository.AddUser(newUser);
+                var createdUser = _userRepository.GetUserByUsername(username);
+                if (createdUser == null)
+                {
+                    throw new Exception("Không thể tạo User mới.");
+                }
+                employee.UserId = createdUser.UserId;
+                _employeeRepository.AddEmployee(employee);
+
+                Console.WriteLine("Thêm Employee thành công!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi: {ex.Message}");
+                throw;
+            }
         }
+        
         public void UpdateEmployee(Employee employee)
         {
             _employeeRepository.UpdateEmployee(employee);

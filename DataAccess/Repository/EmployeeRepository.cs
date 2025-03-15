@@ -67,11 +67,15 @@ namespace DataAccess.Repository
                 var existingEmployee = _context.Employees.Find(employee.EmployeeId);
                 if (existingEmployee != null)
                 {
+                    int originalUserId = existingEmployee.UserId; 
+
                     _context.Entry(existingEmployee).CurrentValues.SetValues(employee);
+
+                    existingEmployee.UserId = originalUserId;
 
                     if (employee.Avatar == null)
                     {
-                        employee.Avatar = existingEmployee.Avatar;
+                        existingEmployee.Avatar = existingEmployee.Avatar;
                     }
 
                     _context.SaveChanges();
@@ -83,6 +87,7 @@ namespace DataAccess.Repository
                 throw;
             }
         }
+
         public void DeleteEmployee(int employeeId)
         {
             try
@@ -90,6 +95,14 @@ namespace DataAccess.Repository
                 var employee = _context.Employees.Find(employeeId);
                 if (employee != null)
                 {
+                    // Xóa User 
+                    var user = _context.Users.Find(employee.UserId);
+                    if (user != null)
+                    {
+                        _context.Users.Remove(user);
+                    }
+
+                    // Xóa Employee
                     _context.Employees.Remove(employee);
                     _context.SaveChanges();
                 }

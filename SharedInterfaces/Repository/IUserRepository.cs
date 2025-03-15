@@ -10,5 +10,6 @@ namespace SharedInterfaces.Repository
     public interface IUserRepository
     {
         public User GetUserByUsername(string username);
+        public void AddUser(User user); 
     }
 }

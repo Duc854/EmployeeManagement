@@ -11,7 +11,7 @@ namespace SharedInterfaces.Service
     {
         List<Employee> GetAllEmployees();
         Employee GetEmployeeById(int employeeId);
-        void AddEmployee(Employee employee);
+        void AddEmployee(Employee employee, string username, string password);
         void UpdateEmployee(Employee employee);
         void DeleteEmployee(int employeeId);
         void SaveEmployeeAvatar(int employeeId, byte[] avatarData);

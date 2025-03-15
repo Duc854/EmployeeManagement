@@ -31,5 +31,18 @@ namespace DataAccess.Repository
                 throw;
             }
         }
+        public void AddUser(User user)
+        {
+            try
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
     }
 }
