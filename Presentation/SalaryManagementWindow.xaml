@@ -1,0 +1,70 @@
+﻿<Window x:Class="Presentation.SalaryManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="SalaryManagementWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Quản lý Lương" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Form nhập liệu -->
+                <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                    <TextBlock Text="Mã Lương:"/>
+                    <TextBox x:Name="txtSalaryID" IsReadOnly="True"/>
+
+                    <TextBlock Text="Mã Nhân Viên:"/>
+                    <TextBox x:Name="txtEmployeeID"/>
+
+                    <TextBlock Text="Lương Cơ Bản:"/>
+                    <TextBox x:Name="txtBasicSalary"/>
+
+                    <TextBlock Text="Phụ Cấp:"/>
+                    <TextBox x:Name="txtAllowance"/>
+
+                    <TextBlock Text="Thưởng:"/>
+                    <TextBox x:Name="txtBonus"/>
+
+                    <TextBlock Text="Khấu Trừ:"/>
+                    <TextBox x:Name="txtDeduction"/>
+
+                    <TextBlock Text="Tổng Lương:"/>
+                    <TextBox x:Name="txtTotalSalary" IsReadOnly="True"/>
+
+                    <TextBlock Text="Ngày Trả:"/>
+                   <DatePicker x:Name="dpPayDate" SelectedDate="{Binding PayDate}" />
+                </StackPanel>
+
+                <!-- DataGrid hiển thị danh sách lương -->
+                <DataGrid x:Name="dgSalaries" Grid.Column="1" AutoGenerateColumns="False" SelectionChanged="dgSalaries_SelectionChanged" Margin="0,10,0,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã Lương" Binding="{Binding SalaryId}" Width="*"/>
+                        <DataGridTextColumn Header="Mã Nhân Viên" Binding="{Binding EmployeeId}" Width="*"/>
+                        <DataGridTextColumn Header="Lương Cơ Bản" Binding="{Binding BasicSalary}" Width="*"/>
+                        <DataGridTextColumn Header="Phụ Cấp" Binding="{Binding Allowance}" Width="*"/>
+                        <DataGridTextColumn Header="Thưởng" Binding="{Binding Bonus}" Width="*"/>
+                        <DataGridTextColumn Header="Khấu Trừ" Binding="{Binding Deduction}" Width="*"/>
+                        <DataGridTextColumn Header="Tổng Lương" Binding="{Binding TotalSalary}" Width="*"/>
+                        <DataGridTextColumn Header="Ngày Trả" Binding="{Binding PayDate}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+            <!-- Nút thao tác -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button x:Name="Add"  Content="Thêm" Width="80" Margin="5" Click="Add_Click" />
+                <Button x:Name="Update" Content="Sửa"  Width="80" Margin="5" Click="Update_Click"/>
+                <Button x:Name="delete" Content="Xóa"  Width="80" Margin="5" Click="delete_Click"/>
+                <Button x:Name="Reset" Content="Làm mới" Width="80" Margin="5" Click="Reset_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

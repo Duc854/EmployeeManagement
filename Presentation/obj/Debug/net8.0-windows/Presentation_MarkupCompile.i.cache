@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\KY_5\PRN212\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\
+E:\Ky_5\SWN\New folder\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\
 Presentation
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-G:\KY_5\PRN212\EmployeeManagement\Presentation\App.xaml
-91701924394
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+E:\Ky_5\SWN\New folder\EmployeeManagement\Presentation\App.xaml
+101431759796
 
-1645658248
-243-834206147
-AdminHomePage.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;Login.xaml;MainWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;
+17-1378205463
+243-191422091
+AdminHomePage.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;Login.xaml;MainWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;SalaryManagementWindow.xaml;
 
-False
+True
 

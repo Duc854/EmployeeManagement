@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\KY_5\\PRN212\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {}
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {}
   },
   "projects": {
-    "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\Model.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\Model.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -95,24 +95,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\KY_5\\PRN212\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\KY_5\\PRN212\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
         "projectName": "SharedInterfaces",
-        "projectPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\SharedInterfaces\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,8 +127,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\Model.csproj": {
-                "projectPath": "G:\\KY_5\\PRN212\\EmployeeManagement\\Model\\Model.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj"
               }
             }
           }
@@ -143,7 +143,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -194,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
