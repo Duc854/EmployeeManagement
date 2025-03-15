@@ -36,24 +36,25 @@ namespace Presentation
         private void LoadStatisticsByDepartment()
         {
             var result = _reportService.GetEmployeeStatisticsByDepartment();
-            dgStatistics.ItemsSource = result.DefaultView;
+            dgStatistics.ItemsSource = result;
         }
 
         private void btnStatisticsByDepartment_Click(object sender, RoutedEventArgs e)
         {
-            LoadStatisticsByDepartment();
+            var data = _reportService.GetEmployeeStatisticsByDepartment();
+            dgStatistics.ItemsSource = data;
         }
 
         private void btnStatisticsByGender_Click(object sender, RoutedEventArgs e)
         {
-            var result = _reportService.GetEmployeeStatisticsByGender();
-            dgStatistics.ItemsSource = result.DefaultView;
+            var data = _reportService.GetEmployeeStatisticsByGender();
+            dgStatistics.ItemsSource = data;
         }
 
         private void btnStatisticsByPosition_Click(object sender, RoutedEventArgs e)
         {
-            var result = _reportService.GetEmployeeStatisticsByPosition();
-            dgStatistics.ItemsSource = result.DefaultView;
+            var data = _reportService.GetEmployeeStatisticsByPosition();
+            dgStatistics.ItemsSource = data;
         }
     }
 }

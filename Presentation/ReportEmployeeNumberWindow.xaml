@@ -24,11 +24,16 @@
         <!-- Bảng dữ liệu -->
         <DataGrid x:Name="dgStatistics"
                   Grid.Row="1"
-                  AutoGenerateColumns="True"
+                  AutoGenerateColumns="False"
                   CanUserAddRows="False"
                   IsReadOnly="True"
                   HeadersVisibility="Column"
                   VerticalAlignment="Stretch"
-                  HorizontalAlignment="Stretch"/>
+                  HorizontalAlignment="Stretch">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nhóm thống kê" Binding="{Binding Item1}" Width="*"/>
+                <DataGridTextColumn Header="Số lượng" Binding="{Binding Item2}" Width="*"/>
+            </DataGrid.Columns>
+            </DataGrid>
     </Grid>
 </Window>
