@@ -50,6 +50,7 @@
             <ListBoxItem Content="Quản lý người dùng" Width="120"/>
             <ListBoxItem Content="Quản lý phòng" Width="98"/>
             <ListBoxItem Content="Quản lý đặt phòng" Width="98"/>
+            <ListBoxItem Content="Quản lý thông báo." />
         </ListBox>
         <Grid Grid.Column="1" Margin="10">
             <StackPanel>

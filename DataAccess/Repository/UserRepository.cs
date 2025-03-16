@@ -19,6 +19,21 @@ namespace DataAccess.Repository
             _context = new EmployeeManagementContext();
         }
 
+        public List<User> GetAllUser()
+        {
+            try
+            {
+                return _context.Users
+                    .AsNoTracking()
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
         public User GetUserByUsername(string username)
         {
             try

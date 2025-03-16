@@ -17,6 +17,37 @@ namespace BusinessLogic.Service
             _notificationRepository = new NotificationRepository();
         }
 
+        public string CreateANotification(Notification notification)
+        {
+            return _notificationRepository.CreateANotification(notification);
+        }
+
+        public List<Notification> GetAllNotification()
+        {
+            try
+            {
+                return _notificationRepository.GetAllNotification();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi lấy thông báo: " + ex.Message);
+                return new List<Notification>();
+            }
+        }
+
+        public List<Notification> GetNotificationBySentDate(DateTime dateTime)
+        {
+            try
+            {
+                return _notificationRepository.GetNotificationBySentDate(dateTime);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi tìm thông báo: " + ex.Message);
+                return new List<Notification>();
+            }
+        }
+
         public List<Notification> HomeNotifications()
         {
             try

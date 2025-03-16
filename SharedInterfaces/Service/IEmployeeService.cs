@@ -7,9 +7,8 @@ using Models.Models;
 
 namespace SharedInterfaces.Service
 {
-    public interface IUserService
+    public interface IEmployeeService
     {
-        public User Authenticate(string username, string password);
-        public List<User> GetAllUser();
+        public List<Employee> GetAllEmployee();
     }
 }
