@@ -42,6 +42,23 @@ namespace DataAccess.Repository
             _context.Departments.Remove(department);
             _context.SaveChanges();
         }
-       
+
+        public List<Department> GetAllDepartment()
+        {
+            try
+            {
+                var departments = _context.Departments
+                    .AsNoTracking()
+                    .ToList();
+
+                return departments;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
     }
 }

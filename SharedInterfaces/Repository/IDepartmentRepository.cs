@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Models.Models;
 
 namespace SharedInterfaces.Repository
@@ -14,5 +15,6 @@ namespace SharedInterfaces.Repository
         void AddDepartment(Department department);
         void UpdateDepartment(Department department);
         void DeleteDepartment(int id);
+        public List<Department> GetAllDepartment();
     }
 }

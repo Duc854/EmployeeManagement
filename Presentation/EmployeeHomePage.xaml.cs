@@ -127,6 +127,19 @@ namespace Presentation
             loginWindow.Show();
             Close();
         }
+
+        private BitmapImage LoadImage(byte[] imageData)
+        {
+            using (var stream = new MemoryStream(imageData))
+            {
+                BitmapImage image = new BitmapImage();
+                image.BeginInit();
+                image.CacheOption = BitmapCacheOption.OnLoad;
+                image.StreamSource = stream;
+                image.EndInit();
+                return image;
+            }
+        }
     }
 
 }

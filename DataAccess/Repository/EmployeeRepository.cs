@@ -169,5 +169,22 @@ namespace DataAccess.Repository
                             e.Position.ToLower().Contains(keyword) )
                 .ToList();
         }
+
+        public List<Employee> GetAllEmployee()
+        {
+            try
+            {
+                var employees = _context.Employees
+                    .AsNoTracking()
+                    .ToList();
+
+                return employees;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

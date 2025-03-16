@@ -17,5 +17,7 @@ namespace SharedInterfaces.Service
         void SaveEmployeeAvatar(int employeeId, byte[] avatarData);
         byte[] GetEmployeeAvatar(int employeeId);
         List<Employee> SearchEmployees(string keyword);
+
+        public List<Employee> GetAllEmployee();
     }
 }

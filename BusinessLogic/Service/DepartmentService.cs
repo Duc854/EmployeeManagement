@@ -40,5 +40,10 @@ namespace BusinessLogic.Service
         {
             _departmentRepository.UpdateDepartment(department);
         }
+
+        public List<Department> GetAllDepartment()
+        {
+            return _departmentRepository.GetAllDepartment();
+        }
     }
 }

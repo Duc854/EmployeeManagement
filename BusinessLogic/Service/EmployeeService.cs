@@ -119,5 +119,10 @@ namespace BusinessLogic.Service
         {
             return _employeeRepository.SearchEmployees(keyword);
         }
+
+        public List<Employee> GetAllEmployee()
+        {
+            return _employeeRepository.GetAllEmployee();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace SharedInterfaces.Service
         void AddDepartment(Department department);
         void UpdateDepartment(Department department);
         void DeleteDepartment(int id);
+        List<Department> GetAllDepartment();
     }
 }
