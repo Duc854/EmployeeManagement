@@ -26,6 +26,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UpdateEmployee.xaml.cs">
+		</Compile>
     <Compile Update="ReportEmployeeNumberWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
