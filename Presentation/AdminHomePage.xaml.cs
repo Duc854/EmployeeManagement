@@ -48,11 +48,11 @@ namespace Presentation
 
                     notiManageWindow.Show();
                 }
-                //    if (action == "Quản lý người dùng")
-                //    {
-                //        CustomerManagement customerManagement = new CustomerManagement();
-                //        customerManagement.Show();
-                //    }
+                if (action == "Quản lý thông báo")
+                {
+                    NotiManageWindow window = new NotiManageWindow();
+                    window.Show();
+                }
                 //    if (action == "Quản lý phòng")
                 //    {
                 //        RoomManagementView roomManagementView = new RoomManagementView();

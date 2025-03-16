@@ -64,7 +64,7 @@ namespace Presentation
             txtDepartment.Text = User.Employee.Department.DepartmentName;
             txtFullName.Text = User.Employee.FullName;
             txtPosition.Text = User.Employee.Position;
-            byte[] avatarBytes = User.Employee.Avatar; // Hàm lấy ảnh từ Employee
+            byte[] avatarBytes = User.Employee.Avatar;
             if (avatarBytes != null)
             {
                 AvatarImage.Source = LoadImage(avatarBytes);
