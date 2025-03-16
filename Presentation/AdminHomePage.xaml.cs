@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using BusinessLogic.Service;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +21,22 @@ namespace Presentation
     /// </summary>
     public partial class AdminHomePage : Window
     {
+        public AttendanceService _attendanceService;
         public AdminHomePage()
         {
             InitializeComponent();
+            _attendanceService = new AttendanceService();
+            LoadData();
         }
 
+        private void LoadData()
+        {
+            EmployeeCountText.Text = "0"; 
+            DepartmentCountText.Text = "0";
+            LateAttendanceText.Text = "0";
+            PendingLeaveText.Text = "0";
+            OtherMetricsText.Text = "0";
+        }
         private void ActionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //if (lstActions.SelectedItem is ListBoxItem selectedItem)

@@ -17,7 +17,7 @@
 
             <!-- Ảnh đại diện -->
             <Border Height="100" Width="100" CornerRadius="50" Margin="10" HorizontalAlignment="Center">
-                <Image Name = "Avatar" Source="{Binding Avatar}" Stretch="UniformToFill"/>
+                <Image Name="AvatarImage" Stretch="UniformToFill"/>
             </Border>
 
             <!-- Thông tin cá nhân -->

@@ -52,38 +52,35 @@
             <ListBoxItem Content="Quản lý đặt phòng" Width="98"/>
         </ListBox>
         <Grid Grid.Column="1" Margin="10">
-            <StackPanel>
-                <!-- Phần Số liệu thống kê -->
+            
+            <StackPanel x:Name="MainPanel">
                 <TextBlock Text="Số liệu thống kê" FontSize="20" FontWeight="Bold"/>
                 <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                    <!-- Số lượng nhân viên -->
                     <StackPanel Margin="10">
                         <TextBlock Text="Số lượng nhân viên" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding EmployeeCount}" FontSize="16"/>
+                        <TextBlock x:Name="EmployeeCountText" FontSize="16"/>
                     </StackPanel>
-                    <!-- Số phòng ban -->
                     <StackPanel Margin="10">
                         <TextBlock Text="Số phòng ban" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding DepartmentCount}" FontSize="16"/>
+                        <TextBlock x:Name="DepartmentCountText" FontSize="16"/>
                     </StackPanel>
-                    <!-- Số ca chấm công trễ -->
                     <StackPanel Margin="10">
                         <TextBlock Text="Ca chấm công trễ" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding LateAttendanceCount}" FontSize="16"/>
+                        <TextBlock x:Name="LateAttendanceText" FontSize="16"/>
                     </StackPanel>
-                    <!-- Số đơn nghỉ phép chờ duyệt -->
                     <StackPanel Margin="10">
                         <TextBlock Text="Đơn nghỉ phép chờ duyệt" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding PendingLeaveRequests}" FontSize="16"/>
+                        <TextBlock x:Name="PendingLeaveText" FontSize="16"/>
                     </StackPanel>
-                    <!-- Các chỉ số khác -->
                     <StackPanel Margin="10">
                         <TextBlock Text="Chỉ số khác" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding OtherMetrics}" FontSize="16"/>
+                        <TextBlock x:Name="OtherMetricsText" FontSize="16"/>
                     </StackPanel>
                 </StackPanel>
+            </StackPanel>
 
-                <!-- Phần Báo cáo chấm công -->
+            <!-- Phần Báo cáo chấm công -->
+            <StackPanel Grid.Row="2">
                 <TextBlock Text="Danh sách chấm công hôm nay" FontSize="20" FontWeight="Bold"/>
                 <DataGrid x:Name="dgAttendanceToday" AutoGenerateColumns="False" Margin="10" Width="500">
                     <DataGrid.Resources>

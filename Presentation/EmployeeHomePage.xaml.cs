@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using Models.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,11 @@ namespace Presentation
             InitializeComponent();
             _notificationService = new NotificationService();
             _attendanceService = new AttendanceService();
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             try
             {
                 notifications = _notificationService.HomeNotifications();
@@ -58,7 +64,11 @@ namespace Presentation
             txtDepartment.Text = User.Employee.Department.DepartmentName;
             txtFullName.Text = User.Employee.FullName;
             txtPosition.Text = User.Employee.Position;
-
+            byte[] avatarBytes = User.Employee.Avatar; // Hàm lấy ảnh từ Employee
+            if (avatarBytes != null)
+            {
+                AvatarImage.Source = LoadImage(avatarBytes);
+            }
         }
 
         private void NotificationList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -108,6 +118,19 @@ namespace Presentation
         {
             string noti = _attendanceService.DailyAttendace(User.UserId);
             MessageBox.Show($"{noti}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private BitmapImage LoadImage(byte[] imageData)
+        {
+            using (var stream = new MemoryStream(imageData))
+            {
+                BitmapImage image = new BitmapImage();
+                image.BeginInit();
+                image.CacheOption = BitmapCacheOption.OnLoad;
+                image.StreamSource = stream;
+                image.EndInit();
+                return image;
+            }
         }
     }
 
