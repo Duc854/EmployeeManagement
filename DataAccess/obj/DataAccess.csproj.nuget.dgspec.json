@@ -32,6 +32,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj"
+              },
               "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
                 "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
               }

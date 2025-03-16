@@ -1007,6 +1007,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Model": "1.0.0",
           "SharedInterfaces": "1.0.0"
         },
         "runtime": {
