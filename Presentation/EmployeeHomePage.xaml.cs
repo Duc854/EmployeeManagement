@@ -120,17 +120,12 @@ namespace Presentation
             MessageBox.Show($"{noti}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        private BitmapImage LoadImage(byte[] imageData)
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
-            using (var stream = new MemoryStream(imageData))
-            {
-                BitmapImage image = new BitmapImage();
-                image.BeginInit();
-                image.CacheOption = BitmapCacheOption.OnLoad;
-                image.StreamSource = stream;
-                image.EndInit();
-                return image;
-            }
+            MessageBox.Show("Bạn đã đăng xuất!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            Login loginWindow = new Login();
+            loginWindow.Show();
+            Close();
         }
     }
 

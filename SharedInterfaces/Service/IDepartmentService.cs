@@ -9,6 +9,10 @@ namespace SharedInterfaces.Service
 {
     public interface IDepartmentService
     {
-        public List<Department> GetAllDepartment();
+        List<Department> GetAllDepartments();
+        Department GetDepartmentById(int id);
+        void AddDepartment(Department department);
+        void UpdateDepartment(Department department);
+        void DeleteDepartment(int id);
     }
 }

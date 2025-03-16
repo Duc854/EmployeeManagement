@@ -46,5 +46,40 @@ namespace DataAccess.Repository
                 throw;
             }
         }
+        public User GetUserById(int userId)
+        {
+            try
+            {
+                return _context.Users.Include(u => u.Employee).Include(u => u.Employee.Department).AsNoTracking().FirstOrDefault(u => u.UserId == userId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+        public void AddUser(User user)
+        {
+            try
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+        public void UpdateUser(User user)
+        {
+            var existingUser = _context.Users.Find(user.UserId);
+            if (existingUser != null)
+            {
+                _context.Entry(existingUser).CurrentValues.SetValues(user);
+                _context.SaveChanges();
+            }
+        }
+
     }
 }

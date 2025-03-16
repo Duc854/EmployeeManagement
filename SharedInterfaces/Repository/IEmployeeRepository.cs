@@ -9,6 +9,13 @@ namespace SharedInterfaces.Repository
 {
     public interface IEmployeeRepository
     {
-        public List<Employee> GetAllEmployee();
+        List<Employee> GetAllEmployees();
+        Employee GetEmployeeById(int employeeId);
+        void AddEmployee(Employee employee);
+        void UpdateEmployee(Employee employee);
+        void DeleteEmployee(int employeeId);
+        void SaveEmployeeAvatar(int employeeId, byte[] avatarData);
+        byte[] GetEmployeeAvatar(int employeeId);
+        List<Employee> SearchEmployees(string keyword);
     }
 }

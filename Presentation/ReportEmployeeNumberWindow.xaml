@@ -1,0 +1,39 @@
+﻿<Window x:Class="Presentation.ReportEmployeeNumberWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="ReportEmployeeNumberWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Nút lọc -->
+            <RowDefinition Height="*"/>
+            <!-- Bảng dữ liệu -->
+        </Grid.RowDefinitions>
+
+        <!-- Nút chọn lọc dữ liệu -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10" Grid.Row="0">
+            <Button Content="Thống kê theo phòng ban" Click="btnStatisticsByDepartment_Click" Margin="5"/>
+            <Button Content="Thống kê theo giới tính" Click="btnStatisticsByGender_Click" Margin="5"/>
+            <Button Content="Thống kê theo chức vụ" Click="btnStatisticsByPosition_Click" Margin="5"/>
+        </StackPanel>
+
+        <!-- Bảng dữ liệu -->
+        <DataGrid x:Name="dgStatistics"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  HeadersVisibility="Column"
+                  VerticalAlignment="Stretch"
+                  HorizontalAlignment="Stretch">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nhóm thống kê" Binding="{Binding Item1}" Width="*"/>
+                <DataGridTextColumn Header="Số lượng" Binding="{Binding Item2}" Width="*"/>
+            </DataGrid.Columns>
+            </DataGrid>
+    </Grid>
+</Window>

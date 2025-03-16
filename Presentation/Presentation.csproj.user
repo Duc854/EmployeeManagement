@@ -13,13 +13,30 @@
     <Compile Update="AdminHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreateEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EmployeeHomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="NotiManageWindow.xaml.cs">
+    <Compile Update="UpdateEmployee.xaml.cs">
+		</Compile>
+    <Compile Update="ReportEmployeeNumberWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportSalaryEmployeeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -39,7 +56,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="NotiManageWindow.xaml">
+    <Page Update="ReportEmployeeNumberWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportSalaryEmployeeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
