@@ -47,8 +47,8 @@
                 </Style>
             </ListBox.ItemContainerStyle>
 
-            <ListBoxItem Content="Quản lý người dùng" Width="120"/>
-            <ListBoxItem Content="Quản lý phòng" Width="98"/>
+            <ListBoxItem Content="Quản lý nhân viên" Width="120"/>
+            <ListBoxItem Content="Quản lý phòng ban" Width="98"/>
             <ListBoxItem Content="Quản lý thông báo" Width="98"/>
         </ListBox>
         <Grid Grid.Column="1" Margin="10">

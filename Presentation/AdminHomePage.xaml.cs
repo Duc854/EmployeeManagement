@@ -42,32 +42,22 @@ namespace Presentation
             if (lstActions.SelectedItem is ListBoxItem selectedItem)
             {
                 string action = selectedItem.Content.ToString();
-                if (action == "Quản lý thông báo.")
-                {
-                    var notiManageWindow = new NotiManageWindow();
-
-                    notiManageWindow.Show();
-                }
                 if (action == "Quản lý thông báo")
                 {
                     NotiManageWindow window = new NotiManageWindow();
                     window.Show();
                 }
-                //    if (action == "Quản lý phòng")
-                //    {
-                //        RoomManagementView roomManagementView = new RoomManagementView();
-                //        roomManagementView.Show();
-                //    }
-                //    if (action == "Quản lý đặt phòng")
-                //    {
-                //        BookingManagementView bookingManagementView = new BookingManagementView();
-                //        bookingManagementView.Show();
-                //    }
+                if (action == "Quản lý nhân viên")
+                {
+                    EmployeeManagementWindow window = new EmployeeManagementWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý phòng ban")
+                {
+                    DepartmentWindow window = new DepartmentWindow();
+                    window.Show();
+                }
             }
-        }
-
-        private void FilterReports_Click(object sender, RoutedEventArgs e)
-        {
         }
 
     }
