@@ -54,6 +54,7 @@ namespace Presentation;
                 if (user.Role == "Admin")
                 {
                     MessageBox.Show($"Đăng nhập (Admin) thành công! Chào mừng, {user.Username}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Application.Current.Properties["user"] = user;
                     new AdminHomePage().Show();
                 }
                 else

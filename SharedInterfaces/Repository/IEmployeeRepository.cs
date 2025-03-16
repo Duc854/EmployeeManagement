@@ -7,9 +7,8 @@ using Models.Models;
 
 namespace SharedInterfaces.Repository
 {
-    public interface IUserRepository
+    public interface IEmployeeRepository
     {
-        public User GetUserByUsername(string username);
-        public List<User> GetAllUser();
+        public List<Employee> GetAllEmployee();
     }
 }
