@@ -22,14 +22,21 @@
 
         <!-- Bảng hiển thị thống kê -->
         <DataGrid x:Name="dgSalaryStatistics"
-                  Grid.Row="1"
-                  AutoGenerateColumns="True"
-                  CanUserAddRows="False"
-                  IsReadOnly="True"
-                  HeadersVisibility="Column"
-                  AlternatingRowBackground="LightGray"
-                  VerticalAlignment="Stretch"
-                  HorizontalAlignment="Stretch"/>
+          Grid.Row="1"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          IsReadOnly="True"
+          HeadersVisibility="Column"
+          AlternatingRowBackground="LightGray"
+          VerticalAlignment="Stretch"
+          HorizontalAlignment="Stretch">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Năm" Binding="{Binding Item1}" Width="*" />
+                <DataGridTextColumn Header="Tháng" Binding="{Binding Item2}" Width="*" />
+                <DataGridTextColumn Header="Lương tổng" Binding="{Binding Item3}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+
 
         <!-- Ghi chú hoặc trạng thái -->
         <TextBlock x:Name="txtStatus"

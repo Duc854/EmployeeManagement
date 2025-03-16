@@ -24,13 +24,11 @@ namespace Presentation
     public partial class ReportEmployeeWindow : Window
     {
         private readonly IReportService _reportService;
-        private readonly IEmployeeService _employeeService;
 
         public ReportEmployeeWindow()
         {
             InitializeComponent();
             _reportService = new ReportService(new ReportRepository());
-            _employeeService = new EmployeeService();
 
             LoadAllEmployees(); 
         }
@@ -38,7 +36,7 @@ namespace Presentation
         private void LoadAllEmployees()
         {
             var result = _reportService.GetAllEmployees(); 
-            dgResult.ItemsSource = result.DefaultView;
+            dgResult.ItemsSource = result;
         }
         
         private void btnFilter_Click(object sender, RoutedEventArgs e)
@@ -53,7 +51,7 @@ namespace Presentation
             decimal? maxSalary = decimal.TryParse(maxSalaryText, out var max) ? max : (decimal?)null;
 
             var result = _reportService.GetEmployeesFiltered(department, gender, minSalary, maxSalary, startDate);
-            dgResult.ItemsSource = result.DefaultView;
+            dgResult.ItemsSource = result;
         }
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {

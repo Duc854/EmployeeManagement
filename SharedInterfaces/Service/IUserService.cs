@@ -10,5 +10,6 @@ namespace SharedInterfaces.Service
     public interface IUserService
     {
         public User Authenticate(string username, string password);
+        public List<User> GetAllUser();
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using BusinessLogic.Service;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,36 +21,43 @@ namespace Presentation
     /// </summary>
     public partial class AdminHomePage : Window
     {
+        public AttendanceService _attendanceService;
         public AdminHomePage()
         {
             InitializeComponent();
+            _attendanceService = new AttendanceService();
+            LoadData();
         }
 
+        private void LoadData()
+        {
+            EmployeeCountText.Text = "0"; 
+            DepartmentCountText.Text = "0";
+            LateAttendanceText.Text = "0";
+            PendingLeaveText.Text = "0";
+            OtherMetricsText.Text = "0";
+        }
         private void ActionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //if (lstActions.SelectedItem is ListBoxItem selectedItem)
-            //{
-            //    string action = selectedItem.Content.ToString();
-            //    if (action == "Quản lý người dùng")
-            //    {
-            //        CustomerManagement customerManagement = new CustomerManagement();
-            //        customerManagement.Show();
-            //    }
-            //    if (action == "Quản lý phòng")
-            //    {
-            //        RoomManagementView roomManagementView = new RoomManagementView();
-            //        roomManagementView.Show();
-            //    }
-            //    if (action == "Quản lý đặt phòng")
-            //    {
-            //        BookingManagementView bookingManagementView = new BookingManagementView();
-            //        bookingManagementView.Show();
-            //    }
-            //}
-        }
-
-        private void FilterReports_Click(object sender, RoutedEventArgs e)
-        {
+            if (lstActions.SelectedItem is ListBoxItem selectedItem)
+            {
+                string action = selectedItem.Content.ToString();
+                if (action == "Quản lý thông báo")
+                {
+                    NotiManageWindow window = new NotiManageWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý nhân viên")
+                {
+                    EmployeeManagementWindow window = new EmployeeManagementWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý phòng ban")
+                {
+                    DepartmentWindow window = new DepartmentWindow();
+                    window.Show();
+                }
+            }
         }
 
     }

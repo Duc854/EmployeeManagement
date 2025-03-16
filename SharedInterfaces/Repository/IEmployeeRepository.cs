@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Models.Models;
 
 namespace SharedInterfaces.Repository
@@ -17,5 +18,6 @@ namespace SharedInterfaces.Repository
         void SaveEmployeeAvatar(int employeeId, byte[] avatarData);
         byte[] GetEmployeeAvatar(int employeeId);
         List<Employee> SearchEmployees(string keyword);
+        public List<Employee> GetAllEmployee();
     }
 }
