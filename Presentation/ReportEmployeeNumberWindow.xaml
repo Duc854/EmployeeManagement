@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="ReportEmployeeNumberWindow" Height="450" Width="800">
+        Title="ReportEmployeeNumberWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <!-- Nút lọc -->
             <RowDefinition Height="*"/>
             <!-- Bảng dữ liệu -->
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
         <!-- Nút chọn lọc dữ liệu -->
@@ -35,5 +36,7 @@
                 <DataGridTextColumn Header="Số lượng" Binding="{Binding Item2}" Width="*"/>
             </DataGrid.Columns>
             </DataGrid>
+        <Button x:Name="btnLogout" Content="Đăng xuất" Grid.Row="2" Width="100" Height="30"
+        Background="LightSkyBlue" HorizontalAlignment="Center" Click="btnLogout_Click"/>
     </Grid>
 </Window>

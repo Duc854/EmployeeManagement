@@ -5,52 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="AdminHomePage" Height="450" Width="800">
+        Title="AdminHomePage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListBox Name="lstActions" Grid.Column="0" Background="LightGray" SelectionChanged="ActionList_SelectionChanged">
-            <ListBox.ItemContainerStyle>
-                <Style TargetType="ListBoxItem">
-                    <Setter Property="Padding" Value="0"/>
-                    <Setter Property="FontSize" Value="14"/>
-                    <Setter Property="Foreground" Value="Black"/>
-                    <Setter Property="Background" Value="Transparent"/>
-                    <Setter Property="Cursor" Value="Hand"/>
-                    <Setter Property="MinWidth" Value="150"/>
-                    <Setter Property="MinHeight" Value="50"/>
-                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
-                    <Setter Property="VerticalContentAlignment" Value="Center"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="ListBoxItem">
-                                <Border BorderBrush="Black" BorderThickness="1" Padding="10" Background="Transparent" Width="145" Height="50">
-                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
+        <DockPanel Grid.Column="0" Background="LightGray" LastChildFill="True">
+            <!-- ListBox sẽ được đặt ở trên cùng -->
+            <ListBox Name="lstActions" DockPanel.Dock="Top" Background="LightGray" 
+             SelectionChanged="ActionList_SelectionChanged">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="MinWidth" Value="150"/>
+                        <Setter Property="MinHeight" Value="50"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Border BorderBrush="Black" BorderThickness="1" Padding="10" Background="Transparent" Width="145" Height="50">
+                                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
 
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="LightBlue"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                        </Trigger>
-                        <Trigger Property="IsSelected" Value="True">
-                            <Setter Property="Background" Value="DodgerBlue"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ListBox.ItemContainerStyle>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightBlue"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="DodgerBlue"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
 
-            <ListBoxItem Content="Quản lý nhân viên" Width="120"/>
-            <ListBoxItem Content="Quản lý phòng ban" Width="98"/>
-            <ListBoxItem Content="Quản lý thông báo" Width="98"/>
-        </ListBox>
+                <ListBoxItem Content="Quản lý nhân viên" Width="98"/>
+                <ListBoxItem Content="Quản lý phòng ban" Width="98"/>
+                <ListBoxItem Content="Quản lý thông báo" Width="98"/>
+                <ListBoxItem Content="Quản lý bảng lương" Width="98"/>
+                <ListBoxItem Content="Thống kê theo nhóm" Width="98"/>
+                <ListBoxItem Content="Lọc nhân viên" Width="98"/>
+                <ListBoxItem Content="Thống kê lương" Width="98"/>
+            </ListBox>
+
+            <!-- Khoảng trống để đẩy nút xuống đáy -->
+            <StackPanel DockPanel.Dock="Top" Height="Auto"/>
+
+            <!-- Nút Logout đặt ở dưới cùng -->
+            <Button x:Name="btnLogout" Content="Đăng xuất" DockPanel.Dock="Bottom" Width="100" Height="30"
+        Background="LightSkyBlue" HorizontalAlignment="Center" Click="btnLogout_Click"/>
+        </DockPanel>
         <Grid Grid.Column="1" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="150"/>

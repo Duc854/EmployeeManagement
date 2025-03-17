@@ -170,3 +170,5 @@ D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\Report
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\UpdateEmployee.baml
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\EmployeeNotificationPage.g.cs
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\EmployeeNotificationPage.baml
+D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\EmployeeProfile.g.cs
+D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\EmployeeProfile.baml

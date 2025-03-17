@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Visual Studio\EmployeeManagement\Presentation\App.xaml
-131714986675
+14156311732
 
-20-216877056
+21-1708509331
 243-1646828257
-AddNotiWindow.xaml;AdminHomePage.xaml;CreateEmployee.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;EmployeeNotificationPage.xaml;Login.xaml;NotiManageWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;UpdateEmployee.xaml;
+AddNotiWindow.xaml;AdminHomePage.xaml;CreateEmployee.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;EmployeeNotificationPage.xaml;EmployeeProfile.xaml;Login.xaml;NotiManageWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;UpdateEmployee.xaml;
 
 False
 

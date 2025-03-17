@@ -56,19 +56,14 @@ namespace Presentation
             if (lstActions.SelectedItem is ListBoxItem selectedItem)
             {
                 string action = selectedItem.Content.ToString();
-                //    if (action == "Quản lý người dùng")
-                //    {
-                //        CustomerManagement customerManagement = new CustomerManagement();
-                //        customerManagement.Show();
-                //    }
-                //    if (action == "Quản lý phòng")
-                //    {
-                //        RoomManagementView roomManagementView = new RoomManagementView();
-                //        roomManagementView.Show();
-                //    }
                 if (action == "Thông báo nội bộ")
                 {
                     MainFrame.Navigate(new EmployeeNotificationPage());
+                }
+                if (action == "Thông tin cá nhân")
+                {
+                    EmployeeProfile window = new EmployeeProfile(User.Employee.EmployeeId);
+                    window.Show();
                 }
             }
         }
@@ -82,9 +77,9 @@ namespace Presentation
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Bạn đã đăng xuất!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            Login loginWindow = new Login();
-            loginWindow.Show();
-            Close();
+            string appPath = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+            System.Diagnostics.Process.Start(appPath);
+            Application.Current.Shutdown();
         }
 
         private BitmapImage LoadImage(byte[] imageData)
