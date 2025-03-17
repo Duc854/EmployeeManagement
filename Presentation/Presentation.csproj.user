@@ -13,6 +13,9 @@
     <Compile Update="AdminHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AttendanceManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreateEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -45,6 +48,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AdminHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AttendanceManagementWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeHomePage.xaml">

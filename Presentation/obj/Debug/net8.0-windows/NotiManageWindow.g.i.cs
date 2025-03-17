@@ -85,7 +85,7 @@ namespace Presentation {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/notimanagewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;component/notimanagewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NotiManageWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

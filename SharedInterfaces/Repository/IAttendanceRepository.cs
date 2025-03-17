@@ -12,5 +12,14 @@ namespace SharedInterfaces.Repository
         public void CheckInAttendance(int employeeId);
         public void CheckInLateAttendance(int employeeId);
         public List<Attendance> GetTodayAttendance();
+
+        void AddAttendance(Attendance attendance);
+        void UpdateAttendence(Attendance attendance);
+        void DeleteAttendence(int id);
+
+        Salary GetManagementById(int id);
+
+
+
     }
 }

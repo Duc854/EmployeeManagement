@@ -133,7 +133,7 @@ namespace Presentation {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/employeehomepage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;component/employeehomepage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EmployeeHomePage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

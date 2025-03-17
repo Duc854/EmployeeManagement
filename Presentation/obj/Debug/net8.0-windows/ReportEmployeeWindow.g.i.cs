@@ -109,7 +109,7 @@ namespace Presentation {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/reportemployeewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;component/reportemployeewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ReportEmployeeWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

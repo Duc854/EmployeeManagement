@@ -16,6 +16,7 @@ namespace DataAccess.Repository
         {
             _context = new EmployeeManagementContext();
         }
+
         public void CheckInAttendance(int employeeId)
         {
             try
@@ -78,13 +79,71 @@ namespace DataAccess.Repository
             }
         }
 
+        
+
         public List<Attendance> GetTodayAttendance()
         {
             try
             {
-                return _context.Attendances.Where(atd => atd.WorkDate == DateOnly.FromDateTime(DateTime.Now)).ToList();
+                return _context.Attendances.Include(a => a.Employee).
+                    Where(atd => atd.WorkDate == DateOnly.FromDateTime(DateTime.Now)).ToList();
             }
             catch (Exception ex) {
+                throw;
+            }
+        }
+
+        public void AddAttendance(Attendance attendance)
+        {
+            try
+            {
+                _context.Attendances.Add(attendance);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
+        }
+
+
+
+        public void UpdateAttendence(Attendance attendance)
+        {
+            try
+            {
+              _context.Entry(attendance).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public void DeleteAttendence(int id)
+        {
+            try
+            {
+              _context.Attendances.Remove(_context.Attendances.Find(id));
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public Salary GetManagementById(int id)
+        {
+            try
+            {
+                return _context.Salaries.Find(id);
+            }
+            catch (Exception ex)
+            {
                 throw;
             }
         }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\Ky_5\SWN\New folder\EmployeeManagement\Presentation\App.xaml
-13-67879808
+14-1819156710
 
-201663707226
+211783223688
 243-191422091
-AddNotiWindow.xaml;AdminHomePage.xaml;CreateEmployee.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;Login.xaml;NotiManageWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;SalaryManagementWindow.xaml;UpdateEmployee.xaml;
+AddNotiWindow.xaml;AdminHomePage.xaml;AttendanceManagementWindow.xaml;CreateEmployee.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;Login.xaml;NotiManageWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;SalaryManagementWindow.xaml;UpdateEmployee.xaml;
 
 False
 
