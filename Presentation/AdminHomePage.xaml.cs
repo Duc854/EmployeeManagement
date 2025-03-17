@@ -57,7 +57,29 @@ namespace Presentation
                     DepartmentWindow window = new DepartmentWindow();
                     window.Show();
                 }
+                if (action == "Thống kê theo nhóm")
+                {
+                    ReportEmployeeNumberWindow window = new ReportEmployeeNumberWindow();
+                    window.Show();
+                }
+                if (action == "Lọc nhân viên")
+                {
+                    ReportEmployeeWindow window = new ReportEmployeeWindow();
+                    window.Show();
+                }
+                if (action == "Thống kê lương")
+                {
+                    ReportSalaryEmployeeWindow window = new ReportSalaryEmployeeWindow();
+                    window.Show();
+                }
             }
+        }
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bạn đã đăng xuất!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            string appPath = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+            System.Diagnostics.Process.Start(appPath);
+            Application.Current.Shutdown();
         }
 
     }

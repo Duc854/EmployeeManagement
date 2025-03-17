@@ -18,6 +18,6 @@ namespace SharedInterfaces.Service
         byte[] GetEmployeeAvatar(int employeeId);
         List<Employee> SearchEmployees(string keyword);
 
-        public List<Employee> GetAllEmployee();
+        List<Employee> GetAllEmployee();
     }
 }

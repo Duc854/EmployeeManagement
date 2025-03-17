@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="ReportSalaryEmployeeWindow" Height="450" Width="800">
+        Title="ReportSalaryEmployeeWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
         <!-- Nút lọc lương và xuất Excel -->
@@ -45,5 +46,7 @@
                    FontSize="12"
                    Foreground="Gray"
                    Margin="5,5,0,0"/>
+        <Button x:Name="btnLogout" Content="Đăng xuất" Grid.Row="3" Width="100" Height="30"
+        Background="LightSkyBlue" HorizontalAlignment="Center" Click="btnLogout_Click"/>
     </Grid>
 </Window>
