@@ -1,0 +1,20 @@
+﻿Presentation
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\
+Presentation
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\Visual Studio\EmployeeManagement\Presentation\App.xaml
+131714986675
+
+22-272511814
+243-1646828257
+AddNotiWindow.xaml;AdminHomePage.xaml;CreateEmployee.xaml;DepartmentWindow.xaml;EmployeeHomePage.xaml;EmployeeManagementWindow.xaml;EmployeeNotificationPage.xaml;Login.xaml;NotiManageWindow.xaml;ReportEmployeeNumberWindow.xaml;ReportEmployeeWindow.xaml;ReportSalaryEmployeeWindow.xaml;UpdateEmployee.xaml;
+
+True
+

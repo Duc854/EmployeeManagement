@@ -24,7 +24,6 @@ namespace Presentation
     public partial class EmployeeHomePage : Window
     {
         private User User;
-        private List<Notification> notifications;
         private readonly AttendanceService _attendanceService;
         private readonly NotificationService _notificationService;
 
@@ -38,80 +37,40 @@ namespace Presentation
 
         private void LoadData()
         {
-            try
-            {
-                notifications = _notificationService.HomeNotifications();
-
-                if (notifications == null || notifications.Count == 0)
+                User = Application.Current.Properties["user"] as User;
+                txtDepartment.Text = User.Employee.Department.DepartmentName;
+                txtFullName.Text = User.Employee.FullName;
+                txtPosition.Text = User.Employee.Position;
+                byte[] avatarBytes = User.Employee.Avatar;
+                if (avatarBytes != null)
                 {
-                    notifications = new List<Notification>
-                {
-                    new Notification
-                    {
-                        Title = "Không có thông báo nào để hiển thị",
-                        Message = ""
-                    }
-                };
+                    AvatarImage.Source = LoadImage(avatarBytes);
                 }
-                NotificationList.ItemsSource = notifications;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tải thông báo: " + ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-                notifications = new List<Notification>();
-            }
-            User = Application.Current.Properties["user"] as User;
-            txtDepartment.Text = User.Employee.Department.DepartmentName;
-            txtFullName.Text = User.Employee.FullName;
-            txtPosition.Text = User.Employee.Position;
-            byte[] avatarBytes = User.Employee.Avatar;
-            if (avatarBytes != null)
-            {
-                AvatarImage.Source = LoadImage(avatarBytes);
-            }
         }
 
-        private void NotificationList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (NotificationList.SelectedItem is Notification selectedNotification)
-            {
-                DetailTitle.Text = selectedNotification.Title;
-                DetailContent.Text = selectedNotification.Message;
-                DetailPanel.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (DetailPanel.Visibility == Visibility.Visible)
-            {
-                DetailPanel.Visibility = Visibility.Collapsed;
-                NotificationList.Visibility = Visibility.Visible;
-                NotificationList.SelectedItem = null;
-            }
-        }
 
         private void ActionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //if (lstActions.SelectedItem is ListBoxItem selectedItem)
-            //{
-            //    string action = selectedItem.Content.ToString();
-            //    if (action == "Quản lý người dùng")
-            //    {
-            //        CustomerManagement customerManagement = new CustomerManagement();
-            //        customerManagement.Show();
-            //    }
-            //    if (action == "Quản lý phòng")
-            //    {
-            //        RoomManagementView roomManagementView = new RoomManagementView();
-            //        roomManagementView.Show();
-            //    }
-            //    if (action == "Quản lý đặt phòng")
-            //    {
-            //        BookingManagementView bookingManagementView = new BookingManagementView();
-            //        bookingManagementView.Show();
-            //    }
-            //}
+            welcomeTxt.Visibility = Visibility.Hidden;
+
+            if (lstActions.SelectedItem is ListBoxItem selectedItem)
+            {
+                string action = selectedItem.Content.ToString();
+                //    if (action == "Quản lý người dùng")
+                //    {
+                //        CustomerManagement customerManagement = new CustomerManagement();
+                //        customerManagement.Show();
+                //    }
+                //    if (action == "Quản lý phòng")
+                //    {
+                //        RoomManagementView roomManagementView = new RoomManagementView();
+                //        roomManagementView.Show();
+                //    }
+                if (action == "Thông báo nội bộ")
+                {
+                    MainFrame.Navigate(new EmployeeNotificationPage());
+                }
+            }
         }
 
         private void DailyAttendance(object sender, RoutedEventArgs e)

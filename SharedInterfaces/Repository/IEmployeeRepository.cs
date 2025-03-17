@@ -19,5 +19,6 @@ namespace SharedInterfaces.Repository
         byte[] GetEmployeeAvatar(int employeeId);
         List<Employee> SearchEmployees(string keyword);
         public List<Employee> GetAllEmployee();
+        public Employee GetEmployeeByUserId(int userId);
     }
 }

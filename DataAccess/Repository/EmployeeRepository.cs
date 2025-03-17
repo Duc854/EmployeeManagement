@@ -186,5 +186,22 @@ namespace DataAccess.Repository
                 throw ex;
             }
         }
+
+        public Employee GetEmployeeByUserId(int userId)
+        {
+            try
+            {
+                var employee = _context.Employees
+                    .AsNoTracking()
+                    .FirstOrDefault(x => x.UserId == userId);
+
+                return employee;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
