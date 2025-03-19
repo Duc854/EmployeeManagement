@@ -47,6 +47,28 @@ namespace DataAccess.Repository
             {
                 Console.WriteLine(ex.Message);
             }
+ 
+            return notis;
+        }
+
+        public List<Notification> GetNotificationByEmployeeIdAndDepartmentId(int empId, int departmentId)
+        {
+            List<Notification> notis = new List<Notification>();
+
+            try
+            {
+                notis = _context.Notifications
+                    .Where(x => x.DepartmentId == departmentId || 
+                            x.ReceiverId == empId ||
+                            x.ReceiverId == null ||
+                            x.DepartmentId == null)
+                    .ToList();
+            }
+            catch (Exception ex)
+            { 
+
+                throw ex;
+            }
 
             return notis;
         }

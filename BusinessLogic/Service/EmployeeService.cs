@@ -124,5 +124,10 @@ namespace BusinessLogic.Service
         {
             return _employeeRepository.GetAllEmployee();
         }
+
+        public Employee GetEmployeeByUserId(int userId)
+        {
+            return _employeeRepository.GetEmployeeByUserId(userId);
+        }
     }
 }

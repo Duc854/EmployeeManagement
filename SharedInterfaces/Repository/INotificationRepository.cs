@@ -13,5 +13,6 @@ namespace SharedInterfaces.Repository
         public List<Notification> GetAllNotification();
         public List<Notification> GetNotificationBySentDate(DateTime dateTime);
         public string CreateANotification(Notification notification);
+        public List<Notification> GetNotificationByEmployeeIdAndDepartmentId(int empId, int departmentId);
     }
 }

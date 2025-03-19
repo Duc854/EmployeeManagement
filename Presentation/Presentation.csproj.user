@@ -28,6 +28,12 @@
     <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EmployeeNotificationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +60,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeNotificationPage.xaml">
+	<SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
