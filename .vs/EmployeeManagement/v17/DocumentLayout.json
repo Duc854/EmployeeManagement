@@ -1,66 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportemployeenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportemployeenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\model\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38BF81E9-2013-4B31-8E74-39CE1566B1B5}|DataAccess\\DataAccess.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\dataaccess\\repository\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38BF81E9-2013-4B31-8E74-39CE1566B1B5}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\model\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportsalaryemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportsalaryemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportsalaryemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\presentation\\reportsalaryemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportsalaryemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportsalaryemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\model\\models\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\sharedinterfaces\\service\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\sharedinterfaces\\service\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|solutionrelative:sharedinterfaces\\service\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\model\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\sharedinterfaces\\repository\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|solutionrelative:sharedinterfaces\\repository\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A156055-FF88-437A-BAEC-52109F05CC15}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\businesslogic\\service\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38BF81E9-2013-4B31-8E74-39CE1566B1B5}|DataAccess\\DataAccess.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\dataaccess\\repository\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38BF81E9-2013-4B31-8E74-39CE1566B1B5}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A156055-FF88-437A-BAEC-52109F05CC15}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\businesslogic\\service\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A156055-FF88-437A-BAEC-52109F05CC15}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement\\sharedinterfaces\\repository\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16ABF382-10DD-4DAB-81CA-B5F88CDA4296}|SharedInterfaces\\SharedInterfaces.csproj|solutionrelative:sharedinterfaces\\repository\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\employeedetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\employeedetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\employeedetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\employeedetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\model\\models\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laptop368\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\model\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\model\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\presentation\\reportemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|c:\\users\\laptop368\\source\\repos\\new folder\\employeemanagement1\\model\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C244D3B-EF3A-494E-BB9D-80E9D69B907B}|Model\\Model.csproj|solutionrelative:model\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +85,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,106 +101,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "Model\\Models\\Department.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Department.cs",
-              "RelativeToolTip": "Model\\Models\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T01:34:53.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\Repository\\ReportRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repository\\ReportRepository.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\DataAccess\\Repository\\ReportRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repository\\ReportRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:21:19.822Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReportEmployeeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeWindow.xaml",
-              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeWindow.xaml",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeWindow.xaml",
-              "RelativeToolTip": "Presentation\\ReportEmployeeWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T09:24:31.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReportEmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\ReportEmployeeWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAADwvyUAAAA0AAAAAAAAAA==",
+              "Title": "ReportEmployeeNumberWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T01:55:26.112Z"
+              "WhenOpened": "2025-03-12T09:18:07.906Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ReportEmployeeNumberWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeNumberWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\ReportEmployeeNumberWindow.xaml",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeNumberWindow.xaml",
               "RelativeToolTip": "Presentation\\ReportEmployeeNumberWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T09:16:53.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReportSalaryEmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAswDMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:18:18.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReportEmployeeNumberWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:18:07.906Z"
+              "WhenOpened": "2025-03-12T09:16:53.34Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Model\\Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Employee.cs",
-              "RelativeToolTip": "Model\\Models\\Employee.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAZAAAAAAAAAA==",
+              "Title": "ReportSalaryEmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\ReportSalaryEmployeeWindow.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwKQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:00:42.771Z"
+              "WhenOpened": "2025-03-12T09:18:18.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\SharedInterfaces\\Service\\IReportService.cs",
+              "RelativeDocumentMoniker": "SharedInterfaces\\Service\\IReportService.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\SharedInterfaces\\Service\\IReportService.cs",
+              "RelativeToolTip": "SharedInterfaces\\Service\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:22:01.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\DataAccess\\Repository\\ReportRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\ReportRepository.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\DataAccess\\Repository\\ReportRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\ReportRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAgwG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:21:19.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\SharedInterfaces\\Repository\\IReportRepository.cs",
+              "RelativeDocumentMoniker": "SharedInterfaces\\Repository\\IReportRepository.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\SharedInterfaces\\Repository\\IReportRepository.cs",
+              "RelativeToolTip": "SharedInterfaces\\Repository\\IReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:22:22.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\App.xaml",
               "RelativeDocumentMoniker": "Presentation\\App.xaml",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\App.xaml",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\App.xaml",
               "RelativeToolTip": "Presentation\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-12T09:23:04.609Z",
@@ -193,74 +190,156 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "ReportSalaryEmployeeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportSalaryEmployeeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportSalaryEmployeeWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\ReportSalaryEmployeeWindow.xaml",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Presentation\\ReportSalaryEmployeeWindow.xaml",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportSalaryEmployeeWindow.xaml",
               "RelativeToolTip": "Presentation\\ReportSalaryEmployeeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T09:16:48.68Z"
+              "WhenOpened": "2025-03-12T09:16:48.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\BusinessLogic\\Service\\ReportService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Service\\ReportService.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\BusinessLogic\\Service\\ReportService.cs",
+              "RelativeToolTip": "BusinessLogic\\Service\\ReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:21:38.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeDetailsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\EmployeeDetailsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\EmployeeDetailsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\EmployeeDetailsWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\EmployeeDetailsWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:26:58.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "EmployeeManagementContext.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\EmployeeManagementContext.cs",
-              "RelativeDocumentMoniker": "Model\\Models\\EmployeeManagementContext.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\EmployeeManagementContext.cs",
-              "RelativeToolTip": "Model\\Models\\EmployeeManagementContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:54:25.405Z"
+              "Title": "EmployeeDetailsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\EmployeeDetailsWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\EmployeeDetailsWindow.xaml",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\EmployeeDetailsWindow.xaml",
+              "RelativeToolTip": "Presentation\\EmployeeDetailsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T10:24:53.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "IReportService.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\Service\\IReportService.cs",
-              "RelativeDocumentMoniker": "SharedInterfaces\\Service\\IReportService.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\Service\\IReportService.cs",
-              "RelativeToolTip": "SharedInterfaces\\Service\\IReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:22:01.216Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T10:49:10.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Salary.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Salary.cs",
-              "RelativeDocumentMoniker": "Model\\Models\\Salary.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\Model\\Models\\Salary.cs",
-              "RelativeToolTip": "Model\\Models\\Salary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "EmployeeManagementContext.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\EmployeeManagementContext.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\EmployeeManagementContext.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\EmployeeManagementContext.cs",
+              "RelativeToolTip": "Model\\Models\\EmployeeManagementContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwCgAAACPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:00:35.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\Repository\\IReportRepository.cs",
-              "RelativeDocumentMoniker": "SharedInterfaces\\Repository\\IReportRepository.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\SharedInterfaces\\Repository\\IReportRepository.cs",
-              "RelativeToolTip": "SharedInterfaces\\Repository\\IReportRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:22:22.255Z"
+              "WhenOpened": "2025-03-13T07:54:25.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\BusinessLogic\\Service\\ReportService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Service\\ReportService.cs",
-              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement\\BusinessLogic\\Service\\ReportService.cs",
-              "RelativeToolTip": "BusinessLogic\\Service\\ReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAjAAAAAAAAAA==",
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\laptop368\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ViewState": "AgIAAJ4BAAAAAAAAAADgv7QBAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:21:38.054Z"
+              "WhenOpened": "2025-03-18T10:34:47.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReportEmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\ReportEmployeeWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvyUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:55:26.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportEmployeeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeWindow.xaml",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Presentation\\ReportEmployeeWindow.xaml",
+              "RelativeToolTip": "Presentation\\ReportEmployeeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-12T09:24:31.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Department.cs",
+              "RelativeToolTip": "Model\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:34:53.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Employee.cs",
+              "RelativeToolTip": "Model\\Models\\Employee.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T02:00:42.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Salary.cs",
+              "DocumentMoniker": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Salary.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\Salary.cs",
+              "ToolTip": "C:\\Users\\laptop368\\source\\repos\\New folder\\EmployeeManagement1\\Model\\Models\\Salary.cs",
+              "RelativeToolTip": "Model\\Models\\Salary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T02:00:35.503Z",
+              "EditorCaption": ""
             }
           ]
         }

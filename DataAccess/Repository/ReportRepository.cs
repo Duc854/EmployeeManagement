@@ -20,10 +20,10 @@ namespace DataAccess.Repository
         }
         public List<Employee> GetAllEmployees()
         {
-                return _context.Employees
-                .Include(e => e.Department)
-                .ToList();
-                
+            return _context.Employees
+            .Include(e => e.Department)
+            .ToList();
+
         }
 
         public List<Employee> GetEmployeesFiltered(string departmentName, string gender, decimal? minSalary, decimal? maxSalary, DateTime? startDate)
@@ -38,7 +38,7 @@ namespace DataAccess.Repository
                     (!minSalary.HasValue || e.Salary >= minSalary) &&
                     (!maxSalary.HasValue || e.Salary <= maxSalary) &&
                     (!startDate.HasValue || e.StartDate >= startDateOnly))
-                .ToList();      
+                .ToList();
         }
 
         public List<Tuple<string, int>> GetEmployeeStatisticsByDepartment()
@@ -93,7 +93,7 @@ namespace DataAccess.Repository
         public List<Tuple<int, int, decimal>> GetSalaryStatisticsByQuarter()
         {
             return _context.Salaries
-                .ToList ()
+                .ToList()
                 .GroupBy(s => new
                 {
                     s.PayDate.Year,
