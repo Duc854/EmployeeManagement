@@ -4389,23 +4389,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\fpt shop\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+      "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
       "projectName": "BusinessLogic",
-      "projectPath": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\obj\\",
+      "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+      "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4420,11 +4420,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj"
+            "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj"
             },
-            "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
-              "projectPath": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
+            "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+              "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
             }
           }
         }

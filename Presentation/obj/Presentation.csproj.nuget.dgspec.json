@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio\\EmployeeManagement\\Presentation\\Presentation.csproj": {}
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
               }
             }
           }
@@ -106,20 +106,20 @@
         }
       }
     },
-    "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\EmployeeManagement\\DataAccess\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -134,11 +134,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj"
               },
-              "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj"
               }
             }
           }
@@ -208,20 +208,20 @@
         }
       }
     },
-    "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -303,20 +303,20 @@
         }
       }
     },
-    "D:\\Visual Studio\\EmployeeManagement\\Presentation\\Presentation.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "D:\\Visual Studio\\EmployeeManagement\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\EmployeeManagement\\Presentation\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -331,8 +331,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\BusinessLogic\\BusinessLogic.csproj"
               }
             }
           }
@@ -409,20 +409,20 @@
         }
       }
     },
-    "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
+    "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
         "projectName": "SharedInterfaces",
-        "projectPath": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\EmployeeManagement\\SharedInterfaces\\obj\\",
+        "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\SharedInterfaces.csproj",
+        "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+        "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\SharedInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -437,8 +437,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj": {
-                "projectPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj"
+              "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj": {
+                "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj"
               }
             }
           }

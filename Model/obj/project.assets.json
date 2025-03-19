@@ -4321,23 +4321,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\fpt shop\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj",
+      "projectUniqueName": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio\\EmployeeManagement\\Model\\obj\\",
+      "projectPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\fpt shop\\.nuget\\packages\\",
+      "outputPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fpt shop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
