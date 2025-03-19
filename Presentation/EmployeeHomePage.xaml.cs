@@ -94,6 +94,18 @@ namespace Presentation
                 return image;
             }
         }
+
+        private void LeaveRequest_Selected(object sender, RoutedEventArgs e)
+        {
+            var leaveRequestWindow = new LeaveRequestWindow(User.Employee.EmployeeId);
+            leaveRequestWindow.ShowDialog();
+        }
+
+        private void numberLeave_Selected(object sender, RoutedEventArgs e)
+        {
+            var EmployEmployeeLeaveStatus = new EmployeeLeaveStatus(User.Employee.EmployeeId);
+            EmployEmployeeLeaveStatus.ShowDialog();
+        }
     }
 
 }

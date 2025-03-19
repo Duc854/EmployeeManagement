@@ -1,0 +1,23 @@
+﻿<Window x:Class="Presentation.EmployeeLeaveStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="Số ngày nghỉ còn lại" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Số ngày nghỉ còn lại trong tháng" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Nghỉ Phép:"/>
+          <TextBlock x:Name="txtAnnualLeave"/>
+
+            <TextBlock Text="Nghỉ Bệnh:"/>
+            <TextBlock x:Name="txtSickLeave"/>
+
+            <TextBlock Text="Nghỉ Không Lương:"/>
+            <TextBlock x:Name="txtUnpaidLeave"/>
+        </StackPanel>
+    </Grid>
+</Window>

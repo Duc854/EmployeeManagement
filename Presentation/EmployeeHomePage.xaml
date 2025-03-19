@@ -62,7 +62,9 @@
                 </ListBox.ItemContainerStyle>
                 <ListBoxItem Content="Thông tin cá nhân"/>
                 <ListBoxItem Content="Thông báo nội bộ"/>
-                <ListBoxItem Content="Số ngày phép còn lại"/>
+                <ListBoxItem x:Name="numberLeave" Content="Số ngày phép còn lại" Selected="numberLeave_Selected"/>
+                <ListBoxItem x:Name="LeaveRequest" Content="Tạo đơn xin nghỉ phép" Selected="LeaveRequest_Selected"/>
+
             </ListBox>
             <Button x:Name="btn_Logout" Content="Đăng xuất" Click="btnLogout_Click" Background="LightSkyBlue"  Height="30" Width="100" Grid.Column="2" Margin=" 0 30 0 0"/>
         </StackPanel>

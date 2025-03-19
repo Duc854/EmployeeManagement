@@ -25,6 +25,9 @@
     <Compile Update="EmployeeHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EmployeeLeaveStatus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +35,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="EmployeeProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LeaveRequestManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LeaveRequestWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
@@ -62,10 +71,19 @@
     <Page Update="EmployeeHomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="EmployeeLeaveStatus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="EmployeeNotificationPage.xaml">
-	<SubType>Designer</SubType>
+      <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LeaveRequestManagementWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LeaveRequestWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
