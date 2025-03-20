@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Presentation"
 
-             StartupUri="AttendanceManagementWindow.xaml">
+             StartupUri="ReportEmployeeNumberWindow.xaml">
 
   
 </Application>

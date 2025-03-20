@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|e:\\ky_5\\swn\\new folder\\employeemanagement\\presentation\\reportemployeenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|e:\\ky_5\\swn\\new folder\\employeemanagement\\presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|e:\\ky_5\\swn\\new folder\\employeemanagement\\presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37692F1B-2191-41C2-A529-1AABB152BE4A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\reportemployeenumberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1644,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportEmployeeNumberWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "ToolTip": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\ReportEmployeeNumberWindow.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAD4v04AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:51:15.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportEmployeeNumberWindow.xaml",
+              "DocumentMoniker": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\ReportEmployeeNumberWindow.xaml",
+              "ToolTip": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\ReportEmployeeNumberWindow.xaml",
+              "RelativeToolTip": "Presentation\\ReportEmployeeNumberWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-20T14:51:11.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\App.xaml",
+              "RelativeDocumentMoniker": "Presentation\\App.xaml",
+              "ToolTip": "E:\\Ky_5\\SWN\\New folder\\EmployeeManagement\\Presentation\\App.xaml",
+              "RelativeToolTip": "Presentation\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-20T14:50:22.69Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
