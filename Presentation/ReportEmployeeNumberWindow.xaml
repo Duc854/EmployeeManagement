@@ -20,6 +20,8 @@
             <Button Content="Thống kê theo phòng ban" Click="btnStatisticsByDepartment_Click" Margin="5"/>
             <Button Content="Thống kê theo giới tính" Click="btnStatisticsByGender_Click" Margin="5"/>
             <Button Content="Thống kê theo chức vụ" Click="btnStatisticsByPosition_Click" Margin="5"/>
+            <Button Content="Xuất Excel" Click="btnExportExcel_Click" Margin="5"/>
+            <Button Content="Xuất PDF" Click="btnExportPdf_Click" Margin="5"/>
         </StackPanel>
 
         <!-- Bảng dữ liệu -->
@@ -34,8 +36,9 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nhóm thống kê" Binding="{Binding Item1}" Width="*"/>
                 <DataGridTextColumn Header="Số lượng" Binding="{Binding Item2}" Width="*"/>
+
             </DataGrid.Columns>
-            </DataGrid>
+        </DataGrid>
         <Button x:Name="btnLogout" Content="Đăng xuất" Grid.Row="2" Width="100" Height="30"
         Background="LightSkyBlue" HorizontalAlignment="Center" Click="btnLogout_Click"/>
     </Grid>

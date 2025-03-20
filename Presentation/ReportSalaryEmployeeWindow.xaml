@@ -19,6 +19,7 @@
             <Button Content="Lương theo tháng" Click="btnSalaryByMonth_Click" Margin="5"/>
             <Button Content="Lương theo quý" Click="btnSalaryByQuarter_Click" Margin="5"/>
             <Button Content="📁 Xuất Excel" Click="btnExportToExcel_Click" Margin="5"/>
+            <Button Content="📄 Xuất PDF" Click="btnExportToPDF_Click" Margin="5"/>
         </StackPanel>
 
         <!-- Bảng hiển thị thống kê -->
