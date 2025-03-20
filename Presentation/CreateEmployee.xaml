@@ -1,0 +1,64 @@
+﻿<Window x:Class="Presentation.CreateEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="CreateEmployee" Height="800" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Height="800" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Form Nhập Thông Tin -->
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBlock Text="Tên đăng nhập:" FontWeight="Bold"/>
+            <TextBox Name="txtUsername" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Mật khẩu:" FontWeight="Bold"/>
+            <TextBox x:Name="txtPassword" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Họ và Tên:" FontWeight="Bold"/>
+            <TextBox x:Name="txtFullName" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Ngày Sinh:" FontWeight="Bold"/>
+            <DatePicker x:Name="dpBirthDate"  Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Giới tính:" FontWeight="Bold"/>
+            <ComboBox x:Name="cbGender" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Địa chỉ:" FontWeight="Bold"/>
+            <TextBox x:Name="txtAddress"  Margin="10,5,10,10" Height="23" />
+
+            <TextBlock Text="Số điện thoại:" FontWeight="Bold"/>
+            <TextBox x:Name="txtPhoneNumber" Margin="10,5,10,10" Height="23" FontSize="15"/>
+
+            <TextBlock Text="Mã phòng ban:" FontWeight="Bold"/>
+            <ComboBox x:Name="cbDepartmentId" SelectionChanged="cbDepartmentId_SelectionChanged" Margin="10,5,10,10" Height="23" />
+
+            <TextBlock Text="Tên phòng ban:" FontWeight="Bold"/>
+            <TextBox x:Name="txtDepartmentName" IsReadOnly="True" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Chức vụ:" FontWeight="Bold"/>
+            <TextBox x:Name="txtPosition" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Lương:" FontWeight="Bold"/>
+            <TextBox x:Name="txtSalary" Margin="10,5,10,10" Height="23"/>
+
+            <TextBlock Text="Ngày bắt đầu:" FontWeight="Bold"/>
+            <DatePicker x:Name="dpStartDate" Margin="10,5,10,10" Height="23"/>
+            <Button Content="Thêm Nhân Viên" Background="#0099FF" Foreground="White" Click="btnAddEmployee_Click" 
+                    Margin="10,20,10,10" Height="39" FontSize="15" Width="312"/>
+        </StackPanel>
+
+        <!-- Avatar Upload -->
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image x:Name="imgAvatar" Width="150" Height="150" Stretch="UniformToFill" />
+            <Button Content="Chọn Ảnh" Click="btnUploadAvatar_Click" FontSize="15"/>
+        </StackPanel>
+        <Button Grid.Column="1" Content="Quay lại" HorizontalAlignment="Left" Margin="50,688,0,0" VerticalAlignment="Top" 
+                Height="39" FontSize="15" Width="174" Click="btnBack_Click" />
+    </Grid>
+</Window>

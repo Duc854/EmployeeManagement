@@ -1,0 +1,38 @@
+﻿<Page x:Class="Presentation.EmployeeNotificationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Presentation"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeeNotificationPage">
+
+    <Grid PreviewMouseDown="Grid_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition MaxHeight="100"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row ="0">
+                <TextBlock Text="Thông báo" FontSize="20" FontWeight="Bold"/>
+            </StackPanel>
+            <ListBox Name="NotificationList" SelectionChanged="NotificationList_SelectionChanged"
+     Margin="10" Grid.Row="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Title}" Foreground="Blue"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Border Name="DetailPanel" Grid.Row="2" Visibility="Collapsed"
+    Background="LightGray" Padding="10">
+                <StackPanel>
+                    <TextBlock Name="DetailTitle" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Name="DetailContent" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

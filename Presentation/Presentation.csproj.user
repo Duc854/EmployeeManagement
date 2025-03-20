@@ -7,17 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddNotiWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AdminHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="EmployeeDetailsWindow.xaml.cs">
+    <Compile Update="CreateEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="EmployeeHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EmployeeManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeNotificationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateEmployee.xaml.cs">
     </Compile>
     <Compile Update="ReportEmployeeNumberWindow.xaml.cs">
       <SubType>Code</SubType>
@@ -30,19 +47,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminHomePage.xaml">
+    <Page Update="AddNotiWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="EmployeeDetailsWindow.xaml">
+    <Page Update="AdminHomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeHomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login.xaml">
+    <Page Update="EmployeeNotificationPage.xaml">
+	<SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ReportEmployeeNumberWindow.xaml">

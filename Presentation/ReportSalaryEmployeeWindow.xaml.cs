@@ -168,5 +168,12 @@ namespace Presentation
             }
         }
 
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bạn đã đăng xuất!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            string appPath = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+            System.Diagnostics.Process.Start(appPath);
+            Application.Current.Shutdown();
+        }
     }
 }

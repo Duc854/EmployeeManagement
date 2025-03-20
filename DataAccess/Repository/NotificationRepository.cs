@@ -1,4 +1,5 @@
-﻿using Models.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Models.Models;
 using SharedInterfaces.Repository;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,82 @@ namespace DataAccess.Repository
         {
             _context = new EmployeeManagementContext();
         }
+
+        public string CreateANotification(Notification notification)
+        {
+            try
+            {
+                _context.Notifications
+                    .Add(notification);
+                _context.SaveChanges();
+
+                return "Gửi thông báo thành công";
+            }
+            catch (Exception ex)
+            {
+                return $"Lỗi khi gửi thông báo: {ex.Message}";
+            }
+        }
+
+        public List<Notification> GetAllNotification()
+        {
+            List<Notification> notis = new List<Notification>();
+            try
+            {
+                notis = _context.Notifications
+                    .AsNoTracking()
+                    .OrderByDescending(x => x.SentDate)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+ 
+            return notis;
+        }
+
+        public List<Notification> GetNotificationByEmployeeIdAndDepartmentId(int empId, int departmentId)
+        {
+            List<Notification> notis = new List<Notification>();
+
+            try
+            {
+                notis = _context.Notifications
+                    .Where(x => x.DepartmentId == departmentId || 
+                            x.ReceiverId == empId ||
+                            x.ReceiverId == null ||
+                            x.DepartmentId == null)
+                    .ToList();
+            }
+            catch (Exception ex)
+            { 
+
+                throw ex;
+            }
+
+            return notis;
+        }
+
+        public List<Notification> GetNotificationBySentDate(DateTime dateTime)
+        {
+            List<Notification> notis = new List<Notification>();
+
+            try
+            {
+                notis = _context.Notifications
+                    .AsNoTracking()
+                    .Where(x => x.SentDate.HasValue && x.SentDate.Value.Date == dateTime.Date)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return notis;
+        }
+
         public List<Notification> HomeNotifications()
         {
             try
