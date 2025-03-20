@@ -58,6 +58,7 @@
                 <ListBoxItem Content="Thống kê theo nhóm" Width="98"/>
                 <ListBoxItem Content="Lọc nhân viên" Width="98"/>
                 <ListBoxItem Content="Thống kê lương" Width="98"/>
+                <ListBoxItem Content="Quản lý sao lưu" Width="98"/>
             </ListBox>
 
             <!-- Khoảng trống để đẩy nút xuống đáy -->

@@ -77,6 +77,11 @@ namespace Presentation
                     ReportSalaryEmployeeWindow window = new ReportSalaryEmployeeWindow();
                     window.Show();
                 }
+                if (action == "Quản lý sao lưu")
+                {
+                    ManageBackupWindow window = new ManageBackupWindow();
+                    window.Show();
+                }
             }
         }
         private void btnLogout_Click(object sender, RoutedEventArgs e)

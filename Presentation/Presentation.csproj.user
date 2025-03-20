@@ -37,6 +37,9 @@
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ManageBackupWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UpdateEmployee.xaml.cs">
     </Compile>
     <Compile Update="ReportEmployeeNumberWindow.xaml.cs">
@@ -69,6 +72,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageBackupWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ReportEmployeeNumberWindow.xaml">

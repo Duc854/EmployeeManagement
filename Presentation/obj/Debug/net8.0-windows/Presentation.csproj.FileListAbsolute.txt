@@ -175,3 +175,6 @@ D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\refint
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\Presentation.pdb
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
 D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\ref\Presentation.dll
+D:\Visual Studio\EmployeeManagement\Presentation\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\ManageBackupWindow.g.cs
+D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\ManageBackupWindow.baml

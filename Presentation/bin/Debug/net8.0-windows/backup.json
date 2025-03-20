@@ -1,0 +1,1561 @@
+{
+  "Departments": [
+    {
+      "DepartmentId": 1,
+      "DepartmentName": "HR",
+      "Employees": [
+        {
+          "EmployeeId": 1,
+          "UserId": 3,
+          "FullName": "Nguy?n Van A",
+          "BirthDate": "1990-05-10",
+          "Gender": "Male",
+          "Address": "Hà N?i",
+          "PhoneNumber": "0123456789",
+          "DepartmentId": 1,
+          "Position": "HR Manager",
+          "Salary": 1500.00,
+          "StartDate": "2020-01-15",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 2,
+          "Title": "L?ch h?p tháng 3",
+          "Message": "L?ch h?p vào ngày 15/03/2024 lúc 10:00 AM.",
+          "SenderId": 1,
+          "ReceiverId": 3,
+          "DepartmentId": 1,
+          "SentDate": "2024-03-10T00:00:00",
+          "Receiver": {
+            "EmployeeId": 3,
+            "UserId": 5,
+            "FullName": "Lê Van C",
+            "BirthDate": "1988-03-22",
+            "Gender": "Male",
+            "Address": "Ðà N?ng",
+            "PhoneNumber": "0345678912",
+            "DepartmentId": 3,
+            "Position": "Accountant",
+            "Salary": 1800.00,
+            "StartDate": "2018-06-20",
+            "Avatar": null,
+            "Attendances": [],
+            "Department": {
+              "DepartmentId": 3,
+              "DepartmentName": "Finance",
+              "Employees": [],
+              "Notifications": [
+                {
+                  "NotificationId": 8,
+                  "Title": "Ðào t?o n?i b?",
+                  "Message": "Bu?i dào t?o k? nang m?m vào 22/03.",
+                  "SenderId": 2,
+                  "ReceiverId": null,
+                  "DepartmentId": 3,
+                  "SentDate": "2024-03-04T00:00:00",
+                  "Receiver": null,
+                  "Sender": null
+                }
+              ]
+            },
+            "LeaveRequests": [],
+            "Notifications": [],
+            "Salaries": [],
+            "User": null
+          },
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 2,
+      "DepartmentName": "IT",
+      "Employees": [
+        {
+          "EmployeeId": 2,
+          "UserId": 4,
+          "FullName": "Tr?n Th? B",
+          "BirthDate": "1995-07-15",
+          "Gender": "Female",
+          "Address": "H? Chí Minh",
+          "PhoneNumber": "0987654321",
+          "DepartmentId": 2,
+          "Position": "IT Developer",
+          "Salary": 2000.00,
+          "StartDate": "2019-04-10",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 3,
+      "DepartmentName": "Finance",
+      "Employees": [
+        {
+          "EmployeeId": 3,
+          "UserId": 5,
+          "FullName": "Lê Van C",
+          "BirthDate": "1988-03-22",
+          "Gender": "Male",
+          "Address": "Ðà N?ng",
+          "PhoneNumber": "0345678912",
+          "DepartmentId": 3,
+          "Position": "Accountant",
+          "Salary": 1800.00,
+          "StartDate": "2018-06-20",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [
+            {
+              "NotificationId": 2,
+              "Title": "L?ch h?p tháng 3",
+              "Message": "L?ch h?p vào ngày 15/03/2024 lúc 10:00 AM.",
+              "SenderId": 1,
+              "ReceiverId": 3,
+              "DepartmentId": 1,
+              "SentDate": "2024-03-10T00:00:00",
+              "Department": {
+                "DepartmentId": 1,
+                "DepartmentName": "HR",
+                "Employees": [
+                  {
+                    "EmployeeId": 1,
+                    "UserId": 3,
+                    "FullName": "Nguy?n Van A",
+                    "BirthDate": "1990-05-10",
+                    "Gender": "Male",
+                    "Address": "Hà N?i",
+                    "PhoneNumber": "0123456789",
+                    "DepartmentId": 1,
+                    "Position": "HR Manager",
+                    "Salary": 1500.00,
+                    "StartDate": "2020-01-15",
+                    "Avatar": null,
+                    "Attendances": [],
+                    "LeaveRequests": [],
+                    "Notifications": [],
+                    "Salaries": [],
+                    "User": null
+                  }
+                ],
+                "Notifications": []
+              },
+              "Sender": null
+            }
+          ],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 8,
+          "Title": "Ðào t?o n?i b?",
+          "Message": "Bu?i dào t?o k? nang m?m vào 22/03.",
+          "SenderId": 2,
+          "ReceiverId": null,
+          "DepartmentId": 3,
+          "SentDate": "2024-03-04T00:00:00",
+          "Receiver": null,
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 4,
+      "DepartmentName": "Marketing",
+      "Employees": [
+        {
+          "EmployeeId": 4,
+          "UserId": 6,
+          "FullName": "Hoàng Th? D",
+          "BirthDate": "1992-11-05",
+          "Gender": "Female",
+          "Address": "H?i Phòng",
+          "PhoneNumber": "0765432198",
+          "DepartmentId": 4,
+          "Position": "Marketing Executive",
+          "Salary": 1700.00,
+          "StartDate": "2021-09-01",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 10,
+          "Title": "Thông báo tang ca",
+          "Message": "Nhóm s?n xu?t làm thêm gi? vào 09/03.",
+          "SenderId": 5,
+          "ReceiverId": null,
+          "DepartmentId": 4,
+          "SentDate": "2024-03-01T00:00:00",
+          "Receiver": null,
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 5,
+      "DepartmentName": "Sales",
+      "Employees": [
+        {
+          "EmployeeId": 5,
+          "UserId": 7,
+          "FullName": "Ph?m Van E",
+          "BirthDate": "1993-09-12",
+          "Gender": "Male",
+          "Address": "C?n Tho",
+          "PhoneNumber": "0567891234",
+          "DepartmentId": 5,
+          "Position": "Sales Executive",
+          "Salary": 1600.00,
+          "StartDate": "2022-02-14",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [
+            {
+              "NotificationId": 1013,
+              "Title": "Gui toi phong ban Customer Support",
+              "Message": "Tat ca bi duoi viec",
+              "SenderId": 1,
+              "ReceiverId": 5,
+              "DepartmentId": 6,
+              "SentDate": "2025-03-17T22:12:03.103",
+              "Department": {
+                "DepartmentId": 6,
+                "DepartmentName": "Customer Support",
+                "Employees": [
+                  {
+                    "EmployeeId": 6,
+                    "UserId": 8,
+                    "FullName": "Bùi Th? F",
+                    "BirthDate": "1996-08-25",
+                    "Gender": "Female",
+                    "Address": "Nha Trang",
+                    "PhoneNumber": "0654321789",
+                    "DepartmentId": 6,
+                    "Position": "Customer Support",
+                    "Salary": 1400.00,
+                    "StartDate": "2021-07-10",
+                    "Avatar": null,
+                    "Attendances": [],
+                    "LeaveRequests": [],
+                    "Notifications": [],
+                    "Salaries": [],
+                    "User": null
+                  }
+                ],
+                "Notifications": []
+              },
+              "Sender": null
+            }
+          ],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 11,
+          "Title": "Tuy?n d?ng n?i b?",
+          "Message": "Công ty tuy?n v? trí Tru?ng nhóm.",
+          "SenderId": 4,
+          "ReceiverId": null,
+          "DepartmentId": 5,
+          "SentDate": "2024-02-25T00:00:00",
+          "Receiver": null,
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 6,
+      "DepartmentName": "Customer Support",
+      "Employees": [
+        {
+          "EmployeeId": 6,
+          "UserId": 8,
+          "FullName": "Bùi Th? F",
+          "BirthDate": "1996-08-25",
+          "Gender": "Female",
+          "Address": "Nha Trang",
+          "PhoneNumber": "0654321789",
+          "DepartmentId": 6,
+          "Position": "Customer Support",
+          "Salary": 1400.00,
+          "StartDate": "2021-07-10",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 1013,
+          "Title": "Gui toi phong ban Customer Support",
+          "Message": "Tat ca bi duoi viec",
+          "SenderId": 1,
+          "ReceiverId": 5,
+          "DepartmentId": 6,
+          "SentDate": "2025-03-17T22:12:03.103",
+          "Receiver": {
+            "EmployeeId": 5,
+            "UserId": 7,
+            "FullName": "Ph?m Van E",
+            "BirthDate": "1993-09-12",
+            "Gender": "Male",
+            "Address": "C?n Tho",
+            "PhoneNumber": "0567891234",
+            "DepartmentId": 5,
+            "Position": "Sales Executive",
+            "Salary": 1600.00,
+            "StartDate": "2022-02-14",
+            "Avatar": null,
+            "Attendances": [],
+            "Department": {
+              "DepartmentId": 5,
+              "DepartmentName": "Sales",
+              "Employees": [],
+              "Notifications": [
+                {
+                  "NotificationId": 11,
+                  "Title": "Tuy?n d?ng n?i b?",
+                  "Message": "Công ty tuy?n v? trí Tru?ng nhóm.",
+                  "SenderId": 4,
+                  "ReceiverId": null,
+                  "DepartmentId": 5,
+                  "SentDate": "2024-02-25T00:00:00",
+                  "Receiver": null,
+                  "Sender": null
+                }
+              ]
+            },
+            "LeaveRequests": [],
+            "Notifications": [],
+            "Salaries": [],
+            "User": null
+          },
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 7,
+      "DepartmentName": "Operations",
+      "Employees": [
+        {
+          "EmployeeId": 7,
+          "UserId": 9,
+          "FullName": "Ð? Van G",
+          "BirthDate": "1987-02-10",
+          "Gender": "Male",
+          "Address": "Hu?",
+          "PhoneNumber": "0456789123",
+          "DepartmentId": 7,
+          "Position": "Operations Manager",
+          "Salary": 2200.00,
+          "StartDate": "2017-11-25",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 8,
+      "DepartmentName": "Engineering",
+      "Employees": [
+        {
+          "EmployeeId": 8,
+          "UserId": 10,
+          "FullName": "Hà Th? H",
+          "BirthDate": "1994-04-18",
+          "Gender": "Female",
+          "Address": "Qu?ng Ninh",
+          "PhoneNumber": "0356789214",
+          "DepartmentId": 8,
+          "Position": "Engineer",
+          "Salary": 2300.00,
+          "StartDate": "2020-12-05",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": [
+        {
+          "NotificationId": 12,
+          "Title": "Test send notification",
+          "Message": "Kiem tra da gui duoc thong bao chua",
+          "SenderId": 1,
+          "ReceiverId": 10,
+          "DepartmentId": 8,
+          "SentDate": "2025-03-16T20:48:28.617",
+          "Receiver": {
+            "EmployeeId": 10,
+            "UserId": 12,
+            "FullName": "Duong Th? J",
+            "BirthDate": "1989-12-05",
+            "Gender": "Female",
+            "Address": "Bình Duong",
+            "PhoneNumber": "0492837465",
+            "DepartmentId": 10,
+            "Position": "Admin Assistant",
+            "Salary": 1300.00,
+            "StartDate": "2022-06-28",
+            "Avatar": null,
+            "Attendances": [],
+            "Department": {
+              "DepartmentId": 10,
+              "DepartmentName": "Admin",
+              "Employees": [],
+              "Notifications": []
+            },
+            "LeaveRequests": [],
+            "Notifications": [],
+            "Salaries": [],
+            "User": null
+          },
+          "Sender": null
+        }
+      ]
+    },
+    {
+      "DepartmentId": 9,
+      "DepartmentName": "Legal",
+      "Employees": [
+        {
+          "EmployeeId": 9,
+          "UserId": 11,
+          "FullName": "Ngô Van I",
+          "BirthDate": "1991-06-30",
+          "Gender": "Male",
+          "Address": "Vung Tàu",
+          "PhoneNumber": "0293847561",
+          "DepartmentId": 9,
+          "Position": "Legal Advisor",
+          "Salary": 2100.00,
+          "StartDate": "2019-03-18",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 10,
+      "DepartmentName": "Admin",
+      "Employees": [
+        {
+          "EmployeeId": 10,
+          "UserId": 12,
+          "FullName": "Duong Th? J",
+          "BirthDate": "1989-12-05",
+          "Gender": "Female",
+          "Address": "Bình Duong",
+          "PhoneNumber": "0492837465",
+          "DepartmentId": 10,
+          "Position": "Admin Assistant",
+          "Salary": 1300.00,
+          "StartDate": "2022-06-28",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [
+            {
+              "NotificationId": 12,
+              "Title": "Test send notification",
+              "Message": "Kiem tra da gui duoc thong bao chua",
+              "SenderId": 1,
+              "ReceiverId": 10,
+              "DepartmentId": 8,
+              "SentDate": "2025-03-16T20:48:28.617",
+              "Department": {
+                "DepartmentId": 8,
+                "DepartmentName": "Engineering",
+                "Employees": [
+                  {
+                    "EmployeeId": 8,
+                    "UserId": 10,
+                    "FullName": "Hà Th? H",
+                    "BirthDate": "1994-04-18",
+                    "Gender": "Female",
+                    "Address": "Qu?ng Ninh",
+                    "PhoneNumber": "0356789214",
+                    "DepartmentId": 8,
+                    "Position": "Engineer",
+                    "Salary": 2300.00,
+                    "StartDate": "2020-12-05",
+                    "Avatar": null,
+                    "Attendances": [],
+                    "LeaveRequests": [],
+                    "Notifications": [],
+                    "Salaries": [],
+                    "User": null
+                  }
+                ],
+                "Notifications": []
+              },
+              "Sender": null
+            }
+          ],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 11,
+      "DepartmentName": "R&D",
+      "Employees": [
+        {
+          "EmployeeId": 11,
+          "UserId": 13,
+          "FullName": "Tô Van K",
+          "BirthDate": "1997-07-20",
+          "Gender": "Male",
+          "Address": "Thanh Hóa",
+          "PhoneNumber": "0182736455",
+          "DepartmentId": 11,
+          "Position": "Researcher",
+          "Salary": 1900.00,
+          "StartDate": "2020-08-15",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 12,
+      "DepartmentName": "Logistics",
+      "Employees": [
+        {
+          "EmployeeId": 12,
+          "UserId": 14,
+          "FullName": "Cao Th? L",
+          "BirthDate": "1990-09-15",
+          "Gender": "Female",
+          "Address": "B?c Ninh",
+          "PhoneNumber": "0552937461",
+          "DepartmentId": 12,
+          "Position": "Logistics Manager",
+          "Salary": 2000.00,
+          "StartDate": "2021-05-10",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 13,
+      "DepartmentName": "Procurement",
+      "Employees": [
+        {
+          "EmployeeId": 13,
+          "UserId": 15,
+          "FullName": "T? Van M",
+          "BirthDate": "1995-01-10",
+          "Gender": "Male",
+          "Address": "Hòa Bình",
+          "PhoneNumber": "0665728394",
+          "DepartmentId": 13,
+          "Position": "Procurement Officer",
+          "Salary": 1850.00,
+          "StartDate": "2023-01-05",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 14,
+      "DepartmentName": "Public Relations",
+      "Employees": [
+        {
+          "EmployeeId": 14,
+          "UserId": 16,
+          "FullName": "Phan Th? N",
+          "BirthDate": "1993-10-22",
+          "Gender": "Female",
+          "Address": "Hà Giang",
+          "PhoneNumber": "0786459231",
+          "DepartmentId": 14,
+          "Position": "PR Specialist",
+          "Salary": 1700.00,
+          "StartDate": "2020-03-12",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 15,
+      "DepartmentName": "Security",
+      "Employees": [
+        {
+          "EmployeeId": 15,
+          "UserId": 17,
+          "FullName": "Luong Van O",
+          "BirthDate": "1988-06-05",
+          "Gender": "Male",
+          "Address": "Lâm Ð?ng",
+          "PhoneNumber": "0336748291",
+          "DepartmentId": 15,
+          "Position": "Security Officer",
+          "Salary": 1200.00,
+          "StartDate": "2018-07-08",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 16,
+      "DepartmentName": "Medical",
+      "Employees": [
+        {
+          "EmployeeId": 16,
+          "UserId": 18,
+          "FullName": "Vu Th? P",
+          "BirthDate": "1992-02-15",
+          "Gender": "Female",
+          "Address": "Kiên Giang",
+          "PhoneNumber": "0748293645",
+          "DepartmentId": 16,
+          "Position": "Medical Staff",
+          "Salary": 1900.00,
+          "StartDate": "2021-04-14",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 17,
+      "DepartmentName": "Training",
+      "Employees": [
+        {
+          "EmployeeId": 17,
+          "UserId": 19,
+          "FullName": "Ðinh Van Q",
+          "BirthDate": "1996-04-25",
+          "Gender": "Male",
+          "Address": "Nam Ð?nh",
+          "PhoneNumber": "0674823910",
+          "DepartmentId": 17,
+          "Position": "Trainer",
+          "Salary": 1800.00,
+          "StartDate": "2019-09-20",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 18,
+      "DepartmentName": "Compliance",
+      "Employees": [
+        {
+          "EmployeeId": 18,
+          "UserId": 20,
+          "FullName": "H? Th? R",
+          "BirthDate": "1994-12-30",
+          "Gender": "Female",
+          "Address": "Son La",
+          "PhoneNumber": "0357283649",
+          "DepartmentId": 18,
+          "Position": "Compliance Officer",
+          "Salary": 1750.00,
+          "StartDate": "2022-08-01",
+          "Avatar": null,
+          "Attendances": [],
+          "LeaveRequests": [],
+          "Notifications": [],
+          "Salaries": [],
+          "User": null
+        }
+      ],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 19,
+      "DepartmentName": "Quality Assurance",
+      "Employees": [],
+      "Notifications": []
+    },
+    {
+      "DepartmentId": 20,
+      "DepartmentName": "Product Management",
+      "Employees": [],
+      "Notifications": []
+    }
+  ],
+  "Users": [
+    {
+      "UserId": 1,
+      "Username": "admin1",
+      "PasswordHash": "hashed_password_1",
+      "Role": "Admin",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 2,
+      "Username": "admin2",
+      "PasswordHash": "hashed_password_2",
+      "Role": "Admin",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 3,
+      "Username": "employee1",
+      "PasswordHash": "hashed_password_3",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 4,
+      "Username": "employee2",
+      "PasswordHash": "hashed_password_4",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 5,
+      "Username": "employee3",
+      "PasswordHash": "hashed_password_5",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 6,
+      "Username": "employee4",
+      "PasswordHash": "hashed_password_6",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 7,
+      "Username": "employee5",
+      "PasswordHash": "hashed_password_7",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 8,
+      "Username": "employee6",
+      "PasswordHash": "hashed_password_8",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 9,
+      "Username": "employee7",
+      "PasswordHash": "hashed_password_9",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 10,
+      "Username": "employee8",
+      "PasswordHash": "hashed_password_10",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 11,
+      "Username": "employee9",
+      "PasswordHash": "hashed_password_11",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 12,
+      "Username": "employee10",
+      "PasswordHash": "hashed_password_12",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 13,
+      "Username": "employee11",
+      "PasswordHash": "hashed_password_13",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 14,
+      "Username": "employee12",
+      "PasswordHash": "hashed_password_14",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 15,
+      "Username": "employee13",
+      "PasswordHash": "hashed_password_15",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 16,
+      "Username": "employee14",
+      "PasswordHash": "hashed_password_16",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 17,
+      "Username": "employee15",
+      "PasswordHash": "hashed_password_17",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 18,
+      "Username": "employee16",
+      "PasswordHash": "hashed_password_18",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 19,
+      "Username": "employee17",
+      "PasswordHash": "hashed_password_19",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    },
+    {
+      "UserId": 20,
+      "Username": "employee18",
+      "PasswordHash": "hashed_password_20",
+      "Role": "Employee",
+      "ActivityLogs": [],
+      "Backups": [],
+      "Employee": null,
+      "Notifications": []
+    }
+  ],
+  "Employees": [
+    {
+      "EmployeeId": 1,
+      "UserId": 3,
+      "FullName": "Nguy?n Van A",
+      "BirthDate": "1990-05-10",
+      "Gender": "Male",
+      "Address": "Hà N?i",
+      "PhoneNumber": "0123456789",
+      "DepartmentId": 1,
+      "Position": "HR Manager",
+      "Salary": 1500.00,
+      "StartDate": "2020-01-15",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 1,
+        "DepartmentName": "HR",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 3,
+        "Username": "employee1",
+        "PasswordHash": "hashed_password_3",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 2,
+      "UserId": 4,
+      "FullName": "Tr?n Th? B",
+      "BirthDate": "1995-07-15",
+      "Gender": "Female",
+      "Address": "H? Chí Minh",
+      "PhoneNumber": "0987654321",
+      "DepartmentId": 2,
+      "Position": "IT Developer",
+      "Salary": 2000.00,
+      "StartDate": "2019-04-10",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 2,
+        "DepartmentName": "IT",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 4,
+        "Username": "employee2",
+        "PasswordHash": "hashed_password_4",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 3,
+      "UserId": 5,
+      "FullName": "Lê Van C",
+      "BirthDate": "1988-03-22",
+      "Gender": "Male",
+      "Address": "Ðà N?ng",
+      "PhoneNumber": "0345678912",
+      "DepartmentId": 3,
+      "Position": "Accountant",
+      "Salary": 1800.00,
+      "StartDate": "2018-06-20",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 3,
+        "DepartmentName": "Finance",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 5,
+        "Username": "employee3",
+        "PasswordHash": "hashed_password_5",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 4,
+      "UserId": 6,
+      "FullName": "Hoàng Th? D",
+      "BirthDate": "1992-11-05",
+      "Gender": "Female",
+      "Address": "H?i Phòng",
+      "PhoneNumber": "0765432198",
+      "DepartmentId": 4,
+      "Position": "Marketing Executive",
+      "Salary": 1700.00,
+      "StartDate": "2021-09-01",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 4,
+        "DepartmentName": "Marketing",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 6,
+        "Username": "employee4",
+        "PasswordHash": "hashed_password_6",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 5,
+      "UserId": 7,
+      "FullName": "Ph?m Van E",
+      "BirthDate": "1993-09-12",
+      "Gender": "Male",
+      "Address": "C?n Tho",
+      "PhoneNumber": "0567891234",
+      "DepartmentId": 5,
+      "Position": "Sales Executive",
+      "Salary": 1600.00,
+      "StartDate": "2022-02-14",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 5,
+        "DepartmentName": "Sales",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 7,
+        "Username": "employee5",
+        "PasswordHash": "hashed_password_7",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 6,
+      "UserId": 8,
+      "FullName": "Bùi Th? F",
+      "BirthDate": "1996-08-25",
+      "Gender": "Female",
+      "Address": "Nha Trang",
+      "PhoneNumber": "0654321789",
+      "DepartmentId": 6,
+      "Position": "Customer Support",
+      "Salary": 1400.00,
+      "StartDate": "2021-07-10",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 6,
+        "DepartmentName": "Customer Support",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 8,
+        "Username": "employee6",
+        "PasswordHash": "hashed_password_8",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 7,
+      "UserId": 9,
+      "FullName": "Ð? Van G",
+      "BirthDate": "1987-02-10",
+      "Gender": "Male",
+      "Address": "Hu?",
+      "PhoneNumber": "0456789123",
+      "DepartmentId": 7,
+      "Position": "Operations Manager",
+      "Salary": 2200.00,
+      "StartDate": "2017-11-25",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 7,
+        "DepartmentName": "Operations",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 9,
+        "Username": "employee7",
+        "PasswordHash": "hashed_password_9",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 8,
+      "UserId": 10,
+      "FullName": "Hà Th? H",
+      "BirthDate": "1994-04-18",
+      "Gender": "Female",
+      "Address": "Qu?ng Ninh",
+      "PhoneNumber": "0356789214",
+      "DepartmentId": 8,
+      "Position": "Engineer",
+      "Salary": 2300.00,
+      "StartDate": "2020-12-05",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 8,
+        "DepartmentName": "Engineering",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 10,
+        "Username": "employee8",
+        "PasswordHash": "hashed_password_10",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 9,
+      "UserId": 11,
+      "FullName": "Ngô Van I",
+      "BirthDate": "1991-06-30",
+      "Gender": "Male",
+      "Address": "Vung Tàu",
+      "PhoneNumber": "0293847561",
+      "DepartmentId": 9,
+      "Position": "Legal Advisor",
+      "Salary": 2100.00,
+      "StartDate": "2019-03-18",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 9,
+        "DepartmentName": "Legal",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 11,
+        "Username": "employee9",
+        "PasswordHash": "hashed_password_11",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 10,
+      "UserId": 12,
+      "FullName": "Duong Th? J",
+      "BirthDate": "1989-12-05",
+      "Gender": "Female",
+      "Address": "Bình Duong",
+      "PhoneNumber": "0492837465",
+      "DepartmentId": 10,
+      "Position": "Admin Assistant",
+      "Salary": 1300.00,
+      "StartDate": "2022-06-28",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 10,
+        "DepartmentName": "Admin",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 12,
+        "Username": "employee10",
+        "PasswordHash": "hashed_password_12",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 11,
+      "UserId": 13,
+      "FullName": "Tô Van K",
+      "BirthDate": "1997-07-20",
+      "Gender": "Male",
+      "Address": "Thanh Hóa",
+      "PhoneNumber": "0182736455",
+      "DepartmentId": 11,
+      "Position": "Researcher",
+      "Salary": 1900.00,
+      "StartDate": "2020-08-15",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 11,
+        "DepartmentName": "R&D",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 13,
+        "Username": "employee11",
+        "PasswordHash": "hashed_password_13",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 12,
+      "UserId": 14,
+      "FullName": "Cao Th? L",
+      "BirthDate": "1990-09-15",
+      "Gender": "Female",
+      "Address": "B?c Ninh",
+      "PhoneNumber": "0552937461",
+      "DepartmentId": 12,
+      "Position": "Logistics Manager",
+      "Salary": 2000.00,
+      "StartDate": "2021-05-10",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 12,
+        "DepartmentName": "Logistics",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 14,
+        "Username": "employee12",
+        "PasswordHash": "hashed_password_14",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 13,
+      "UserId": 15,
+      "FullName": "T? Van M",
+      "BirthDate": "1995-01-10",
+      "Gender": "Male",
+      "Address": "Hòa Bình",
+      "PhoneNumber": "0665728394",
+      "DepartmentId": 13,
+      "Position": "Procurement Officer",
+      "Salary": 1850.00,
+      "StartDate": "2023-01-05",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 13,
+        "DepartmentName": "Procurement",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 15,
+        "Username": "employee13",
+        "PasswordHash": "hashed_password_15",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 14,
+      "UserId": 16,
+      "FullName": "Phan Th? N",
+      "BirthDate": "1993-10-22",
+      "Gender": "Female",
+      "Address": "Hà Giang",
+      "PhoneNumber": "0786459231",
+      "DepartmentId": 14,
+      "Position": "PR Specialist",
+      "Salary": 1700.00,
+      "StartDate": "2020-03-12",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 14,
+        "DepartmentName": "Public Relations",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 16,
+        "Username": "employee14",
+        "PasswordHash": "hashed_password_16",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 15,
+      "UserId": 17,
+      "FullName": "Luong Van O",
+      "BirthDate": "1988-06-05",
+      "Gender": "Male",
+      "Address": "Lâm Ð?ng",
+      "PhoneNumber": "0336748291",
+      "DepartmentId": 15,
+      "Position": "Security Officer",
+      "Salary": 1200.00,
+      "StartDate": "2018-07-08",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 15,
+        "DepartmentName": "Security",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 17,
+        "Username": "employee15",
+        "PasswordHash": "hashed_password_17",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 16,
+      "UserId": 18,
+      "FullName": "Vu Th? P",
+      "BirthDate": "1992-02-15",
+      "Gender": "Female",
+      "Address": "Kiên Giang",
+      "PhoneNumber": "0748293645",
+      "DepartmentId": 16,
+      "Position": "Medical Staff",
+      "Salary": 1900.00,
+      "StartDate": "2021-04-14",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 16,
+        "DepartmentName": "Medical",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 18,
+        "Username": "employee16",
+        "PasswordHash": "hashed_password_18",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 17,
+      "UserId": 19,
+      "FullName": "Ðinh Van Q",
+      "BirthDate": "1996-04-25",
+      "Gender": "Male",
+      "Address": "Nam Ð?nh",
+      "PhoneNumber": "0674823910",
+      "DepartmentId": 17,
+      "Position": "Trainer",
+      "Salary": 1800.00,
+      "StartDate": "2019-09-20",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 17,
+        "DepartmentName": "Training",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 19,
+        "Username": "employee17",
+        "PasswordHash": "hashed_password_19",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    },
+    {
+      "EmployeeId": 18,
+      "UserId": 20,
+      "FullName": "H? Th? R",
+      "BirthDate": "1994-12-30",
+      "Gender": "Female",
+      "Address": "Son La",
+      "PhoneNumber": "0357283649",
+      "DepartmentId": 18,
+      "Position": "Compliance Officer",
+      "Salary": 1750.00,
+      "StartDate": "2022-08-01",
+      "Avatar": null,
+      "Attendances": [],
+      "Department": {
+        "DepartmentId": 18,
+        "DepartmentName": "Compliance",
+        "Employees": [],
+        "Notifications": []
+      },
+      "LeaveRequests": [],
+      "Notifications": [],
+      "Salaries": [],
+      "User": {
+        "UserId": 20,
+        "Username": "employee18",
+        "PasswordHash": "hashed_password_20",
+        "Role": "Employee",
+        "ActivityLogs": [],
+        "Backups": [],
+        "Notifications": []
+      }
+    }
+  ]
+}

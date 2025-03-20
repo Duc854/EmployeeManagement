@@ -1,4 +1,4 @@
-﻿D:\Visual Studio\EmployeeManagement\Presentation\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 
 FD:\Visual Studio\EmployeeManagement\Presentation\AddNotiWindow.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\AdminActivityManageWindow.xaml;;
@@ -10,6 +10,7 @@ FD:\Visual Studio\EmployeeManagement\Presentation\EmployeeManagementWindow.xaml;
 FD:\Visual Studio\EmployeeManagement\Presentation\EmployeeNotificationPage.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\EmployeeProfile.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\Login.xaml;;
+FD:\Visual Studio\EmployeeManagement\Presentation\ManageBackupWindow.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\NotiManageWindow.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\ReportEmployeeNumberWindow.xaml;;
 FD:\Visual Studio\EmployeeManagement\Presentation\ReportEmployeeWindow.xaml;;

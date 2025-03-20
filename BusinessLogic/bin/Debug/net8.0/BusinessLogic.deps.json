@@ -15,6 +15,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Newtonsoft.Json": "8.0.2",
           "SharedInterfaces": "1.0.0"
         },
         "runtime": {
@@ -736,6 +737,14 @@
           }
         }
       },
+      "Newtonsoft.Json/8.0.2": {
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.2.19309"
+          }
+        }
+      },
       "System.CodeDom/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -1379,6 +1388,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e5yWmEfu68rmtG431zl9N/7PlNKQDIuiDW5MHlEFAZcecakcxrIGnKqrPAtWNILzK2oNanRB5cD150MYhECK3g==",
+      "path": "newtonsoft.json/8.0.2",
+      "hashPath": "newtonsoft.json.8.0.2.nupkg.sha512"
     },
     "System.CodeDom/4.4.0": {
       "type": "package",

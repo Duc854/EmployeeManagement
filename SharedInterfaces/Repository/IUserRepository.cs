@@ -13,5 +13,6 @@ namespace SharedInterfaces.Repository
         public void AddUser(User user);
         public void UpdateUser(User user);
         public User GetUserById(int userId);
+        public List<User> GetAllUser();
     }
 }
