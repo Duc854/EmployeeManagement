@@ -85,8 +85,8 @@ namespace DataAccess.Repository
         {
             try
             {
-                return _context.Attendances.Include(a => a.Employee).
-                    Where(atd => atd.WorkDate == DateOnly.FromDateTime(DateTime.Now)).ToList();
+                return _context.Attendances.Include(a => a.Employee)
+                   .ToList();
             }
             catch (Exception ex) {
                 throw;
