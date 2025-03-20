@@ -79,7 +79,19 @@ namespace DataAccess.Repository
             }
         }
 
-        
+        public List<Attendance> GetAttendance()
+        {
+            try
+            {
+                var today = DateOnly.FromDateTime(DateTime.Today);
+                return _context.Attendances.Include(a => a.Employee).Where(a => a.WorkDate == today)
+                   .ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
         public List<Attendance> GetTodayAttendance()
         {

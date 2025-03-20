@@ -45,5 +45,10 @@ namespace BusinessLogic.Service
         {
             return _departmentRepository.GetAllDepartment();
         }
+
+        public int GetNumDepartment()
+        {
+            return _departmentRepository.GetAllDepartment().Count;
+        }
     }
 }
