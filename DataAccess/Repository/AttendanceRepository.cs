@@ -168,6 +168,12 @@ namespace DataAccess.Repository
                 .Include(a => a.Employee) // Load thông tin nhân viên
                 .ToList();
         }
+
+        public List<Attendance> GetAttendances()
+        {
+            return _context.Attendances
+                .ToList();
+        }
     }
     }
 

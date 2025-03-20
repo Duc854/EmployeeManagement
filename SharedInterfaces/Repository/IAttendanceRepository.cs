@@ -20,6 +20,7 @@ namespace SharedInterfaces.Repository
         public Attendance GetManagementById(int id);
 
         List<Attendance> GetMonthlyAttendance(int month, int year);
+        List<Attendance> GetAttendances();
 
 
 

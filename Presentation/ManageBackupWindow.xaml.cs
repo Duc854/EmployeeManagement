@@ -12,7 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BusinessLogic.Service;
+using BusinessLogic.Service.ModelHelper;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using SharedInterfaces.Service;
 
 namespace Presentation
@@ -59,9 +61,33 @@ namespace Presentation
             }
         }
 
-        private void restoreBtn_Click(object sender, RoutedEventArgs e)
+        private async void restoreBtn_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                var openFileDialog = new Microsoft.Win32.OpenFileDialog();
+                openFileDialog.Filter = "JSON Files (*.json)|*.json|All Files (*.*)|*.*";
+                openFileDialog.DefaultExt = ".json";
 
+                bool? result = openFileDialog.ShowDialog();
+                if (result == true)
+                {
+                    string filePath = openFileDialog.FileName;
+
+                    await _backupService.RestoreDataAsync(filePath);
+
+                    MessageBox.Show($"Dữ liệu đã được phục hồi thành công từ file: {filePath}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa chọn file để phục hồi.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show($"Xảy ra lỗi khi phục hồi dữ liệu: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                throw ex;
+            }
         }
     }
 }

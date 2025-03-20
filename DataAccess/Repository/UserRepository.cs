@@ -72,13 +72,30 @@ namespace DataAccess.Repository
         }
         public void UpdateUser(User user)
         {
-            var existingUser = _context.Users.Find(user.UserId);
-            if (existingUser != null)
+            try
             {
-                _context.Entry(existingUser).CurrentValues.SetValues(user);
-                _context.SaveChanges();
+                var existingUser = _context.Users.Find(user.UserId);
+                if (existingUser != null)
+                {
+                    _context.Entry(existingUser).CurrentValues.SetValues(user);
+                    _context.SaveChanges();
+                }
             }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
 
+        public User AddUserBackup(User user)
+        {
+            _context.Users
+                .Add(user);
+            _context.SaveChanges();
+
+            return user;
+        }
     }
 }

@@ -16,5 +16,6 @@ namespace SharedInterfaces.Repository
         void UpdateDepartment(Department department);
         void DeleteDepartment(int id);
         public List<Department> GetAllDepartment();
+        Department AddDepartmentBackup(Department department);
     }
 }

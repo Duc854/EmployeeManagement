@@ -10,8 +10,8 @@ namespace SharedInterfaces.Service
 {
     public interface IDataMergeService
     {
-        public void MergeUsersAsync(List<User> users);
+        public List<int> MergeUsersAsync(List<User> users);
         public void MergeEmployeesAsync(List<Employee> employees);
-        public void MergeDepartmentsAsync(List<Department> departments);
+        public List<int> MergeDepartmentsAsync(List<Department> departments);
     }
 }
