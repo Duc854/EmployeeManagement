@@ -75,6 +75,8 @@
                 <Button x:Name="btnUpdate" Content="Sửa" Width="100" Margin="5" Click="btnUpdate_Click" Background="#3B82F6" Foreground="White" FontWeight="Bold"/>
                 <Button x:Name="btnDelete" Content="Xóa" Width="100" Margin="5" Click="btnDelete_Click" Background="#EF4444" Foreground="White" FontWeight="Bold"/>
                 <Button x:Name="btnReset" Content="Làm mới" Width="100" Margin="5" Click="btnReset_Click" Background="#6B7280" Foreground="White" FontWeight="Bold"/>
+                <Button x:Name="btnReport" Content="Báo cáo tháng" Width="120" Margin="5" 
+        Click="btnReport_Click" Background="#F59E0B" Foreground="White" FontWeight="Bold"/>
             </StackPanel>
         </StackPanel>
     </Grid>

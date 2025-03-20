@@ -147,6 +147,15 @@ namespace DataAccess.Repository
                 throw new Exception("Lỗi khi lấy dữ liệu Attendance: " + ex.Message);
             }
         }
+
+        public List<Attendance> GetMonthlyAttendance(int month, int year)
+        {
+
+            return _context.Attendances
+                .Where(a => a.WorkDate.Year == year && a.WorkDate.Month == month)
+                .Include(a => a.Employee) // Load thông tin nhân viên
+                .ToList();
+        }
     }
     }
 

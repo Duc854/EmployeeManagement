@@ -246,6 +246,10 @@ namespace Presentation
             }
         }
 
-
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            AttendanceReportWindow reportWindow = new AttendanceReportWindow();
+            reportWindow.ShowDialog();
+        }
     }
 }
