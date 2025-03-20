@@ -17,7 +17,7 @@ namespace SharedInterfaces.Repository
         void UpdateAttendence(Attendance attendance);
         void DeleteAttendence(int id);
 
-        Salary GetManagementById(int id);
+        public Attendance GetManagementById(int id);
 
 
 

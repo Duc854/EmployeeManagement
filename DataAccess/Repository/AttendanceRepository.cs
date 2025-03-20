@@ -136,16 +136,17 @@ namespace DataAccess.Repository
             }
         }
 
-        public Salary GetManagementById(int id)
+        public Attendance GetManagementById(int id)
         {
             try
             {
-                return _context.Salaries.Find(id);
+                return _context.Attendances.Find(id);
             }
             catch (Exception ex)
             {
-                throw;
+                throw new Exception("Lỗi khi lấy dữ liệu Attendance: " + ex.Message);
             }
         }
     }
-}
+    }
+

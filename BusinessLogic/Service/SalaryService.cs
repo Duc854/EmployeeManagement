@@ -33,6 +33,11 @@ namespace BusinessLogic.Service
            return _salaryRepository.GetAllSalary();
         }
 
+        public Salary GetSalaryByEmployeeId(int employeeId)
+        {
+            return _salaryRepository.GetAllSalary().FirstOrDefault(s => s.EmployeeId == employeeId);
+        }
+
         public Salary GetSalaryById(int id)
         {
           return _salaryRepository.GetSalaryById(id);

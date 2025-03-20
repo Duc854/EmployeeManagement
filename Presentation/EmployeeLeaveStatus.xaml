@@ -8,7 +8,7 @@
         Title="Số ngày nghỉ còn lại" Height="300" Width="400">
     <Grid>
         <StackPanel Margin="20">
-            <TextBlock Text="Số ngày nghỉ còn lại trong tháng" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="Số ngày nghỉ còn lại trong năm " FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
 
             <TextBlock Text="Nghỉ Phép:"/>
           <TextBlock x:Name="txtAnnualLeave"/>

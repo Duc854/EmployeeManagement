@@ -14,5 +14,8 @@ namespace SharedInterfaces.Service
         void AddSalary(Salary salary);
         void UpdateSalary(Salary salary);
         void DeleteSalary(int id);
+        Salary GetSalaryByEmployeeId(int employeeId);
+
+
     }
 }

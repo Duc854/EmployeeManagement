@@ -59,21 +59,29 @@ namespace Presentation
                     return;
                 }
 
+                int employeeId = int.Parse(txtEmployeeID.Text);
+
+                // Kiểm tra xem nhân viên đã có bảng lương chưa
+                var existingSalary = _salaryService.GetSalaryByEmployeeId(employeeId);
+                if (existingSalary != null)
+                {
+                    MessageBox.Show("Nhân viên này đã có bảng lương. Không thể thêm mới!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
                 Salary newSalary = new Salary
                 {
-                    EmployeeId = int.Parse(txtEmployeeID.Text),
+                    EmployeeId = employeeId,
                     BasicSalary = decimal.Parse(txtBasicSalary.Text),
                     Allowance = string.IsNullOrEmpty(txtAllowance.Text) ? 0 : decimal.Parse(txtAllowance.Text),
                     Bonus = string.IsNullOrEmpty(txtBonus.Text) ? 0 : decimal.Parse(txtBonus.Text),
                     Deduction = string.IsNullOrEmpty(txtDeduction.Text) ? 0 : decimal.Parse(txtDeduction.Text),
-
                     PayDate = DateOnly.FromDateTime(dpPayDate.SelectedDate.Value)
-
                 };
 
                 _salaryService.AddSalary(newSalary);
                 LoadSalary();
-                Reset_Click( sender, e);
+                Reset_Click(sender, e);
                 MessageBox.Show("Thêm lương thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
@@ -92,16 +100,25 @@ namespace Presentation
                     return;
                 }
 
-               int SalaryId = int.Parse(txtSalaryID.Text);
-               var salary = _salaryService.GetSalaryById(SalaryId);
+                int salaryId = int.Parse(txtSalaryID.Text);
+                var salary = _salaryService.GetSalaryById(salaryId);
 
                 if (salary == null)
                 {
-                    MessageBox.Show("Không tìm thấy ID cần cập nhật");
+                    MessageBox.Show("Không tìm thấy ID cần cập nhật", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                _salaryService.UpdateSalary(salary);
+
                 
+                salary.BasicSalary = decimal.Parse(txtBasicSalary.Text);
+                salary.Allowance = string.IsNullOrEmpty(txtAllowance.Text) ? 0 : decimal.Parse(txtAllowance.Text);
+                salary.Bonus = string.IsNullOrEmpty(txtBonus.Text) ? 0 : decimal.Parse(txtBonus.Text);
+                salary.Deduction = string.IsNullOrEmpty(txtDeduction.Text) ? 0 : decimal.Parse(txtDeduction.Text);
+                salary.PayDate = dpPayDate.SelectedDate.HasValue ? DateOnly.FromDateTime(dpPayDate.SelectedDate.Value) : salary.PayDate;
+
+            
+                _salaryService.UpdateSalary(salary);
+
                 LoadSalary();
                 Reset_Click(sender, e);
                 MessageBox.Show("Cập nhật lương thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -111,6 +128,7 @@ namespace Presentation
                 MessageBox.Show("Lỗi khi cập nhật: " + ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
 
         private void delete_Click(object sender, RoutedEventArgs e)
         {

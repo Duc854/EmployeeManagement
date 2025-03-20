@@ -3,69 +3,78 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="AttendanceManagementWindow" Height="450" Width="800">
-     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10">
-            <TextBlock Text="Quản lý Chấm Công" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+        Title="Quản lý Chấm Công" Height="500" Width="1250"
+        Background="#F3F4F6">
+
+    <Grid Margin="10">
+        <StackPanel Orientation="Vertical">
+            <!-- Tiêu đề -->
+            <TextBlock Text="Quản lý Chấm Công" FontSize="24" FontWeight="Bold" Foreground="#374151" 
+                       HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1.2*"/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- Form nhập liệu -->
-                <StackPanel Grid.Column="0" Margin="0,0,10,0">
-                    <TextBlock Text="Mã Chấm Công:"/>
-                    <TextBox x:Name="txtAttendanceID" IsReadOnly="True"/>
+                <Border Background="White" Padding="15" BorderThickness="1" BorderBrush="#D1D5DB" CornerRadius="10"
+                        Grid.Column="0" Margin="0,0,10,0">
+                    <StackPanel>
+                        <TextBlock Text="Mã Chấm Công:" FontWeight="Bold"/>
+                        <TextBox x:Name="txtAttendanceID" IsReadOnly="True" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Mã Nhân Viên:"/>
-                    <TextBox x:Name="txtEmployeeID"/>
+                        <TextBlock Text="Mã Nhân Viên:" FontWeight="Bold"/>
+                        <TextBox x:Name="txtEmployeeID" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Ngày Làm Việc:"/>
-                    <DatePicker x:Name="dpWorkDate" />
+                        <TextBlock Text="Ngày Làm Việc:" FontWeight="Bold"/>
+                        <DatePicker x:Name="dpWorkDate" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Giờ Vào:"/>
-                    <TextBox x:Name="txtCheckInTime"/>
+                        <TextBlock Text="Giờ Vào:" FontWeight="Bold"/>
+                        <TextBox x:Name="txtCheckInTime" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Giờ Ra:"/>
-                    <TextBox x:Name="txtCheckOutTime"/>
+                        <TextBlock Text="Giờ Ra:" FontWeight="Bold"/>
+                        <TextBox x:Name="txtCheckOutTime" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Giờ Làm Thêm:"/>
-                    <TextBox x:Name="txtOvertimeHours"/>
+                        <TextBlock Text="Giờ Làm Thêm:" FontWeight="Bold"/>
+                        <TextBox x:Name="txtOvertimeHours" Margin="0,2,0,8"/>
 
-                    <TextBlock Text="Loại Nghỉ Phép:"/>
-                    <ComboBox x:Name="cbLeaveType">
-                        <ComboBoxItem Content="Không nghỉ"/>
-                        <ComboBoxItem Content="Nghỉ ốm"/>
-                        <ComboBoxItem Content="Nghỉ phép"/>
-                        <ComboBoxItem Content="Nghỉ không lương"/>
-                    </ComboBox>
-                </StackPanel>
+                        <TextBlock Text="Loại Nghỉ Phép:" FontWeight="Bold"/>
+                        <ComboBox x:Name="cbLeaveType" Margin="0,2,0,8">
+                            <ComboBoxItem Content="Không nghỉ"/>
+                            <ComboBoxItem Content="Nghỉ ốm"/>
+                            <ComboBoxItem Content="Nghỉ phép"/>
+                            <ComboBoxItem Content="Nghỉ không lương"/>
+                        </ComboBox>
+                    </StackPanel>
+                </Border>
 
                 <!-- DataGrid hiển thị danh sách chấm công -->
-                <DataGrid x:Name="dgAttendance" Grid.Column="1" AutoGenerateColumns="False" SelectionChanged="dgAttendance_SelectionChanged" Margin="0,10,0,0">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Mã Chấm Công" Binding="{Binding AttendanceId}" Width="*"/>
-                        <DataGridTextColumn Header="Mã Nhân Viên" Binding="{Binding EmployeeId}" Width="*"/>
-                        <DataGridTextColumn Header="Tên Nhân Viên" Binding="{Binding Employee.FullName}" Width="*"/>
-                        <DataGridTextColumn Header="Ngày Làm Việc" Binding="{Binding WorkDate}" Width="*"/>
-                        <DataGridTextColumn Header="Giờ Vào" Binding="{Binding CheckInTime}" Width="*"/>
-                        <DataGridTextColumn Header="Giờ Ra" Binding="{Binding CheckOutTime}" Width="*"/>
-                        <DataGridTextColumn Header="Giờ Làm Thêm" Binding="{Binding OvertimeHours}" Width="*"/>
-                        <DataGridTextColumn Header="Loại Nghỉ Phép" Binding="{Binding LeaveType}" Width="*"/>
-                    </DataGrid.Columns>
-                </DataGrid>
+                <Border Background="White" Padding="10" BorderThickness="1" BorderBrush="#D1D5DB" CornerRadius="10"
+                        Grid.Column="1" Margin="0,0,0,0">
+                    <DataGrid x:Name="dgAttendance" AutoGenerateColumns="False" SelectionChanged="dgAttendance_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Mã Chấm Công" Binding="{Binding AttendanceId}" Width="*"/>
+                            <DataGridTextColumn Header="Mã Nhân Viên" Binding="{Binding EmployeeId}" Width="*"/>
+                            <DataGridTextColumn Header="Tên Nhân Viên" Binding="{Binding Employee.FullName}" Width="*"/>
+                            <DataGridTextColumn Header="Ngày Làm Việc" Binding="{Binding WorkDate}" Width="*"/>
+                            <DataGridTextColumn Header="Giờ Vào" Binding="{Binding CheckInTime}" Width="*"/>
+                            <DataGridTextColumn Header="Giờ Ra" Binding="{Binding CheckOutTime}" Width="*"/>
+                            <DataGridTextColumn Header="Giờ Làm Thêm" Binding="{Binding OvertimeHours}" Width="*"/>
+                            <DataGridTextColumn Header="Loại Nghỉ Phép" Binding="{Binding LeaveType}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
             </Grid>
 
             <!-- Nút thao tác -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button x:Name="btnAdd" Content="Thêm" Width="80" Margin="5" Click="btnAdd_Click"/>
-                <Button x:Name="btnUpdate" Content="Sửa" Width="80" Margin="5" Click="btnUpdate_Click"/>
-                <Button x:Name="btnDelete" Content="Xóa" Width="80" Margin="5" Click="btnDelete_Click"/>
-                <Button x:Name="btnReset" Content="Làm mới" Width="80" Margin="5" Click="btnReset_Click"/>
+                <Button x:Name="btnAdd" Content="Thêm" Width="100" Margin="5" Click="btnAdd_Click" Background="#22C55E" Foreground="White" FontWeight="Bold"/>
+                <Button x:Name="btnUpdate" Content="Sửa" Width="100" Margin="5" Click="btnUpdate_Click" Background="#3B82F6" Foreground="White" FontWeight="Bold"/>
+                <Button x:Name="btnDelete" Content="Xóa" Width="100" Margin="5" Click="btnDelete_Click" Background="#EF4444" Foreground="White" FontWeight="Bold"/>
+                <Button x:Name="btnReset" Content="Làm mới" Width="100" Margin="5" Click="btnReset_Click" Background="#6B7280" Foreground="White" FontWeight="Bold"/>
             </StackPanel>
         </StackPanel>
     </Grid>

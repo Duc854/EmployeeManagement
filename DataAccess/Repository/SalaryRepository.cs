@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Models.Models;
 using SharedInterfaces.Repository;
 
@@ -52,7 +53,7 @@ namespace DataAccess.Repository
         {
             try
             {
-                return _contex.Salaries.ToList();
+                return _contex.Salaries.Include(x => x.Employee).ToList();
 
             }
             catch (Exception ex)
@@ -61,6 +62,8 @@ namespace DataAccess.Repository
             }
 
         }
+
+      
 
         public Salary GetSalaryById(int id)
         {
