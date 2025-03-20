@@ -24,10 +24,14 @@ namespace Presentation
     public partial class EmployeeManagementWindow : Window
     {
         private readonly IEmployeeService _employeeService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
         public EmployeeManagementWindow()
         {
             InitializeComponent();
             _employeeService = new EmployeeService();
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
             LoadEmployees();
         }
         public void LoadEmployees()
@@ -89,6 +93,13 @@ namespace Presentation
                     LoadEmployees();
                     ClearEmployeeFields();
                     MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    _activityService.CreateActivityLog(new ActivityLog
+                    {
+                        UserId = _currentUser.UserId,
+                        Action = $"Delete user {employee.FullName}",
+                        Timestamp = DateTime.Now,
+                    });
                 }
             }
             else

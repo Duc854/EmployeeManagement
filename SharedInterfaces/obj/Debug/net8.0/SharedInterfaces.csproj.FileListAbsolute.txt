@@ -1,3 +1,4 @@
+D:\Visual Studio\EmployeeManagement\SharedInterfaces\bin\Debug\net8.0\appsettings.json
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\bin\Debug\net8.0\SharedInterfaces.deps.json
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\bin\Debug\net8.0\SharedInterfaces.runtimeconfig.json
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\bin\Debug\net8.0\SharedInterfaces.dll
@@ -16,4 +17,3 @@ D:\Visual Studio\EmployeeManagement\SharedInterfaces\obj\Debug\net8.0\refint\Sha
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\obj\Debug\net8.0\SharedInterfaces.pdb
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\obj\Debug\net8.0\SharedInterfaces.genruntimeconfig.cache
 D:\Visual Studio\EmployeeManagement\SharedInterfaces\obj\Debug\net8.0\ref\SharedInterfaces.dll
-D:\Visual Studio\EmployeeManagement\SharedInterfaces\bin\Debug\net8.0\appsettings.json

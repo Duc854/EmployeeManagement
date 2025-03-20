@@ -57,6 +57,11 @@ namespace Presentation
                     DepartmentWindow window = new DepartmentWindow();
                     window.Show();
                 }
+                if (action == "Quản lý hoạt động")
+                {
+                    AdminActivityManageWindow window = new AdminActivityManageWindow();
+                    window.Show();
+                }
                 if (action == "Thống kê theo nhóm")
                 {
                     ReportEmployeeNumberWindow window = new ReportEmployeeNumberWindow();

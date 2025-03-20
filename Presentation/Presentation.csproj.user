@@ -10,6 +10,9 @@
     <Compile Update="AddNotiWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AdminActivityManageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AdminHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -50,6 +53,9 @@
     <Page Update="AddNotiWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="AdminActivityManageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AdminHomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -57,7 +63,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeNotificationPage.xaml">
-	<SubType>Designer</SubType>
+      <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeeProfile.xaml">
       <SubType>Designer</SubType>
