@@ -1,0 +1,42 @@
+﻿<Window x:Class="Presentation.AdminActivityManageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        xmlns:helper="clr-namespace:Presentation.Helper" mc:Ignorable="d" 
+        Title="AdminActivityManageWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" >
+
+    <Window.Resources>
+        <helper:UserIdToVisibilityConverter x:Key="UserIdToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <DataGrid x:Name="ActivityDataGrid" Margin="10 10 10 10" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Log Id" Binding="{Binding LogId}" Width="*"/>
+                <DataGridTextColumn Header="User Id" Binding="{Binding UserId}" Width="*"/>
+                <DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="*"/>
+                <DataGridTextColumn Header="Timestamp" Binding="{Binding Timestamp}" Width="*"/>
+
+                <DataGridTemplateColumn Header="Actions" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button x:Name="sendNotiBtn" Content="Send Noti" Width="80" Margin="5" Click="sendNotiBtn_Click">
+                                    <Button.Visibility>
+                                        <MultiBinding Converter="{StaticResource UserIdToVisibilityConverter}">
+                                            <Binding Path="UserId"/>
+                                            <Binding Source="{x:Static Application.Current}" Path="Properties[user].UserId"/>
+                                        </MultiBinding>
+                                    </Button.Visibility>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

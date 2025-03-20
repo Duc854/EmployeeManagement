@@ -29,12 +29,16 @@ namespace Presentation
     {
         private readonly IEmployeeService _employeeService;
         private readonly IDepartmentService _departmentService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
         private byte[] avatarData;
         public CreateEmployee()
         {
             InitializeComponent();
             _employeeService = new EmployeeService();
             _departmentService = new DepartmentService();
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
             LoadGenderOptions();
             LoadDepartments();
         }
@@ -89,6 +93,14 @@ namespace Presentation
 
                 _employeeService.AddEmployee(newEmployee, txtUsername.Text, txtPassword.Text);
                 MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                _activityService.CreateActivityLog(new ActivityLog
+                {
+                    UserId = _currentUser.UserId,
+                    Action = $"Create user {txtFullName.Text}",
+                    Timestamp = DateTime.Now,
+                });
+
                 this.Hide();
                 EmployeeManagementWindow employeeManagementWindow = new EmployeeManagementWindow();
                 employeeManagementWindow.Show();

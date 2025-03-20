@@ -31,6 +31,8 @@ namespace Presentation
         private readonly IDepartmentService _departmentService;
         private readonly IUserRepository _userRepo;
         private Employee _employee;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
 
         private string? _avatarPath = null;
         public UpdateEmployee(int employeeId)
@@ -39,6 +41,8 @@ namespace Presentation
             _employeeService = new EmployeeService();
             _departmentService = new DepartmentService();
             _userRepo = new UserRepository();
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
             LoadGenderOptions();
             LoadEmployeeData(employeeId);
             LoadDepartments();
@@ -136,6 +140,14 @@ namespace Presentation
                 _employeeService.UpdateEmployee(_employee, newUsername, newPassword);
 
                 MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                _activityService.CreateActivityLog(new ActivityLog
+                {
+                    UserId = _currentUser.UserId,
+                    Action = $"Update user {txtFullName.Text}",
+                    Timestamp = DateTime.Now,
+                });
+
                 this.Hide();
                 EmployeeManagementWindow employeeManagementWindow = new EmployeeManagementWindow();
                 employeeManagementWindow.Show();

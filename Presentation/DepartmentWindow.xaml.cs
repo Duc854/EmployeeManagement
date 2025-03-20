@@ -23,10 +23,14 @@ namespace Presentation
     public partial class DepartmentWindow : Window
     {
         private readonly IDepartmentService _departmentService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
         public DepartmentWindow()
         {
             InitializeComponent();
             _departmentService = new DepartmentService();
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
             LoadDepartments();
         }
         public void LoadDepartments()
@@ -65,8 +69,16 @@ namespace Presentation
             };
             _departmentService.AddDepartment(department);
             LoadDepartments();
-            ClearDepartmentFields();
             MessageBox.Show("Thêm phòng ban thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Create department {txtDepartmentName.Text}",
+                Timestamp = DateTime.Now,
+            });
+
+            ClearDepartmentFields();
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
@@ -86,8 +98,17 @@ namespace Presentation
             department.DepartmentName = txtDepartmentName.Text;
             _departmentService.UpdateDepartment(department);
             LoadDepartments();
-            ClearDepartmentFields();
             MessageBox.Show("Cập nhật phòng ban thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Update department {txtDepartmentName.Text}",
+                Timestamp = DateTime.Now,
+            });
+
+            ClearDepartmentFields();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -106,8 +127,17 @@ namespace Presentation
             }
             _departmentService.DeleteDepartment(departmentId);
             LoadDepartments();
-            ClearDepartmentFields();
             MessageBox.Show("Xóa phòng ban thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Delete department {txtDepartmentID.Text}",
+                Timestamp = DateTime.Now,
+            });
+
+            ClearDepartmentFields();
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)

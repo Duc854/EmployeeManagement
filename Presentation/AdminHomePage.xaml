@@ -14,7 +14,7 @@
         <DockPanel Grid.Column="0" Background="LightGray" LastChildFill="True">
             <!-- ListBox sẽ được đặt ở trên cùng -->
             <ListBox Name="lstActions" DockPanel.Dock="Top" Background="LightGray" 
-             SelectionChanged="ActionList_SelectionChanged">
+             SelectionChanged="ActionList_SelectionChanged" Height="381">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="Padding" Value="0"/>
@@ -54,9 +54,11 @@
                 <ListBoxItem Content="Quản lý phòng ban" Width="98"/>
                 <ListBoxItem Content="Quản lý thông báo" Width="98"/>
                 <ListBoxItem Content="Quản lý bảng lương" Width="98"/>
+                <ListBoxItem Content="Quản lý hoạt động" Width="98"/>
                 <ListBoxItem Content="Thống kê theo nhóm" Width="98"/>
                 <ListBoxItem Content="Lọc nhân viên" Width="98"/>
                 <ListBoxItem Content="Thống kê lương" Width="98"/>
+                <ListBoxItem Content="Quản lý sao lưu" Width="98"/>
             </ListBox>
 
             <!-- Khoảng trống để đẩy nút xuống đáy -->

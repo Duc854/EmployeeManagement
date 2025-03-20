@@ -18,6 +18,7 @@ using DataAccess.Repository;
 using Microsoft.Win32;
 using SharedInterfaces.Service;
 using ClosedXML.Excel;
+using Models.Models;
 
 namespace Presentation
 {
@@ -27,10 +28,15 @@ namespace Presentation
     public partial class ReportSalaryEmployeeWindow : Window
     {
         private readonly IReportService _reportService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
         public ReportSalaryEmployeeWindow()
         {
             InitializeComponent();
             _reportService = new ReportService(new ReportRepository());
+
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
 
             // 👉 Tự động hiển thị thống kê theo phòng ban khi khởi động
             LoadSalaryStatisticsByMonth();
@@ -49,6 +55,13 @@ namespace Presentation
             dgSalaryStatistics.ItemsSource = result;
 
             dgSalaryStatistics.Columns[1].Header = "Tháng";
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Filter User by Salary by Month",
+                Timestamp = DateTime.Now,
+            });
         }
 
         private void btnSalaryByQuarter_Click(object sender, RoutedEventArgs e)
@@ -58,6 +71,12 @@ namespace Presentation
 
             dgSalaryStatistics.Columns[1].Header = "Quý";
 
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Filter User by Salary by Quarter",
+                Timestamp = DateTime.Now,
+            });
         }
         private void btnExportToExcel_Click(object sender, RoutedEventArgs e)
         {
@@ -97,6 +116,13 @@ namespace Presentation
                     }
 
                     MessageBox.Show("Xuất file Excel thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    _activityService.CreateActivityLog(new ActivityLog
+                    {
+                        UserId = _currentUser.UserId,
+                        Action = $"Export report by salary to excel",
+                        Timestamp = DateTime.Now,
+                    });
                 }
             }
             catch (Exception ex)

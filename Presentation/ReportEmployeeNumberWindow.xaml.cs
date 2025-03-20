@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BusinessLogic.Service;
 using DataAccess.Repository;
+using Models.Models;
 using SharedInterfaces.Service;
 
 namespace Presentation
@@ -23,11 +24,15 @@ namespace Presentation
     public partial class ReportEmployeeNumberWindow : Window
     {
         private readonly IReportService _reportService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
 
         public ReportEmployeeNumberWindow()
         {
             InitializeComponent();
             _reportService = new ReportService(new ReportRepository());
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
 
             // 👉 Tự động hiển thị thống kê theo phòng ban khi khởi động
             LoadStatisticsByDepartment();
@@ -43,18 +48,40 @@ namespace Presentation
         {
             var data = _reportService.GetEmployeeStatisticsByDepartment();
             dgStatistics.ItemsSource = data;
+
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Statistic by Department",
+                Timestamp = DateTime.Now,
+            });
         }
 
         private void btnStatisticsByGender_Click(object sender, RoutedEventArgs e)
         {
             var data = _reportService.GetEmployeeStatisticsByGender();
             dgStatistics.ItemsSource = data;
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Statistic by Gender",
+                Timestamp = DateTime.Now,
+            });
         }
 
         private void btnStatisticsByPosition_Click(object sender, RoutedEventArgs e)
         {
             var data = _reportService.GetEmployeeStatisticsByPosition();
             dgStatistics.ItemsSource = data;
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Statistic by Position",
+                Timestamp = DateTime.Now,
+            });
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)

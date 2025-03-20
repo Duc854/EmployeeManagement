@@ -23,11 +23,15 @@ namespace Presentation
     public partial class NotiManageWindow : Window
     {
         private readonly INotificationService _notiService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
         public NotiManageWindow()
         {
             InitializeComponent();
 
             _notiService = new NotificationService();
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
 
             GetAllNotifications();
         }
@@ -56,6 +60,13 @@ namespace Presentation
 
             await tcs.Task;
             GetAllNotifications();
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = "Send a notification",
+                Timestamp = DateTime.Now,
+            });
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -77,6 +88,12 @@ namespace Presentation
                 }
 
 
+                _activityService.CreateActivityLog(new ActivityLog
+                {
+                    UserId = _currentUser.UserId,
+                    Action = "Search notification",
+                    Timestamp = DateTime.Now,
+                });
             }
             catch (Exception ex)
             {

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BusinessLogic.Service;
 using DataAccess.Repository;
+using Models.Models;
 using SharedInterfaces.Service;
 
 namespace Presentation
@@ -24,11 +25,15 @@ namespace Presentation
     public partial class ReportEmployeeWindow : Window
     {
         private readonly IReportService _reportService;
+        private readonly IActivityService _activityService;
+        private User _currentUser;
 
         public ReportEmployeeWindow()
         {
             InitializeComponent();
             _reportService = new ReportService(new ReportRepository());
+            _activityService = new ActivityService();
+            _currentUser = (User)App.Current.Properties["user"];
 
             LoadAllEmployees(); 
         }
@@ -52,6 +57,13 @@ namespace Presentation
 
             var result = _reportService.GetEmployeesFiltered(department, gender, minSalary, maxSalary, startDate);
             dgResult.ItemsSource = result;
+
+            _activityService.CreateActivityLog(new ActivityLog
+            {
+                UserId = _currentUser.UserId,
+                Action = $"Filter user",
+                Timestamp = DateTime.Now,
+            });
         }
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
