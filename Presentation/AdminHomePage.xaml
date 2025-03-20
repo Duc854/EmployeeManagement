@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="AdminHomePage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="AdminHomePage" Height="500" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="180"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <DockPanel Grid.Column="0" Background="LightGray" LastChildFill="True">
@@ -53,7 +53,9 @@
                 <ListBoxItem Content="Quản lý nhân viên" Width="98"/>
                 <ListBoxItem Content="Quản lý phòng ban" Width="98"/>
                 <ListBoxItem Content="Quản lý thông báo" Width="98"/>
-                <ListBoxItem Content="Quản lý bảng lương" Width="98"/>
+                <ListBoxItem Content="Quản lý lương" Width="98"/>
+                <ListBoxItem Content="Quản lý điểm danh" Width="98"/>
+                <ListBoxItem Content="Quản lý nghỉ phép" Width="98"/>
                 <ListBoxItem Content="Quản lý hoạt động" Width="98"/>
                 <ListBoxItem Content="Thống kê theo nhóm" Width="98"/>
                 <ListBoxItem Content="Lọc nhân viên" Width="98"/>
@@ -91,10 +93,6 @@
                     <StackPanel Margin="10">
                         <TextBlock Text="Đơn nghỉ phép chờ duyệt" FontWeight="Bold"/>
                         <TextBlock x:Name="PendingLeaveText" FontSize="16"/>
-                    </StackPanel>
-                    <StackPanel Margin="10">
-                        <TextBlock Text="Chỉ số khác" FontWeight="Bold"/>
-                        <TextBlock x:Name="OtherMetricsText" FontSize="16"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

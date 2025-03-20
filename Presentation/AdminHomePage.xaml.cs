@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.Service;
+using DataAccess.Repository;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -22,20 +23,28 @@ namespace Presentation
     public partial class AdminHomePage : Window
     {
         public AttendanceService _attendanceService;
+        public EmployeeService _employeeService;
+        public DepartmentService _departmentService;
+        public LeaveRequestRepository _leaveRequestRepository;
+        public AttendanceRepository _attendanceRepository;
         public AdminHomePage()
         {
             InitializeComponent();
             _attendanceService = new AttendanceService();
+            _employeeService = new EmployeeService();
+            _departmentService = new DepartmentService();
+            _leaveRequestRepository = new LeaveRequestRepository();
+            _attendanceRepository = new AttendanceRepository();
             LoadData();
         }
 
         private void LoadData()
         {
-            EmployeeCountText.Text = "0"; 
-            DepartmentCountText.Text = "0";
-            LateAttendanceText.Text = "0";
-            PendingLeaveText.Text = "0";
-            OtherMetricsText.Text = "0";
+            EmployeeCountText.Text = _employeeService.GetNumEmployee() +""; 
+            DepartmentCountText.Text = _departmentService.GetNumDepartment() + "";
+            LateAttendanceText.Text = _attendanceService.AttendanceLateCount()+"";
+            PendingLeaveText.Text = _leaveRequestRepository.GetLeave() +"";
+            dgAttendanceToday.ItemsSource = _attendanceRepository.GetAttendance();
         }
         private void ActionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -80,6 +89,21 @@ namespace Presentation
                 if (action == "Quản lý sao lưu")
                 {
                     ManageBackupWindow window = new ManageBackupWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý lương")
+                {
+                    SalaryManagementWindow window = new SalaryManagementWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý điểm danh")
+                {
+                    AttendanceManagementWindow window = new AttendanceManagementWindow();
+                    window.Show();
+                }
+                if (action == "Quản lý nghỉ phép")
+                {
+                    LeaveRequestManagementWindow window = new LeaveRequestManagementWindow();
                     window.Show();
                 }
             }

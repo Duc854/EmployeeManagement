@@ -33,5 +33,10 @@ namespace BusinessLogic.Service
                 return "Xảy ra lỗi trong quá trình xử lý dữ liệu! \n Vui lòng thử lại sau";
             }
         }
+
+        public int AttendanceLateCount()
+        {
+            return _attendanceRepository.GetAttendance().Where(a => a.CheckInTime == null).Count();
+        }
     }
 }

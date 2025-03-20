@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
         mc:Ignorable="d"
-        Title="Trang chủ" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Trang chủ" Height="500" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -62,18 +62,39 @@
                 </ListBox.ItemContainerStyle>
                 <ListBoxItem Content="Thông tin cá nhân"/>
                 <ListBoxItem Content="Thông báo nội bộ"/>
-                <ListBoxItem Content="Số ngày phép còn lại"/>
+                <ListBoxItem x:Name="numberLeave" Content="Số ngày phép còn lại" Selected="numberLeave_Selected"/>
+                <ListBoxItem x:Name="LeaveRequest" Content="Tạo đơn xin nghỉ phép" Selected="LeaveRequest_Selected"/>
+
             </ListBox>
-            <Button x:Name="btn_Logout" Content="Đăng xuất" Click="btnLogout_Click" Background="LightSkyBlue"  Height="30" Width="100" Grid.Column="2" Margin=" 0 30 0 0"/>
+            <Button x:Name="btn_Logout" Content="Đăng xuất" Click="btnLogout_Click" Background="LightSkyBlue"  Height="30" Width="100" Grid.Column="2" Margin=" 0 1 0 0"/>
         </StackPanel>
-        
-        <Grid Grid.Column="1" Margin="10">
-            <Frame Name="MainFrame" NavigationUIVisibility="Hidden" />
-            <TextBlock 
-                x:Name="welcomeTxt"
-                Text="Xin chào người dùng" 
-                FontSize="18" 
-                VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <Grid Grid.Column="1" Margin="10" PreviewMouseDown="Grid_MouseDown">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition MaxHeight="100"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row ="0">
+                    <TextBlock Text="Thông báo" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+                <ListBox Name="NotificationList" SelectionChanged="NotificationList_SelectionChanged"
+                 Margin="10" Grid.Row="1">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Title}" Foreground="Blue"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Border Name="DetailPanel" Grid.Row="2" Visibility="Collapsed"
+                Background="LightGray" Padding="10">
+                    <StackPanel>
+                        <TextBlock Name="DetailTitle" FontWeight="Bold" FontSize="14"/>
+                        <TextBlock Name="DetailContent" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
         </Grid>
         <Button Content="Chấm công" Click="DailyAttendance" Background="#D3D3D3"  Height="30" Grid.Column="2" Margin=" 0 350 10 0"/>
     </Grid>

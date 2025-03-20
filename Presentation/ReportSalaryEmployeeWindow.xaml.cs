@@ -18,7 +18,8 @@ using DataAccess.Repository;
 using Microsoft.Win32;
 using SharedInterfaces.Service;
 using ClosedXML.Excel;
-using Models.Models;
+using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
 
 namespace Presentation
 {
@@ -28,17 +29,11 @@ namespace Presentation
     public partial class ReportSalaryEmployeeWindow : Window
     {
         private readonly IReportService _reportService;
-        private readonly IActivityService _activityService;
-        private User _currentUser;
         public ReportSalaryEmployeeWindow()
         {
             InitializeComponent();
             _reportService = new ReportService(new ReportRepository());
 
-            _activityService = new ActivityService();
-            _currentUser = (User)App.Current.Properties["user"];
-
-            // 👉 Tự động hiển thị thống kê theo phòng ban khi khởi động
             LoadSalaryStatisticsByMonth();
         }
 
@@ -55,13 +50,6 @@ namespace Presentation
             dgSalaryStatistics.ItemsSource = result;
 
             dgSalaryStatistics.Columns[1].Header = "Tháng";
-
-            _activityService.CreateActivityLog(new ActivityLog
-            {
-                UserId = _currentUser.UserId,
-                Action = $"Filter User by Salary by Month",
-                Timestamp = DateTime.Now,
-            });
         }
 
         private void btnSalaryByQuarter_Click(object sender, RoutedEventArgs e)
@@ -71,12 +59,6 @@ namespace Presentation
 
             dgSalaryStatistics.Columns[1].Header = "Quý";
 
-            _activityService.CreateActivityLog(new ActivityLog
-            {
-                UserId = _currentUser.UserId,
-                Action = $"Filter User by Salary by Quarter",
-                Timestamp = DateTime.Now,
-            });
         }
         private void btnExportToExcel_Click(object sender, RoutedEventArgs e)
         {
@@ -88,46 +70,110 @@ namespace Presentation
                     return;
                 }
 
-                // Chuyển DataGrid.ItemsSource về DataTable
-                DataView dataView = dgSalaryStatistics.ItemsSource as DataView;
-                if (dataView == null)
+                DataTable dataTable = new DataTable();
+
+                foreach (var column in dgSalaryStatistics.Columns)
                 {
-                    MessageBox.Show("Dữ liệu không hợp lệ!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
+                    dataTable.Columns.Add(column.Header.ToString());
                 }
 
-                DataTable dataTable = dataView.ToTable();
+                foreach (var item in dgSalaryStatistics.Items)
+                {
+                    DataRow row = dataTable.NewRow();
+                    for (int i = 0; i < dgSalaryStatistics.Columns.Count; i++)
+                    {
+                        DataGridColumn column = dgSalaryStatistics.Columns[i];
+                        row[i] = (column.GetCellContent(item) as TextBlock)?.Text ?? "";
+                    }
+                    dataTable.Rows.Add(row);
+                }
 
-                // Mở hộp thoại chọn nơi lưu file
                 SaveFileDialog saveFileDialog = new SaveFileDialog
                 {
-                    Filter = "Excel Workbook (*.xlsx)|*.xlsx",
+                    Filter = "Excel Workbook (.xlsx)|.xlsx",
                     FileName = "ThongKeLuongNhanVien.xlsx"
                 };
 
                 if (saveFileDialog.ShowDialog() == true)
                 {
-                    using (var workbook = new XLWorkbook())
+                    using (XLWorkbook workbook = new XLWorkbook())
                     {
                         var worksheet = workbook.Worksheets.Add(dataTable, "Thống kê lương");
-                        worksheet.Columns().AdjustToContents(); // Tự chỉnh độ rộng cột
+                        worksheet.Columns().AdjustToContents(); // Điều chỉnh cột tự động
 
                         workbook.SaveAs(saveFileDialog.FileName);
                     }
 
                     MessageBox.Show("Xuất file Excel thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    _activityService.CreateActivityLog(new ActivityLog
-                    {
-                        UserId = _currentUser.UserId,
-                        Action = $"Export report by salary to excel",
-                        Timestamp = DateTime.Now,
-                    });
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi xuất Excel: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnExportToPDF_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (dgSalaryStatistics.ItemsSource == null)
+                {
+                    MessageBox.Show("Không có dữ liệu để xuất!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var items = dgSalaryStatistics.ItemsSource.Cast<dynamic>().ToList();
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "PDF file (*.pdf)|*.pdf",
+                    FileName = "ThongKeLuongNhanVien.pdf"
+                };
+
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    var document = new Document();
+                    var section = document.AddSection();
+
+                    var paragraph = section.AddParagraph("BÁO CÁO THỐNG KÊ LƯƠNG NHÂN VIÊN");
+                    paragraph.Format.Alignment = ParagraphAlignment.Center;
+                    paragraph.Format.Font.Size = 16;
+                    paragraph.Format.Font.Bold = true;
+                    paragraph.Format.SpaceAfter = "1cm";
+
+                    var table = section.AddTable();
+                    table.Borders.Width = 0.75;
+
+                    table.AddColumn("3cm");
+                    table.AddColumn("3cm");
+                    table.AddColumn("6cm");
+
+                    var headerRow = table.AddRow();
+                    headerRow.Shading.Color = MigraDoc.DocumentObjectModel.Colors.LightGray;
+                    headerRow.Cells[0].AddParagraph("Năm");
+                    headerRow.Cells[1].AddParagraph(dgSalaryStatistics.Columns[1].Header.ToString());
+                    headerRow.Cells[2].AddParagraph("Lương tổng");
+
+                    foreach (var item in items)
+                    {
+                        var row = table.AddRow();
+                        row.Cells[0].AddParagraph(item.Item1.ToString());
+                        row.Cells[1].AddParagraph(item.Item2.ToString());
+                        row.Cells[2].AddParagraph(item.Item3.ToString());
+                    }
+
+                    var renderer = new PdfDocumentRenderer(true);
+                    renderer.Document = document;
+                    renderer.RenderDocument();
+                    renderer.PdfDocument.Save(saveFileDialog.FileName);
+
+                    MessageBox.Show("Xuất file PDF thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xuất PDF: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
