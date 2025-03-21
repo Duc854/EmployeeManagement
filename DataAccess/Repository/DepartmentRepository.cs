@@ -43,7 +43,7 @@ namespace DataAccess.Repository
             _context.SaveChanges();
         }
 
-        public List<Department> GetAllDepartment()
+        public List<Department> GetAllDepartment()                                      
         {
             try
             {
@@ -60,5 +60,12 @@ namespace DataAccess.Repository
             }
         }
 
+        public Department AddDepartmentBackup(Department department)
+        {
+            _context.Departments.Add(department);
+            _context.SaveChanges();
+
+            return department;
+        }
     }
 }

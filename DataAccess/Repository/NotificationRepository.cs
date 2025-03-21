@@ -97,7 +97,7 @@ namespace DataAccess.Repository
             try
             {
                 Console.WriteLine("Đang lấy thông báo...");
-                var notifications = _context.Notifications
+                var notifications = _context.Notifications.Where(n => n.DepartmentId == null && n.ReceiverId == null)
                                             .OrderByDescending(n => n.SentDate)
                                             .Take(10)
                                             .ToList();

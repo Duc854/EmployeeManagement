@@ -79,14 +79,26 @@ namespace DataAccess.Repository
             }
         }
 
-        
+        public List<Attendance> GetAttendance()
+        {
+            try
+            {
+                var today = DateOnly.FromDateTime(DateTime.Today);
+                return _context.Attendances.Include(a => a.Employee).Where(a => a.WorkDate == today)
+                   .ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
         public List<Attendance> GetTodayAttendance()
         {
             try
             {
-                return _context.Attendances.Include(a => a.Employee).
-                    Where(atd => atd.WorkDate == DateOnly.FromDateTime(DateTime.Now)).ToList();
+                return _context.Attendances.Include(a => a.Employee)
+                   .ToList();
             }
             catch (Exception ex) {
                 throw;
@@ -154,6 +166,12 @@ namespace DataAccess.Repository
             return _context.Attendances
                 .Where(a => a.WorkDate.Year == year && a.WorkDate.Month == month)
                 .Include(a => a.Employee) // Load thông tin nhân viên
+                .ToList();
+        }
+
+        public List<Attendance> GetAttendances()
+        {
+            return _context.Attendances
                 .ToList();
         }
     }

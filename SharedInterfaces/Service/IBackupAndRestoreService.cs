@@ -9,6 +9,6 @@ namespace SharedInterfaces.Service
     public interface IBackupAndRestoreService
     {
         public Task BackupData(string filePath);
-        public Task RestoreData(string filePath);
+        public Task RestoreDataAsync(string filePath);
     }
 }

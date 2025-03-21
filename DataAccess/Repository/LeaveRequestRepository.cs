@@ -89,5 +89,10 @@ namespace DataAccess.Repository
                 throw new Exception(ex.Message);
             }
         }
+
+        public int GetLeave()
+        {
+            return _context.LeaveRequests.Where(lr => lr.Status.Equals("Pending")).ToList().Count();
+        }
     }
 }
