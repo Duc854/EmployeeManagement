@@ -54,7 +54,7 @@
                 <!-- DataGrid hiển thị danh sách chấm công -->
                 <Border Background="White" Padding="10" BorderThickness="1" BorderBrush="#D1D5DB" CornerRadius="10"
                         Grid.Column="1" Margin="0,0,0,0">
-                    <DataGrid x:Name="dgAttendance" AutoGenerateColumns="False" SelectionChanged="dgAttendance_SelectionChanged">
+                    <DataGrid x:Name="dgAttendance" AutoGenerateColumns="False" SelectionChanged="dgAttendance_SelectionChanged" Height="*">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Mã Chấm Công" Binding="{Binding AttendanceId}" Width="*"/>
                             <DataGridTextColumn Header="Mã Nhân Viên" Binding="{Binding EmployeeId}" Width="*"/>
