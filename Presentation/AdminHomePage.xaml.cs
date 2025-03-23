@@ -36,6 +36,14 @@ namespace Presentation
             _leaveRequestRepository = new LeaveRequestRepository();
             _attendanceRepository = new AttendanceRepository();
             LoadData();
+            Task.Run(async () =>
+            {
+                while (true)
+                {
+                    await Task.Delay(TimeSpan.FromSeconds(5)); // Chờ 5 giây để tránh crash
+                    LoadData();
+                }
+            });
         }
 
         private void LoadData()

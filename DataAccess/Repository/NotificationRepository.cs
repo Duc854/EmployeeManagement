@@ -69,8 +69,8 @@ namespace DataAccess.Repository
                 notis = _context.Notifications
                     .Where(x => x.DepartmentId == departmentId || 
                             x.ReceiverId == empId ||
-                            x.ReceiverId == null ||
-                            x.DepartmentId == null)
+                            (x.ReceiverId == null &&
+                            x.DepartmentId == null))
                     .ToList();
             }
             catch (Exception ex)

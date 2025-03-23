@@ -99,10 +99,11 @@ namespace Presentation
             if (lstActions.SelectedItem is ListBoxItem selectedItem)
             {
                 string action = selectedItem.Content.ToString();
-                //if (action == "Thông báo nội bộ")
-                //{
-                //    MainFrame.Navigate(new EmployeeNotificationPage());
-                //}
+                if (action == "Thông báo nội bộ")
+                {
+                    EmployeeNotificationWindow window = new EmployeeNotificationWindow();
+                    window.Show();
+                }
                 if (action == "Thông tin cá nhân")
                 {
                     EmployeeProfile window = new EmployeeProfile(User.Employee.EmployeeId);
