@@ -20,5 +20,7 @@ namespace SharedInterfaces.Repository
         List<Employee> SearchEmployees(string keyword);
         public List<Employee> GetAllEmployee();
         public Employee GetEmployeeByUserId(int userId);
+        Task DeleteAllEmployees();
+        Task<Employee> AddEmployeeAsync(Employee employee);
     }
 }

@@ -17,6 +17,6 @@ namespace SharedInterfaces.Repository
         void DeleteSalary(int id);
 
         Task DeleteAllSalaries();
-
+        Task AddSalaryAsync(Salary salary);
     }
 }

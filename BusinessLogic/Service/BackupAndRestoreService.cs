@@ -37,8 +37,8 @@ namespace BusinessLogic.Service
             var backupData = new BackupUser
             {
                 Users = _userRepo.GetAllUser(),
-                Departments = _departmentRepo.GetAllDepartments(),
-                Employees = _employeeRepo.GetAllEmployees(),
+                Departments = _departmentRepo.GetAllDepartment(),
+                Employees = _employeeRepo.GetAllEmployee(),
                 ActivityLogs = _activityLogRepo.GetActivityLogs(),
                 Attendances = _attendanceRepo.GetAttendances(),
                 LeaveRequests = _leaveRequestRepo.GetAllLeaveRequests(),
@@ -74,7 +74,7 @@ namespace BusinessLogic.Service
             {
                 int tmpId = user.UserId;
                 user.UserId = 0;
-                var newUser = _userRepo.AddUserBackup(user);
+                var newUser = await _userRepo.AddUserBackup(user);
                 userIdMapping[tmpId] = newUser.UserId;
             }
 
@@ -83,48 +83,56 @@ namespace BusinessLogic.Service
             {
                 int tmpId = department.DepartmentId;
                 department.DepartmentId = 0;
-                var newDepartment = _departmentRepo.AddDepartmentBackup(department);
+                var newDepartment = await _departmentRepo.AddDepartmentBackup(department);
                 departmentIdMapping[tmpId] = newDepartment.DepartmentId;
             }
 
             var employeeIdMapping = new Dictionary<int, int>();
             foreach (var employee in backupData.Employees)
             {
+                int tmpId = employee.EmployeeId;
+                employee.EmployeeId = 0;
+
                 employee.UserId = userIdMapping[employee.UserId];
                 if (employee.DepartmentId.HasValue)
                 {
                     employee.DepartmentId = departmentIdMapping[employee.DepartmentId.Value];
                 }
                 var newEmployee = await _employeeRepo.AddEmployeeAsync(employee);
-                employeeIdMapping[employee.EmployeeId] = newEmployee.EmployeeId;
+                employeeIdMapping[tmpId] = newEmployee.EmployeeId;
             }
 
             foreach (var activityLog in backupData.ActivityLogs)
             {
+                activityLog.LogId = 0;
                 activityLog.UserId = userIdMapping[activityLog.UserId];
                 await _activityLogRepo.AddActivityLogAsync(activityLog);
             }
 
             foreach (var attendance in backupData.Attendances)
             {
+                attendance.AttendanceId = 0;
                 attendance.EmployeeId = employeeIdMapping[attendance.EmployeeId];
                 await _attendanceRepo.AddAttendanceAsync(attendance);
             }
 
             foreach (var leaveRequest in backupData.LeaveRequests)
             {
+                leaveRequest.LeaveId = 0;
                 leaveRequest.EmployeeId = employeeIdMapping[leaveRequest.EmployeeId];
                 await _leaveRequestRepo.AddLeaveRequestAsync(leaveRequest);
             }
 
             foreach (var salary in backupData.Salaries)
             {
+                salary.SalaryId = 0;
                 salary.EmployeeId = employeeIdMapping[salary.EmployeeId];
                 await _salaryRepo.AddSalaryAsync(salary);
             }
 
             foreach (var notification in backupData.Notifications)
             {
+                notification.NotificationId = 0;
                 if (notification.SenderId > 0)
                 {
                     notification.SenderId = userIdMapping[notification.SenderId];

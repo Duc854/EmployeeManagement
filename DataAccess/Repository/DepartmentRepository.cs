@@ -60,12 +60,21 @@ namespace DataAccess.Repository
             }
         }
 
-        public Department AddDepartmentBackup(Department department)
+        public async Task<Department> AddDepartmentBackup(Department department)
         {
-            _context.Departments.Add(department);
-            _context.SaveChanges();
+            await _context.Departments.AddAsync(department);
+            await _context.SaveChangesAsync();
 
             return department;
+        }
+
+        public async Task DeleteAllDepartments()
+        {
+            var leaves = await _context.Departments
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
         }
     }
 }

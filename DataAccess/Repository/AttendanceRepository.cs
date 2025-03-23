@@ -183,6 +183,13 @@ namespace DataAccess.Repository
 
             await _context.SaveChangesAsync();
         }
+
+        public async Task AddAttendanceAsync(Attendance attendance)
+        {
+            await _context.Attendances
+                .AddAsync(attendance);
+            await _context.SaveChangesAsync();
+        }
     }
     }
 

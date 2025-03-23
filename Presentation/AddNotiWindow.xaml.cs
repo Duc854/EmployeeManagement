@@ -175,6 +175,8 @@ namespace Presentation
                 SentDate = DateTime.Now
             };
 
+            //MessageBox.Show($"Title: {txtTitle.Text}, Message: {txtMessage.Text}, SenderId: {currentUser.UserId}, ReceivedUser: {receivedUser.UserId}, Department: {receivedDepartment.DepartmentId}, Date: {DateTime.Now}");
+
             var sendNotiResult = _notiService.CreateANotification(sentNotification);
 
             if (sendNotiResult == "Gửi thông báo thành công")
@@ -183,7 +185,6 @@ namespace Presentation
                 MessageBox.Show(sendNotiResult, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 
             this.Close();
-            //MessageBox.Show($"Title: {txtTitle.Text}, Message: {txtMessage.Text}, SenderId: {currentUser.UserId}, ReceivedUser: {receivedUser.UserId}, Department: {receivedDepartment.DepartmentId}, Date: {DateTime.Now}");
         }
     }
 }

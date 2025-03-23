@@ -15,5 +15,6 @@ namespace SharedInterfaces.Repository
         public string CreateANotification(Notification notification);
         public List<Notification> GetNotificationByEmployeeIdAndDepartmentId(int empId, int departmentId);
         Task DeleteAllNotifications();
+        Task AddNotificationAsync(Notification notification);
     }
 }

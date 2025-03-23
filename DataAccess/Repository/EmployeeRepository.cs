@@ -203,5 +203,22 @@ namespace DataAccess.Repository
                 throw ex;
             }
         }
+
+        public async Task DeleteAllEmployees()
+        {
+            var leaves = await _context.Employees
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Employee> AddEmployeeAsync(Employee employee)
+        {
+            await _context.Employees.AddAsync(employee);
+            await _context.SaveChangesAsync();
+
+            return employee;
+        }
     }
 }

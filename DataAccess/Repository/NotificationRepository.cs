@@ -17,6 +17,14 @@ namespace DataAccess.Repository
             _context = new EmployeeManagementContext();
         }
 
+        public async Task AddNotificationAsync(Notification notification)
+        {
+            await _context.Notifications
+                .AddAsync(notification);
+
+            await _context.SaveChangesAsync();
+        }
+
         public string CreateANotification(Notification notification)
         {
             try

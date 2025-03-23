@@ -89,13 +89,22 @@ namespace DataAccess.Repository
             
         }
 
-        public User AddUserBackup(User user)
+        public async Task<User> AddUserBackup(User user)
         {
-            _context.Users
-                .Add(user);
-            _context.SaveChanges();
+            await _context.Users
+                .AddAsync(user);
+            await _context.SaveChangesAsync();
 
             return user;
+        }
+
+        public async Task DeleteAllUsers()
+        {
+            var leaves = await _context.Users
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
         }
     }
 }

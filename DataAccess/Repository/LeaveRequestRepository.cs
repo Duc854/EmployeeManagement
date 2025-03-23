@@ -103,5 +103,12 @@ namespace DataAccess.Repository
 
             await _context.SaveChangesAsync();
         }
+
+        public async Task AddLeaveRequestAsync(LeaveRequest leaveRequest)
+        {
+            await _context.LeaveRequests
+                .AddAsync(leaveRequest);
+            await _context.SaveChangesAsync();
+        }
     }
 }

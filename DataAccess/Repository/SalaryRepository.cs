@@ -34,6 +34,13 @@ namespace DataAccess.Repository
             }
         }
 
+        public async Task AddSalaryAsync(Salary salary)
+        {
+            await _contex.Salaries
+                .AddAsync(salary);
+            await _contex.AddRangeAsync();
+        }
+
         public async Task DeleteAllSalaries()
         {
             var leaves = await _contex.Salaries

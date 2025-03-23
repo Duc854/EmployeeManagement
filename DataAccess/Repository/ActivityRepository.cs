@@ -17,6 +17,13 @@ namespace DataAccess.Repository
             _context = new EmployeeManagementContext();
         }
 
+        public async Task AddActivityLogAsync(ActivityLog activityLog)
+        {
+            await _context.ActivityLogs
+                .AddAsync(activityLog);
+            await _context.SaveChangesAsync();
+        }
+
         public bool CreateActivityLog(ActivityLog activityLog)
         {
             try
@@ -31,6 +38,15 @@ namespace DataAccess.Repository
             {
                 return false;
             }
+        }
+
+        public async Task DeleteAllActivityLogs()
+        {
+            var leaves = await _context.ActivityLogs
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
         }
 
         public List<ActivityLog> GetActivityLogs()

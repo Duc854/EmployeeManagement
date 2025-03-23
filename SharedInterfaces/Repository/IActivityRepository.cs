@@ -11,5 +11,7 @@ namespace SharedInterfaces.Repository
     {
         public List<ActivityLog> GetActivityLogs();
         public bool CreateActivityLog(ActivityLog activityLog);
+        Task DeleteAllActivityLogs();
+        Task AddActivityLogAsync(ActivityLog activityLog);
     }
 }

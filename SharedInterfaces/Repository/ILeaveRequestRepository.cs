@@ -19,6 +19,6 @@ namespace SharedInterfaces.Repository
 
         int GetUsedLeaveDays(int employeeId, string leaveType);
         Task DeleteAllLeaveRequests();
-
+        Task AddLeaveRequestAsync(LeaveRequest leaveRequest);
     }
 }

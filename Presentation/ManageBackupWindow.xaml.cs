@@ -85,8 +85,8 @@ namespace Presentation
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Xảy ra lỗi khi phục hồi dữ liệu: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                throw ex;
+                MessageBox.Show($"Xảy ra lỗi khi phục hồi dữ liệu: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                //throw ex;
             }
         }
     }
