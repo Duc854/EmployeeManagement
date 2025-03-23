@@ -22,7 +22,7 @@ namespace SharedInterfaces.Repository
         List<Attendance> GetMonthlyAttendance(int month, int year);
         List<Attendance> GetAttendances();
 
-
+        Task DeleteAllAttendances();
 
     }
 }

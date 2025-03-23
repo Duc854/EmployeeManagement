@@ -59,86 +59,86 @@ namespace BusinessLogic.Service
             var jsonData = File.ReadAllText(filePath);
             var backupData = JsonConvert.DeserializeObject<BackupUser>(jsonData);
 
-            //await _attendanceRepo.DeleteAllAttendances();
-            //await _leaveRequestRepo.DeleteAllLeaveRequests();
-            //await _salaryRepo.DeleteAllSalaries(); 
-            //await _notificationRepo.DeleteAllNotifications(); 
-            //await _activityLogRepo.DeleteAllActivityLogs(); 
+            await _attendanceRepo.DeleteAllAttendances();
+            await _leaveRequestRepo.DeleteAllLeaveRequests();
+            await _salaryRepo.DeleteAllSalaries();
+            await _notificationRepo.DeleteAllNotifications();
+            await _activityLogRepo.DeleteAllActivityLogs();
 
-            //await _employeeRepo.DeleteAllEmployees(); 
-            //await _departmentRepo.DeleteAllDepartments();
-            //await _userRepo.DeleteAllUsers(); 
+            await _employeeRepo.DeleteAllEmployees();
+            await _departmentRepo.DeleteAllDepartments();
+            await _userRepo.DeleteAllUsers();
 
-            //var userIdMapping = new Dictionary<int, int>();
-            //foreach (var user in backupData.Users)
-            //{
-            //    int tmpId = user.UserId;
-            //    user.UserId = 0;
-            //    var newUser = _userRepo.AddUserBackup(user);
-            //    userIdMapping[tmpId] = newUser.UserId;
-            //}
+            var userIdMapping = new Dictionary<int, int>();
+            foreach (var user in backupData.Users)
+            {
+                int tmpId = user.UserId;
+                user.UserId = 0;
+                var newUser = _userRepo.AddUserBackup(user);
+                userIdMapping[tmpId] = newUser.UserId;
+            }
 
-            //var departmentIdMapping = new Dictionary<int, int>();
-            //foreach (var department in backupData.Departments)
-            //{
-            //    int tmpId = department.DepartmentId;
-            //    department.DepartmentId = 0;
-            //    var newDepartment = _departmentRepo.AddDepartmentBackup(department);
-            //    departmentIdMapping[tmpId] = newDepartment.DepartmentId;
-            //}
+            var departmentIdMapping = new Dictionary<int, int>();
+            foreach (var department in backupData.Departments)
+            {
+                int tmpId = department.DepartmentId;
+                department.DepartmentId = 0;
+                var newDepartment = _departmentRepo.AddDepartmentBackup(department);
+                departmentIdMapping[tmpId] = newDepartment.DepartmentId;
+            }
 
-            //var employeeIdMapping = new Dictionary<int, int>();
-            //foreach (var employee in backupData.Employees)
-            //{
-            //    employee.UserId = userIdMapping[employee.UserId];
-            //    if (employee.DepartmentId.HasValue)
-            //    {
-            //        employee.DepartmentId = departmentIdMapping[employee.DepartmentId.Value];
-            //    }
-            //    var newEmployee = await _employeeRepo.AddEmployeeAsync(employee);
-            //    employeeIdMapping[employee.EmployeeId] = newEmployee.EmployeeId;
-            //}
+            var employeeIdMapping = new Dictionary<int, int>();
+            foreach (var employee in backupData.Employees)
+            {
+                employee.UserId = userIdMapping[employee.UserId];
+                if (employee.DepartmentId.HasValue)
+                {
+                    employee.DepartmentId = departmentIdMapping[employee.DepartmentId.Value];
+                }
+                var newEmployee = await _employeeRepo.AddEmployeeAsync(employee);
+                employeeIdMapping[employee.EmployeeId] = newEmployee.EmployeeId;
+            }
 
-            //foreach (var activityLog in backupData.ActivityLogs)
-            //{
-            //    activityLog.UserId = userIdMapping[activityLog.UserId]; 
-            //    await _activityLogRepo.AddActivityLogAsync(activityLog);
-            //}
+            foreach (var activityLog in backupData.ActivityLogs)
+            {
+                activityLog.UserId = userIdMapping[activityLog.UserId];
+                await _activityLogRepo.AddActivityLogAsync(activityLog);
+            }
 
-            //foreach (var attendance in backupData.Attendances)
-            //{
-            //    attendance.EmployeeId = employeeIdMapping[attendance.EmployeeId];
-            //    await _attendanceRepo.AddAttendanceAsync(attendance);
-            //}
+            foreach (var attendance in backupData.Attendances)
+            {
+                attendance.EmployeeId = employeeIdMapping[attendance.EmployeeId];
+                await _attendanceRepo.AddAttendanceAsync(attendance);
+            }
 
-            //foreach (var leaveRequest in backupData.LeaveRequests)
-            //{
-            //    leaveRequest.EmployeeId = employeeIdMapping[leaveRequest.EmployeeId]; 
-            //    await _leaveRequestRepo.AddLeaveRequestAsync(leaveRequest);
-            //}
+            foreach (var leaveRequest in backupData.LeaveRequests)
+            {
+                leaveRequest.EmployeeId = employeeIdMapping[leaveRequest.EmployeeId];
+                await _leaveRequestRepo.AddLeaveRequestAsync(leaveRequest);
+            }
 
-            //foreach (var salary in backupData.Salaries)
-            //{
-            //    salary.EmployeeId = employeeIdMapping[salary.EmployeeId];
-            //    await _salaryRepo.AddSalaryAsync(salary);
-            //}
+            foreach (var salary in backupData.Salaries)
+            {
+                salary.EmployeeId = employeeIdMapping[salary.EmployeeId];
+                await _salaryRepo.AddSalaryAsync(salary);
+            }
 
-            //foreach (var notification in backupData.Notifications)
-            //{
-            //    if (notification.SenderId > 0)
-            //    {
-            //        notification.SenderId = userIdMapping[notification.SenderId];
-            //    }
-            //    if (notification.ReceiverId.HasValue)
-            //    {
-            //        notification.ReceiverId = employeeIdMapping[notification.ReceiverId.Value];
-            //    }
-            //    if (notification.DepartmentId.HasValue)
-            //    {
-            //        notification.DepartmentId = departmentIdMapping[notification.DepartmentId.Value];
-            //    }
-            //    await _notificationRepo.AddNotificationAsync(notification);
-            //}
+            foreach (var notification in backupData.Notifications)
+            {
+                if (notification.SenderId > 0)
+                {
+                    notification.SenderId = userIdMapping[notification.SenderId];
+                }
+                if (notification.ReceiverId.HasValue)
+                {
+                    notification.ReceiverId = employeeIdMapping[notification.ReceiverId.Value];
+                }
+                if (notification.DepartmentId.HasValue)
+                {
+                    notification.DepartmentId = departmentIdMapping[notification.DepartmentId.Value];
+                }
+                await _notificationRepo.AddNotificationAsync(notification);
+            }
         }
     }
 }

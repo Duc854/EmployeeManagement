@@ -174,6 +174,15 @@ namespace DataAccess.Repository
             return _context.Attendances
                 .ToList();
         }
+
+        public async Task DeleteAllAttendances()
+        {
+            var attendances = await _context.Attendances
+                .ToListAsync();
+            _context.RemoveRange(attendances);
+
+            await _context.SaveChangesAsync();
+        }
     }
     }
 

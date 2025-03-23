@@ -34,6 +34,15 @@ namespace DataAccess.Repository
             }
         }
 
+        public async Task DeleteAllSalaries()
+        {
+            var leaves = await _contex.Salaries
+                .ToListAsync();
+            _contex.RemoveRange(leaves);
+
+            await _contex.SaveChangesAsync();
+        }
+
         public void DeleteSalary(int id)
         {
             try

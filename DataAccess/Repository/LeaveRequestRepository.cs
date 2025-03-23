@@ -94,5 +94,14 @@ namespace DataAccess.Repository
         {
             return _context.LeaveRequests.Where(lr => lr.Status.Equals("Pending")).ToList().Count();
         }
+
+        public async Task DeleteAllLeaveRequests()
+        {
+            var leaves = await _context.LeaveRequests
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -33,6 +33,15 @@ namespace DataAccess.Repository
             }
         }
 
+        public async Task DeleteAllNotifications()
+        {
+            var leaves = await _context.Notifications
+                .ToListAsync();
+            _context.RemoveRange(leaves);
+
+            await _context.SaveChangesAsync();
+        }
+
         public List<Notification> GetAllNotification()
         {
             List<Notification> notis = new List<Notification>();
