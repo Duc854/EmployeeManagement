@@ -189,6 +189,7 @@ namespace Presentation
 
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
+            LoadAttendanceData();
             txtAttendanceID.Clear();
             txtEmployeeID.Clear();
             dpWorkDate.SelectedDate = null;

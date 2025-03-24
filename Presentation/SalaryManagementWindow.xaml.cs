@@ -155,6 +155,8 @@ namespace Presentation
 
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
+
+            LoadSalary();
             txtSalaryID.Text = "";
             txtEmployeeID.Text = "";
             txtBasicSalary.Text = "";
