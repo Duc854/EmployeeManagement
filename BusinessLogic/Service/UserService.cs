@@ -28,6 +28,11 @@ namespace BusinessLogic.Service
             return user;
         }
 
+        public List<User> GetAllAdmin()
+        {
+            return _userRepository.GetAllAdmin();
+        }
+
         public List<User> GetAllUser()
         {
             return _userRepository.GetAllUser();

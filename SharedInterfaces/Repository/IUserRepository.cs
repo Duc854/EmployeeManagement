@@ -16,5 +16,6 @@ namespace SharedInterfaces.Repository
         public List<User> GetAllUser();
         public Task<User> AddUserBackup(User user);
         Task DeleteAllUsers();
+        List<User> GetAllAdmin();
     }
 }

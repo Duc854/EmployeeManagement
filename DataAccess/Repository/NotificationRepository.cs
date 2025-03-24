@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace DataAccess.Repository
 {
     public class NotificationRepository : INotificationRepository
+
     {
         private readonly EmployeeManagementContext _context;
         public NotificationRepository() 
@@ -50,6 +51,19 @@ namespace DataAccess.Repository
             await _context.SaveChangesAsync();
         }
 
+        public async Task DeleteNoti(int notiId)
+        {
+            var noti = await _context.Notifications
+                .FirstOrDefaultAsync(x => x.NotificationId == notiId);
+
+            if (noti == null)
+                return;
+            _context.Notifications
+                .Remove(noti);
+
+            await _context.SaveChangesAsync();
+        }
+
         public List<Notification> GetAllNotification()
         {
             List<Notification> notis = new List<Notification>();
@@ -76,9 +90,8 @@ namespace DataAccess.Repository
             {
                 notis = _context.Notifications
                     .Where(x => x.DepartmentId == departmentId || 
-                            x.ReceiverId == empId ||
-                            (x.ReceiverId == null &&
-                            x.DepartmentId == null))
+                            x.ReceiverId == empId || 
+                            (x.DepartmentId == null && x.ReceiverId == null))
                     .ToList();
             }
             catch (Exception ex)
@@ -90,7 +103,7 @@ namespace DataAccess.Repository
             return notis;
         }
 
-        public List<Notification> GetNotificationBySentDate(DateTime dateTime)
+        public List<Notification> GetNotificationBySentDate(DateTime? dateTime, int senderId, int receiverId, int departmentId)
         {
             List<Notification> notis = new List<Notification>();
 
@@ -98,7 +111,10 @@ namespace DataAccess.Repository
             {
                 notis = _context.Notifications
                     .AsNoTracking()
-                    .Where(x => x.SentDate.HasValue && x.SentDate.Value.Date == dateTime.Date)
+                    .Where(x => (x.SentDate.HasValue && dateTime != null && x.SentDate.Value.Date == dateTime.Value.Date) || 
+                        (x.SenderId == senderId) ||
+                        (x.ReceiverId != null && x.ReceiverId == receiverId) ||
+                        (x.DepartmentId != null && x.DepartmentId == departmentId))
                     .ToList();
             }
             catch (Exception ex)

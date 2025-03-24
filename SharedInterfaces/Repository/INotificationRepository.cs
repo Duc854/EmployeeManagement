@@ -11,10 +11,11 @@ namespace SharedInterfaces.Repository
     {
         public List<Notification> HomeNotifications();
         public List<Notification> GetAllNotification();
-        public List<Notification> GetNotificationBySentDate(DateTime dateTime);
+        public List<Notification> GetNotificationBySentDate(DateTime? dateTime, int senderId, int receiverId, int departmentId);
         public string CreateANotification(Notification notification);
         public List<Notification> GetNotificationByEmployeeIdAndDepartmentId(int empId, int departmentId);
         Task DeleteAllNotifications();
         Task AddNotificationAsync(Notification notification);
+        Task DeleteNoti(int notiId);
     }
 }

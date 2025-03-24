@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -115,11 +116,11 @@ namespace Presentation
             userOptions.Insert(0, new NotiUserOption
             {
                 UserId = -1,
-                UserName = "Gửi đến tất cả"
+                UserName = "Không gửi đến người dùng nào"
             });
             receivedComboBox.ItemsSource = userOptions;
             receivedComboBox.SelectedItem = userOptions
-                .FirstOrDefault(x => x.UserName == "Gửi đến tất cả");
+                .FirstOrDefault(x => x.UserName == "Không gửi đến người dùng nào");
 
             FormPanel.Children.Add(receivedComboBoxLabel);
             FormPanel.Children.Add(receivedComboBox);
@@ -148,12 +149,17 @@ namespace Presentation
                 .ToList();
             departmentOptions.Insert(0, new NotiDepartmentOption
             {
+                DepartmentId = -2,
+                DepartmentName = "Gửi tới tất cả"
+            });
+            departmentOptions.Insert(0, new NotiDepartmentOption
+            {
                 DepartmentId = -1,
-                DepartmentName = "Gửi đến tất cả"
+                DepartmentName = "Không gửi đến phòng ban nào"
             });
             departmentComboBox.ItemsSource = departmentOptions;
             departmentComboBox.SelectedItem = departmentOptions
-                .FirstOrDefault(x => x.DepartmentName == "Gửi đến tất cả");
+                .FirstOrDefault(x => x.DepartmentName == "Không gửi đến phòng ban nào");
 
             FormPanel.Children.Add(departmentComboBoxLabel);
             FormPanel.Children.Add(departmentComboBox);
@@ -164,6 +170,18 @@ namespace Presentation
             User currentUser = (User)App.Current.Properties["user"];
             NotiUserOption receivedUser = (NotiUserOption)receivedComboBox.SelectedItem;
             NotiDepartmentOption receivedDepartment = (NotiDepartmentOption)departmentComboBox.SelectedItem;
+
+            if (receivedUser.UserId == -1 && receivedDepartment.DepartmentId == -1)
+            {
+                MessageBox.Show("Bạn phải chọn nơi để gửi tin nhắn");
+                return;
+            }
+
+            if (receivedUser.UserId == -1 && receivedDepartment.DepartmentId == -2)
+            {
+                receivedUser.UserId = -1;
+                receivedDepartment.DepartmentId = -1;
+            }
 
             Notification sentNotification = new Notification
             {

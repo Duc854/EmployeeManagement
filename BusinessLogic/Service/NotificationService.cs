@@ -25,6 +25,11 @@ namespace BusinessLogic.Service
             return _notificationRepository.CreateANotification(notification);
         }
 
+        public async Task DeleteNoti(int notiId)
+        {
+            await _notificationRepository.DeleteNoti(notiId);
+        }
+
         public List<Notification> GetAllNotification()
         {
             try
@@ -47,11 +52,11 @@ namespace BusinessLogic.Service
             return notifications;
         }
 
-        public List<Notification> GetNotificationBySentDate(DateTime dateTime)
+        public List<Notification> GetNotificationBySentDate(DateTime? dateTime, int senderId, int receiverId, int departmentId)
         {
             try
             {
-                return _notificationRepository.GetNotificationBySentDate(dateTime);
+                return _notificationRepository.GetNotificationBySentDate(dateTime, senderId, receiverId, departmentId);
             }
             catch (Exception ex)
             {

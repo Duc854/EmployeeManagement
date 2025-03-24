@@ -9,13 +9,22 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="45"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
             <DatePicker x:Name="notiDatePicker" />
-            <Button x:Name="btnSearch" Content="Tìm kiếm" Click="btnSearch_Click"/>
+            <TextBlock Text="Người gửi" VerticalAlignment="Center" Margin="15 0 0 0" />
+            <ComboBox x:Name="senderIdComboBox" Margin="10 0 10 0">
+            </ComboBox>
+            <TextBlock Text="Người nhận" VerticalAlignment="Center" Margin="15 0 0 0" />
+            <ComboBox x:Name="receiverIdComboBox" Margin="10 0 10 0">
+            </ComboBox>
+            <TextBlock Text="Phòng nhận" VerticalAlignment="Center" Margin="15 0 0 0" />
+            <ComboBox x:Name="departmentIdComboBox" Margin="10 0 10 0">
+            </ComboBox>
+            <Button x:Name="btnSearch" Content="Tìm kiếm" Click="btnSearch_Click" Margin="20 0 0 0"/>
         </StackPanel>
 
         <Button Grid.Row="0" x:Name="addBtn" Content="Gửi 1 thông báo" Width="200"
@@ -35,7 +44,6 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button x:Name="updateBtn" Content="Sửa" Width="50" Margin="5" Click="updateBtn_Click"/>
                                 <Button x:Name="deleteBtn" Content="Xóa" Width="50" Margin="5" Click="deleteBtn_Click"/>
                             </StackPanel>
                         </DataTemplate>

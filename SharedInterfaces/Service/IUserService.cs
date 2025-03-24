@@ -11,5 +11,6 @@ namespace SharedInterfaces.Service
     {
         public User Authenticate(string username, string password);
         public List<User> GetAllUser();
+        List<User> GetAllAdmin();
     }
 }

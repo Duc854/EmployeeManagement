@@ -106,5 +106,13 @@ namespace DataAccess.Repository
 
             await _context.SaveChangesAsync();
         }
+
+        public List<User> GetAllAdmin()
+        {
+            var users = _context.Users
+                .Where(x => x.Role == "Admin")
+                .ToList();
+            return users;
+        }
     }
 }
